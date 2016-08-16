@@ -75,7 +75,7 @@ blockquote {
 
 blockquote p {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 9pt;
+	font-size: 12px;
 	font-weight: normal;
 	text-align: justify;
 	text-indent: 0px;
@@ -108,7 +108,7 @@ td {
 }
 
 hr {
-	border-top: 2px solid rgb(7, 1, 80);
+	border-top: 1px solid #666666;
 	border-bottom: none;
 	border-left: none;
 	border-right: none;
@@ -195,6 +195,12 @@ hr {
 	display: block;
 	float: right;
 	width: 472px;
+}
+
+.awards_press_caption {
+	display: block;
+	float: right;
+	width: 440px;
 }
 
 .vertical_spacer {

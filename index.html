@@ -13,18 +13,21 @@
 	function populateLatestNews(error, data) {
 		if (error) return;
 
-		var i;
 		var content = document.getElementById("content");
+
+		var i;
+		var newsItem, linkPos, start, rest, linkText, end;
+
 		for (i=0; i<data.news.length; i++) {
-			var newsItem = document.createElement("p");
-			var linkPos = data.news[i].text.indexOf("%%");
+			newsItem = document.createElement("p");
+			linkPos = data.news[i].text.indexOf("%%");
 			if (linkPos >= 0) {
-				var start = data.news[i].text.substring(0, linkPos);
-				var rest = data.news[i].text.substring(linkPos+2);
+				start = data.news[i].text.substring(0, linkPos);
+				rest = data.news[i].text.substring(linkPos+2);
 				linkPos = rest.indexOf("%%");
 				if (linkPos >=0) {
-					var linkText = rest.substring(0, linkPos);;
-					var end = rest.substring(linkPos+2);
+					linkText = rest.substring(0, linkPos);;
+					end = rest.substring(linkPos+2);
 					newsItem.innerHTML = "<u>" + data.news[i].date + "</u>: " + start + "<a href=\"" + data.news[i].link + "\">" + linkText + "</a>" + end;
 				}
 				else {

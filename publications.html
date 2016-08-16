@@ -28,33 +28,35 @@
 
 	function initPublications(parent, pubList) {
 		var i;
+		var title, authors, venue, doi, link;
+
 		for (i=0; i<pubList.length; i++) {
 			if (pubList[i].title !== undefined) {
-				var title = document.createElement("p");
+				title = document.createElement("p");
 				title.className = "pub_title";
 				title.innerHTML = pubList[i].title;
 				parent.appendChild(title);
 			}
 			if (pubList[i].authors !== undefined) {
-				var authors = document.createElement("p");
+				authors = document.createElement("p");
 				authors.className = "pub_content";
 				authors.innerHTML = pubList[i].authors.replace(/Thomas Marrinan/, "<u>Thomas Marrinan</u>").replace(/T. Marrinan/, "<u>T. Marrinan</u>");
 				parent.appendChild(authors);
 			}
 			if (pubList[i].venue !== undefined) {
-				var venue = document.createElement("p");
+				venue = document.createElement("p");
 				venue.className = "pub_content";
 				venue.innerHTML = pubList[i].venue.replace(/In /, "In <i>").replace(/PhD Thesis/, "<i>PhD Thesis").replace(/(, \d{4}|\()/, "</i>$1");
 				parent.appendChild(venue);
 			}
 			if (pubList[i].doi !== undefined) {
-				var doi = document.createElement("p");
+				doi = document.createElement("p");
 				doi.className = "pub_content";
 				doi.innerHTML = "<a href=" + pubList[i].doi + ">" + pubList[i].doi + "</a>";
 				parent.appendChild(doi);
 			}
 			if (pubList[i].link_text !== undefined && pubList[i].link_url !== undefined) {
-				var link = document.createElement("p");
+				link = document.createElement("p");
 				link.className = "pub_content";
 				link.innerHTML = "<a href=" + pubList[i].link_url + ">" + pubList[i].link_text + "</a>";
 				parent.appendChild(link);

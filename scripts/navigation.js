@@ -3,7 +3,7 @@ function initNavigation() {
 		{name: "Home",         link: "index.html"},
 		{name: "Research",     link: "research.html"},
 		{name: "Publications", link: "publications.html"},
-		{name: "Awards/Press", link: "award_press.html"},
+		{name: "Awards/Press", link: "awards_press.html"},
 		{name: "CV",           link: "TMarrinan_CV.pdf"}
 	];
 	
