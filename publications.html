@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thomas Marrinan</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<script type="text/javascript" src="scripts/navigation.js"></script>
+<script type="text/javascript">
+	function init() {
+		initNavigation();
+		getJSON("data/publications.json", populatePubList);
+	}
+
+	function populatePubList(data, error) {
+		if (error) return;
+
+		var conference_papers = document.getElementById("conference_papers");
+		var journal_articles = document.getElementById("journal_articles");
+		var poster_presentations = document.getElementById("poster_presentations");
+		var thesis_documents = document.getElementById("thesis_documents");
+		var presentation_talks = document.getElementById("presentation_talks");
+
+		initPublications(conference_papers, data.conferences);
+		initPublications(journal_articles, data.journals);
+		initPublications(poster_presentations, data.posters);
+		initPublications(thesis_documents, data.theses);
+		initPublications(presentation_talks, data.presentations);
+	}
+
+	function initPublications(parent, pubList) {
+		var i;
+		for (i=0; i<pubList.length; i++) {
+			if (pubList[i].title !== undefined) {
+				var title = document.createElement("p");
+				title.className = "pub_title";
+				title.innerHTML = pubList[i].title;
+				parent.appendChild(title);
+			}
+			if (pubList[i].authors !== undefined) {
+				var authors = document.createElement("p");
+				authors.className = "pub_content";
+				authors.innerHTML = pubList[i].authors.replace(/Thomas Marrinan/, "<u>Thomas Marrinan</u>").replace(/T. Marrinan/, "<u>T. Marrinan</u>");
+				parent.appendChild(authors);
+			}
+			if (pubList[i].venue !== undefined) {
+				var venue = document.createElement("p");
+				venue.className = "pub_content";
+				venue.innerHTML = pubList[i].venue.replace(/In /, "In <i>").replace(/PhD Thesis/, "<i>PhD Thesis").replace(/(, \d{4}|\()/, "</i>$1");
+				parent.appendChild(venue);
+			}
+			if (pubList[i].doi !== undefined) {
+				var doi = document.createElement("p");
+				doi.className = "pub_content";
+				doi.innerHTML = "<a href=" + pubList[i].doi + ">" + pubList[i].doi + "</a>";
+				parent.appendChild(doi);
+			}
+			if (pubList[i].link_text !== undefined && pubList[i].link_url !== undefined) {
+				var link = document.createElement("p");
+				link.className = "pub_content";
+				link.innerHTML = "<a href=" + pubList[i].link_url + ">" + pubList[i].link_text + "</a>";
+				parent.appendChild(link);
+			}
+		}
+	}
+
+	function getJSON(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", url, true);
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					callback(null, JSON.parse(xhr.responseText));
+				}
+				else {
+					callback("Error: File Not Found", null);
+				}
+			}
+		};
+		xhr.send();
+	}
+</script>
+</head>
+
+<body onload="init()">
+	<div id="main">
+		<!-- START: NAVIGATION -->
+		<div id="navigation">
+		</div>
+		<!-- END: NAVIGATION -->
+		
+		<!-- START: MAIN CONTENT -->
+		<div id="content">
+			<!-- START: CONFERENCE / WORKSHOP PAPERS -->
+			<div id="conference_papers">
+				<h2>Conference and Workshop Papers</h2>
+			</div>
+			<div class="vertical_tspacer"></div>
+			<!-- END: CONFERENCE / WORKSHOP PAPERS -->
+
+
+			<div id="journal_articles">
+				<h2>Journal Articles</h2>
+			</div>
+			<div class="vertical_tspacer"></div>
+
+			<div id="poster_presentations">
+				<h2>Posters</h2>
+			</div>
+			<div class="vertical_tspacer"></div>
+
+			<div id="thesis_documents">
+				<h2>Thesis</h2>
+			</div>
+			<div class="vertical_tspacer"></div>
+
+			<div id="presentation_talks">
+				<h2>Presentations</h2>
+			</div>
+			<div class="vertical_tspacer"></div>
+		</div>
+		<!-- END: MAIN CONTENT -->
+
+		<div class="clear"></div>
+	</div>
+</body>
+</html>
