@@ -6,63 +6,53 @@
 <script type="text/javascript" src="scripts/navigation.js"></script>
 <script type="text/javascript">
 	function init() {
-		var news = [
-			{
-				date: "July 18-22, 2016",
-				text: "I helped develop curriculum and teach at the %%ANL Summer Coding Camp%%, where 26 high school students learned to program Python during a one week bootcamp.",
-				link: "http://www.anl.gov/education/learning-center/learning-experiences/summer-coding-camp"
-			},
-			{
-				date: "April 27, 2016",
-				text: "I presented a poster on Future Outlooks for Enabling Interactive Supercomputing Frameworks at the %%Greater Chicago Area Systems Research%% workshop.",
-				link: "https://sites.google.com/site/gcasrworkshop/2016/posters"
-			},
-			{
-				date: "February 25, 2016",
-				text: "I served as a mentor for Argonne's Introduce a Girl to Engineering Day, where 8th grade girls spent the day learing about the STEM careers.",
-				link: null
-			},
-			{
-				date: "November 15-20, 2015",
-				text: "I attended %%SC%% in Austin, TX and learned about high performance computing and in-situ analysis techniques.",
-				link: "http://sc15.supercomputing.org/"
-			},
-			{
-				date: "August 21, 2015",
-				text: "I successfully defended my disseration on %%Data-Intensive Remote Collaboration using Scalable Visualizations in Heterogeneous Display Spaces%%.",
-				link: "https://www.evl.uic.edu/entry.php?id=2128"
-			}
-		];
-
 		initNavigation();
-		initLatestNews(news);
+		getJSON("data/latest.json", populateLatestNews);
 	}
 
-	function initLatestNews(news) {
+	function populateLatestNews(error, data) {
+		if (error) return;
+
 		var i;
 		var content = document.getElementById("content");
-		for (i=0; i<news.length; i++) {
+		for (i=0; i<data.news.length; i++) {
 			var newsItem = document.createElement("p");
-			var linkPos = news[i].text.indexOf("%%");
+			var linkPos = data.news[i].text.indexOf("%%");
 			if (linkPos >= 0) {
-				var start = news[i].text.substring(0, linkPos);
-				var rest = news[i].text.substring(linkPos+2);
+				var start = data.news[i].text.substring(0, linkPos);
+				var rest = data.news[i].text.substring(linkPos+2);
 				linkPos = rest.indexOf("%%");
 				if (linkPos >=0) {
 					var linkText = rest.substring(0, linkPos);;
 					var end = rest.substring(linkPos+2);
-					newsItem.innerHTML = "<u>" + news[i].date + "</u>: " + start + "<a href=\"" + news[i].link + "\">" + linkText + "</a>" + end;
+					newsItem.innerHTML = "<u>" + data.news[i].date + "</u>: " + start + "<a href=\"" + data.news[i].link + "\">" + linkText + "</a>" + end;
 				}
 				else {
-					newsItem.innerHTML = "<u>" + news[i].date + "</u>: " + news[i].text;
+					newsItem.innerHTML = "<u>" + data.news[i].date + "</u>: " + data.news[i].text;
 				}
 			}
 			else {
-				newsItem.innerHTML = "<u>" + news[i].date + "</u>: " + news[i].text;
+				newsItem.innerHTML = "<u>" + data.news[i].date + "</u>: " + data.news[i].text;
 			}
 			newsItem.style.marginBottom = "12px";
 			content.appendChild(newsItem);
 		}
+	}
+
+	function getJSON(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", url, true);
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					callback(null, JSON.parse(xhr.responseText));
+				}
+				else {
+					callback("Error: File Not Found", null);
+				}
+			}
+		};
+		xhr.send();
 	}
 </script>
 </head>
