@@ -10,7 +10,7 @@
 		getJSON("data/publications.json", populatePubList);
 	}
 
-	function populatePubList(data, error) {
+	function populatePubList(error, data) {
 		if (error) return;
 
 		var conference_papers = document.getElementById("conference_papers");
