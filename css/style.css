@@ -89,24 +89,6 @@ blockquote + p {
 	word-wrap: break-word;
 }
 
-table {
-	margin-left: 16px;
-	border-collapse: collapse;
-}
-
-tr {
-	
-}
-
-td {
-	padding: 10px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	font-weight: normal;
-	text-align: justify;
-	border-bottom: solid 1px rgb(7, 1, 80);
-}
-
 hr {
 	border-top: 1px solid #666666;
 	border-bottom: none;
@@ -219,55 +201,6 @@ hr {
 	display: block;
 	width: 100%;
 	height: 30px;
-}
-/*
-.publication {
-	width: 640px;
-}
-.pub_pdf {
-	width: 64px;
-}
-.pub_award {
-	width: 36px;
-}
-
-.pdf_link {
-	display: block;
-	width: 48px;
-	height: 48px;
-	margin-left: 16px;
-	background-image: url('images/publications/acroread.png');
-	background-repeat: no-repeat;
-	background-position: left top;
-}
-
-.pdf_toappear {
-	display: block;
-	width: 48px;
-	height: 48px;
-	margin-left: 16px;
-	background-image: url('images/publications/acroread_toappear.png');
-	background-repeat: no-repeat;
-	background-position: right top;
-}
-*/
-
-.course_list {
-	margin-bottom: 32px;
-}
-
-.course_name {
-	width: 525px;
-}
-
-.course_number {
-	width: 85px;
-	text-align: center;
-}
-
-.course_more {
-	width: 120px;
-	text-align: center;
 }
 
 .clear {
