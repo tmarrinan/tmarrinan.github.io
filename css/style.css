@@ -24,7 +24,6 @@ h2 {
 	font-size: 17px;
 	font-weight: normal;
 	margin-bottom: 6px;
-	/*color: #000000;*/
 	color: #5252AF;
 }
 
@@ -33,7 +32,7 @@ h3 {
 	font-size: 14px;
 	font-weight: normal;
 	margin-bottom: 6px;
-	color: #5252AF;
+	color: #000000;
 }
 
 h4 {
@@ -190,6 +189,12 @@ hr {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-weight: normal;
+}
+
+.research_description {
+	display: block;
+	float: right;
+	width: 472px;
 }
 
 .vertical_spacer {
