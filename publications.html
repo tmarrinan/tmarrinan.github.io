@@ -28,13 +28,25 @@
 
 	function initPublications(parent, pubList) {
 		var i;
-		var title, authors, venue, doi, link;
+		var title, authors, venue, doi, link, award;
 
 		for (i=0; i<pubList.length; i++) {
 			if (pubList[i].title !== undefined) {
 				title = document.createElement("p");
 				title.className = "pub_title";
 				title.innerHTML = pubList[i].title;
+				if (pubList[i].award !== undefined) {
+					award = document.createElement("img");
+					award.width = 16;
+					award.height = 15;
+					award.style.verticalAlign = "text-top";
+					award.style.marginLeft = "3px";
+					if (pubList[i].award === "best paper")
+						award.src = "images/publications/best_paper.png";
+					else if (pubList[i].award === "honorable mention")
+						award.src = "images/publications/honorable_mention.png";
+					title.appendChild(award);
+				}
 				parent.appendChild(title);
 			}
 			if (pubList[i].authors !== undefined) {
