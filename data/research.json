@@ -5,8 +5,8 @@
 			"dates": "2015-Present",
 			"image": {
 				"url": "images/research/research_sc.jpg",
-				"width": 250,
-				"height": 141
+				"width": 270,
+				"height": 153
 			},
 			"link": "research/interactivesc.html",
 			"description": [
@@ -18,8 +18,8 @@
 			"dates": "2013-2015",
 			"image": {
 				"url": "images/research/research_sage2.jpg",
-				"width": 250,
-				"height": 167
+				"width": 270,
+				"height": 180
 			},
 			"link": "research/sage2.html",
 			"description": [
@@ -31,8 +31,8 @@
 			"dates": "2011-2013",
 			"image": {
 				"url": "images/research/research_bio.jpg",
-				"width": 250,
-				"height": 234
+				"width": 270,
+				"height": 252
 			},
 			"link": "research/cerebroview.html",
 			"description": [
@@ -44,8 +44,8 @@
 			"dates": "2009-2010",
 			"image": {
 				"url": "images/research/research_chem.jpg",
-				"width": 250,
-				"height": 266
+				"width": 270,
+				"height": 287
 			},
 			"description": [
 				"Three-dimensional data visualization was used to plot chromatography systems. This research led to more efficient identification of systems used for modifying the selectivity of the separation in complex chemical mixtures. This research soon evolved to require higher dimensional analysis. The research team used parallel coordinates and 3D glyph representation to enhance their prior work."
@@ -56,8 +56,8 @@
 			"dates": "2009",
 			"image": {
 				"url": "images/research/research_astro.jpg",
-				"width": 250,
-				"height": 230
+				"width": 270,
+				"height": 248
 			},
 			"description": [
 				"Volumetric visualization of data from the Hubble Space Telescope was used to help astronomers understand the kinematics of ionized gas in the nuclear regions of Seyfert galaxies, the most common active galactic nuclei. The goal was to compare spectroscopic-analysis results with the expectations from various gas flow models to determine the dominant acceleration mechanism. This research was done as part of DUSCI, the Drake Undergraduate Science Collaborative Institute."
