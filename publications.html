@@ -13,6 +13,18 @@
 	function populatePubList(error, data) {
 		if (error) return;
 
+		var conference_title = document.getElementById("conference_papers");
+		var journal_title = document.getElementById("journal_articles");
+		var poster_title = document.getElementById("poster_presentations");
+		var thesis_title = document.getElementById("thesis_documents");
+		var presentation_title = document.getElementById("presentation_talks");
+
+		conference_title.textContent += " (" + data.conferences.length + ")";
+		journal_title.textContent += " (" + data.journals.length + ")";
+		poster_title.textContent += " (" + data.posters.length + ")";
+		thesis_title.textContent += " (" + data.theses.length + ")";
+		presentation_title.textContent += " (" + data.presentations.length + ")";
+
 		var conference_papers = document.getElementById("conference_papers");
 		var journal_articles = document.getElementById("journal_articles");
 		var poster_presentations = document.getElementById("poster_presentations");
@@ -105,35 +117,35 @@
 		<div id="content">
 			<!-- START: CONFERENCE / WORKSHOP PAPERS -->
 			<div id="conference_papers">
-				<h2>Conference and Workshop Papers</h2>
+				<h2 id="conference_title">Conference and Workshop Papers</h2>
 			</div>
 			<div class="vertical_tspacer"></div>
 			<!-- END: CONFERENCE / WORKSHOP PAPERS -->
 
 			<!-- START: JOURNAL ARTICLES -->
 			<div id="journal_articles">
-				<h2>Journal Articles</h2>
+				<h2 id="journal_title">Journal Articles</h2>
 			</div>
 			<div class="vertical_tspacer"></div>
 			<!-- END: JOURNAL ARTICLES -->
 
 			<!-- START: POSTER PRESENTATIONS -->
 			<div id="poster_presentations">
-				<h2>Posters</h2>
+				<h2 id="poster_title">Posters</h2>
 			</div>
 			<div class="vertical_tspacer"></div>
 			<!-- END: POSTER PRESENTATIONS -->
 
 			<!-- START: THESIS DOCUMENT -->
 			<div id="thesis_documents">
-				<h2>Thesis</h2>
+				<h2 id="thesis_title">Thesis</h2>
 			</div>
 			<div class="vertical_tspacer"></div>
 			<!-- END: THESIS DOCUMENT -->
 
 			<!-- START: PRESENTATION TALKS -->
 			<div id="presentation_talks">
-				<h2>Presentations</h2>
+				<h2 id="presentation_title">Presentations</h2>
 			</div>
 			<div class="vertical_tspacer"></div>
 			<!-- START: PRESENTATION TALKS -->
