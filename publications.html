@@ -13,11 +13,11 @@
 	function populatePubList(error, data) {
 		if (error) return;
 
-		var conference_title = document.getElementById("conference_papers");
-		var journal_title = document.getElementById("journal_articles");
-		var poster_title = document.getElementById("poster_presentations");
-		var thesis_title = document.getElementById("thesis_documents");
-		var presentation_title = document.getElementById("presentation_talks");
+		var conference_title = document.getElementById("conference_title");
+		var journal_title = document.getElementById("journal_title");
+		var poster_title = document.getElementById("poster_title");
+		var thesis_title = document.getElementById("thesis_title");
+		var presentation_title = document.getElementById("presentation_title");
 
 		conference_title.textContent += " (" + data.conferences.length + ")";
 		journal_title.textContent += " (" + data.journals.length + ")";
