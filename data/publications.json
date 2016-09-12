@@ -8,6 +8,20 @@
 			"link_url": "https://cscw.acm.org/2017/"
 		},
 		{
+			"title": "Interactive Multi-Modal Display Spaces for Visual Analysis",
+			"authors": "Thomas Marrinan, Arthur Nishimoto, Joseph A. Insley, Silvio Rizzi, Andrew Johnson, and Michael E. Papka",
+			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published.",
+			"link_text": "http://iss2016.acm.org/",
+			"link_url": "http://iss2016.acm.org/"
+		},
+		{
+			"title": "Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays",
+			"authors": "Thomas Marrinan, Luc Renambot, Jason Leigh, Angus Forbes, Steve Jones, and Andrew Johnson",
+			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published.",
+			"link_text": "http://iss2016.acm.org/",
+			"link_url": "http://iss2016.acm.org/"
+		},
+		{
 			"title": "SAGE2: A New Approach for Data Intensive Collaboration Using Scalable Resolution Shared Displays",
 			"authors": "Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Krishna Bharadwaj, Victor Mateevitsi, Luc Renambot, Lance Long, Andrew Johnson, and Jason Leigh",
 			"venue": "In Proceedings of the IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom '14), 2014, pp. 177-186",

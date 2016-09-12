@@ -1,6 +1,11 @@
 {
 	"news": [
 		{
+			"date": "September 9, 2016",
+			"text": "Extended Abstract submissions \"Interactive Multi-Modal Display Spaces for Visual Analysis\" and \"Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays\" were accepted at %%ISS 2016%% (Interactive Surfaces and Spaces)",
+			"link": "http://iss2016.acm.org/"
+		},
+		{
 			"date": "September 6, 2016",
 			"text": "Paper submission titled \"Mixed Presence Collaboration using Scalable Visualizations in Heterogeneous Display Spaces\" was accepted at %%CSCW 2017%% (Computer-Supported Cooperative Work & Social Computing)",
 			"link": "https://cscw.acm.org/2017/"
