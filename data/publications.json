@@ -10,14 +10,14 @@
 		{
 			"title": "Interactive Multi-Modal Display Spaces for Visual Analysis",
 			"authors": "Thomas Marrinan, Arthur Nishimoto, Joseph A. Insley, Silvio Rizzi, Andrew Johnson, and Michael E. Papka",
-			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published.",
+			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published",
 			"link_text": "http://iss2016.acm.org/",
 			"link_url": "http://iss2016.acm.org/"
 		},
 		{
 			"title": "Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays",
 			"authors": "Thomas Marrinan, Luc Renambot, Jason Leigh, Angus Forbes, Steve Jones, and Andrew Johnson",
-			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published.",
+			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published",
 			"link_text": "http://iss2016.acm.org/",
 			"link_url": "http://iss2016.acm.org/"
 		},
@@ -75,6 +75,13 @@
 		}
 	],
 	"posters": [
+		{
+			"title": "Networking Simulation Clusters with Visualization Clusters for Real-Time Data Analysis",
+			"authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
+			"venue": "In Argonne National Laboratory Postdoctoral Research and Career Symposium",
+			"link_text": "Poster [PDF]",
+			"link_url": "pdfs/Marrinan%20et%20al.%20-%20Networking%20Simulation%20Clusters%20with%20Visualization%20Clusters%20for%20Real-Time%20Data%20Analysis.pdf"
+		}
 		{
 			"title": "Future Outlooks for Enabling Interactive Supercomputing Frameworks",
 			"authors": "Thomas Marrinan and Michael E. Papka",
