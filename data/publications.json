@@ -10,16 +10,14 @@
 		{
 			"title": "Interactive Multi-Modal Display Spaces for Visual Analysis",
 			"authors": "Thomas Marrinan, Arthur Nishimoto, Joseph A. Insley, Silvio Rizzi, Andrew Johnson, and Michael E. Papka",
-			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published",
-			"link_text": "http://iss2016.acm.org/",
-			"link_url": "http://iss2016.acm.org/"
+			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 421-426",
+			"doi": "http://dx.doi.org/10.1145/2992154.2996792"
 		},
 		{
 			"title": "Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays",
 			"authors": "Thomas Marrinan, Luc Renambot, Jason Leigh, Angus Forbes, Steve Jones, and Andrew Johnson",
-			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, to be published",
-			"link_text": "http://iss2016.acm.org/",
-			"link_url": "http://iss2016.acm.org/"
+			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 355-360",
+			"doi": "http://dx.doi.org/10.1145/2992154.2996780"
 		},
 		{
 			"title": "SAGE2: A New Approach for Data Intensive Collaboration Using Scalable Resolution Shared Displays",
