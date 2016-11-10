@@ -40,13 +40,20 @@
 
 	function initPublications(parent, pubList) {
 		var i;
-		var title, authors, venue, doi, link, award;
+		var title, year, authors, venue, doi, link, award;
 
 		for (i=0; i<pubList.length; i++) {
 			if (pubList[i].title !== undefined) {
 				title = document.createElement("p");
 				title.className = "pub_title";
 				title.innerHTML = pubList[i].title;
+				if (pubList[i].year !== undefined) {
+					title.innerHTML += " ";
+					year = document.createElement("span");
+					year.className = "pub_year";
+					year.innerHTML = "(" + pubList[i].year + ")";
+					title.appendChild(year);
+				}
 				if (pubList[i].award !== undefined) {
 					award = document.createElement("img");
 					award.width = 16;

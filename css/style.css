@@ -167,6 +167,11 @@ hr {
 	margin-bottom: 0px;
 	font-weight: bold;
 }
+
+.pub_year {
+	font-weight: normal;
+}
+
 .pub_content {
 	margin-top: 0px;
 	margin-bottom: 0px;
