@@ -40,20 +40,22 @@
 
 	function initPublications(parent, pubList) {
 		var i;
-		var title, year, authors, venue, doi, link, award;
+		var div1, div2, div3, title, year, authors, venue, doi, link, award;
 
 		for (i=0; i<pubList.length; i++) {
+			div1 = document.createElement("div");
+			div1.style.float = "left";
+			div1.style.width = "685px";
+			div2 = document.createElement("div");
+			div2.style.float = "right";
+			div2.style.width = "75px";
+			div3 = document.createElement("div");
+			div3.className = "clear";
+
 			if (pubList[i].title !== undefined) {
 				title = document.createElement("p");
 				title.className = "pub_title";
 				title.innerHTML = pubList[i].title;
-				if (pubList[i].year !== undefined) {
-					title.innerHTML += " ";
-					year = document.createElement("span");
-					year.className = "pub_year";
-					year.innerHTML = "(" + pubList[i].year + ")";
-					title.appendChild(year);
-				}
 				if (pubList[i].award !== undefined) {
 					award = document.createElement("img");
 					award.width = 16;
@@ -66,32 +68,43 @@
 						award.src = "images/publications/honorable_mention.png";
 					title.appendChild(award);
 				}
-				parent.appendChild(title);
+				div1.appendChild(title);
 			}
 			if (pubList[i].authors !== undefined) {
 				authors = document.createElement("p");
 				authors.className = "pub_content";
 				authors.innerHTML = pubList[i].authors.replace(/Thomas Marrinan/, "<u>Thomas Marrinan</u>").replace(/T. Marrinan/, "<u>T. Marrinan</u>");
-				parent.appendChild(authors);
+				div1.appendChild(authors);
 			}
 			if (pubList[i].venue !== undefined) {
 				venue = document.createElement("p");
 				venue.className = "pub_content";
 				venue.innerHTML = pubList[i].venue.replace(/In /, "In <i>").replace(/PhD Thesis/, "<i>PhD Thesis").replace(/(, \d{4}|\()/, "</i>$1");
-				parent.appendChild(venue);
+				div1.appendChild(venue);
 			}
 			if (pubList[i].doi !== undefined) {
 				doi = document.createElement("p");
 				doi.className = "pub_content";
 				doi.innerHTML = "<a href=" + pubList[i].doi + ">" + pubList[i].doi + "</a>";
-				parent.appendChild(doi);
+				div1.appendChild(doi);
 			}
 			if (pubList[i].link_text !== undefined && pubList[i].link_url !== undefined) {
 				link = document.createElement("p");
 				link.className = "pub_content";
 				link.innerHTML = "<a href=" + pubList[i].link_url + ">" + pubList[i].link_text + "</a>";
-				parent.appendChild(link);
+				div1.appendChild(link);
 			}
+			if (pubList[i].year !== undefined) {
+				title.innerHTML += " ";
+				year = document.createElement("p");
+				year.className = "pub_year";
+				year.innerHTML = "(" + pubList[i].year + ")";
+				div2.appendChild(year);
+			}
+
+			parent.appendChild(div1);
+			parent.appendChild(div2);
+			parent.appendChild(div3);
 		}
 	}
 

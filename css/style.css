@@ -169,7 +169,10 @@ hr {
 }
 
 .pub_year {
+	margin-top: 12px;
+	margin-bottom: 0px;
 	font-weight: normal;
+	text-align: right;
 }
 
 .pub_content {
