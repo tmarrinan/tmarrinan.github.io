@@ -120,6 +120,11 @@
 	],
 	"presentations": [
 		{
+			"title": "Human-Centered Computing to Enable Large-Scale Science and Collaboration",
+			"year": "2016",
+			"venue": "Invited Talk: University of St. Thomas"
+		},
+		{
 			"title": "Scalable Adaptive Graphics Environment (SAGE) for Global Collaboration",
 			"year": "2014",
 			"venue": "In Birds of a Feather Presentation at Supercomputing"
