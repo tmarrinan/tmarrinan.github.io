@@ -1,6 +1,16 @@
 {
 	"news": [
 		{
+			"date": "February 25-March 1, 2017",
+			"text": "Paper titled \"Mixed Presence Collaboration using Scalable Visualizations in Heterogeneous Display Spaces\" was presented at %%CSCW 2017%% (Computer-Supported Cooperative Work & Social Computing).",
+			"link": "https://cscw.acm.org/2017/"
+		},
+		{
+			"date": "February 24, 2017",
+			"text": "Paper submission titled \"Automated Dynamic Data Redistribution\" was accepted at %%PDSEC 2017%% (Parallel and Distributed Scientific and Engineering Computing). PDSEC is a workshop held in conjunction with IPDPS (International Parallel & Distributed Processing Symposium)",
+			"link": "http://cse.stfx.ca/~pdsec17/index.php"
+		},
+		{
 			"date": "January 6, 2017",
 			"text": "I accepted a new position of Assistant Professor in the %%Computer and Information Sciences Department at the University of St. Thomas%% in St. Paul, MN. I am set to begin for the 2017-2018 academic year!",
 			"link": "http://www.stthomas.edu/cisc/"
@@ -9,11 +19,6 @@
 			"date": "November 6-9, 2016",
 			"text": "Extended Abstract papers \"Interactive Multi-Modal Display Spaces for Visual Analysis\" and \"Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays\" were presented during the poster session at %%ISS 2016%% (Interactive Surfaces and Spaces).",
 			"link": "http://iss2016.acm.org/"
-		},
-		{
-			"date": "September 6, 2016",
-			"text": "Paper submission titled \"Mixed Presence Collaboration using Scalable Visualizations in Heterogeneous Display Spaces\" was accepted at %%CSCW 2017%% (Computer-Supported Cooperative Work & Social Computing).",
-			"link": "https://cscw.acm.org/2017/"
 		},
 		{
 			"date": "July 18-22, 2016",
