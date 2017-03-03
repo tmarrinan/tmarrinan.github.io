@@ -1,0 +1,23 @@
+{
+	"schools": [
+		{
+			"name": "Univeristy of St. Thomas",
+			"courses": [
+				{
+					"title": "Introduction to Programming and Problem Solving",
+					"department": "CISC",
+					"number": 131,
+					"link": "teaching/cisc131.html",
+					"description": "This course is designed for students with majors in the Department of Computer and Information Sciences and focuses on logical thinking, the design and implementation of algorithms in a procedural language, testing, correctness, and the use of common programming structures such as arrays. In addition, basic machine concepts are covered including hardware organization and representation of information in the machine. The typical student will be adept at using the computer but will have no prior programming experience."
+				},
+				{
+					"title": "Operating Systems",
+					"department": "CISC",
+					"number": 310,
+					"link": "teaching/cisc310.html",
+					"description": "The basic principles of designing and building operating systems. Sequential versus concurrent processes, synchronization and mutual exclusion, memory management techniques, CPU scheduling, input/output device handling, file systems design, security and protection."
+				}
+			]
+		}
+	]
+}

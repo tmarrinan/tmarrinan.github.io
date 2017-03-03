@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tommy Marrinan: Teaching</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<script type="text/javascript" src="scripts/navigation.js"></script>
+<script type="text/javascript">
+	function init() {
+		initNavigation();
+		getJSON("data/courses.json", populateCourses);
+	}
+
+	function populateCourses(error, data) {
+		if (error) return;
+
+		var content = document.getElementById("content");
+
+		var i, j;
+		var school, course_list, course, course_link, description, description_text, clear, spacer;
+		for (i=0; i<data.schools.length; i++) {
+			school = document.createElement("h3");
+			school.innerHTML = data.schools[i].name;
+			content.appendChild(school);
+			course_list = document.createElement("ul");
+			for (j=0; j<data.schools[i].courses.length; j++) {
+				course = document.createElement("li");
+				course_link = document.createElement("a");
+				course_link.href = data.schools[i].courses[j].link;
+				course_link.innerHTML = "<b>" + data.schools[i].courses[j].department + " " + data.schools[i].courses[j].number.toString() + "</b>: " + data.schools[i].courses[j].title; 
+				description = document.createElement("blockquote");
+				description.style.margin = "8px 24px 16px 24px"
+				description_text = document.createElement("p");
+				description_text.innerHTML = data.schools[i].courses[j].description;
+				description.appendChild(description_text);
+				course.appendChild(course_link);
+				course.appendChild(description);
+				course_list.appendChild(course);
+			}
+			content.appendChild(course_list);
+
+			clear = document.createElement("div");
+			clear.className = "clear";
+			content.appendChild(clear);
+			spacer = document.createElement("div");
+			spacer.className = "vertical_dspacer";
+			content.appendChild(spacer);
+		}
+	}
+
+	function getJSON(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", url, true);
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					callback(null, JSON.parse(xhr.responseText));
+				}
+				else {
+					callback("Error: File Not Found", null);
+				}
+			}
+		};
+		xhr.send();
+	}
+</script>
+</head>
+
+<body onload="init()">
+	<div id="main">
+		<!-- START: NAVIGATION -->
+		<div id="navigation">
+		</div>
+		<!-- END: NAVIGATION -->
+		
+		<!-- START: MAIN CONTENT -->
+		<div id="content">
+			<h2>Teaching</h2>
+		</div>
+		<!-- END: MAIN CONTENT -->
+
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

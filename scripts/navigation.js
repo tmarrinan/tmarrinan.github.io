@@ -1,6 +1,7 @@
 function initNavigation() {
 	var pages = [
 		{name: "Home",         link: "index.html"},
+		{name: "Teaching",     link: "teaching.html"},
 		{name: "Research",     link: "research.html"},
 		{name: "Publications", link: "publications.html"},
 		{name: "Awards/Press", link: "awards_press.html"},
