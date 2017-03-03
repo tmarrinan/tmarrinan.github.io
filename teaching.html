@@ -28,7 +28,7 @@
 				course_link.href = data.schools[i].courses[j].link;
 				course_link.innerHTML = "<b>" + data.schools[i].courses[j].department + " " + data.schools[i].courses[j].number.toString() + "</b>: " + data.schools[i].courses[j].title; 
 				description = document.createElement("blockquote");
-				description.style.margin = "8px 24px 16px 24px"
+				description.style.margin = "8px 24px 16px 24px";
 				description_text = document.createElement("p");
 				description_text.innerHTML = data.schools[i].courses[j].description;
 				description.appendChild(description_text);
