@@ -9,7 +9,7 @@ function initNavigation() {
 	];
 	
 	var browser = fetchBrowser();
-	if (browser.isMobile)
+	if (!browser.isMobile)
 		generateMobileNavigation(pages);
 	else
 		generateDesktopNavigation(pages);
@@ -20,8 +20,11 @@ function generateMobileNavigation(pages) {
 	main.style.width = "780px";
 
 	var content = document.getElementById("content");
-	content.style.left = "20px";
-	content.style.top = "56px";
+	content.style.marginLeft = "20px";
+	content.style.position = "static";
+
+	var navWrapper = document.getElementById("navWrapper");
+	navWrapper.style.height = "56px";
 
 	var navigation = document.getElementById("navigation");
 	navigation.style.top = "0px";

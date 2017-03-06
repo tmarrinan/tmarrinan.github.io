@@ -114,7 +114,6 @@ hr {
 	text-align: left;
 }
 
-
 #navigation {
 	position: fixed;
 	top: 20px;
@@ -124,7 +123,7 @@ hr {
 }
 
 #content {
-	position: relative;
+	position: absolute;
 	float: left;
 	left: 340px;
 	width: 760px;
