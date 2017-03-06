@@ -31,7 +31,7 @@ function generateMobileNavigation(pages) {
 	navigation.style.left = "0px";
 	navigation.style.width = "100%";
 	navigation.style.height = "56px";
-	navigation.style.backgroundColor = "#472568"; // rgb(71,37,104) rgb(237,233,240)
+	navigation.style.backgroundColor = "#472568"; // rgb(71,37,104)
 	navigation.style.textAlign = "left";
 
 	var menu = document.createElement("div");
