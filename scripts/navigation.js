@@ -9,7 +9,7 @@ function initNavigation() {
 	];
 	
 	var browser = fetchBrowser();
-	if (browser.isMobile)
+	if (!browser.isMobile)
 		generateMobileNavigation(pages);
 	else
 		generateDesktopNavigation(pages);
@@ -72,7 +72,7 @@ function generateMobileNavigation(pages) {
 
 	var overlay = document.createElement("div");
 	overlay.id = "overlay";
-	overlay.style.position = "absolute";
+	overlay.style.position = "fixed";
 	overlay.style.top = "0px";
 	overlay.style.left = "0px";
 	overlay.style.width = "100%";
@@ -85,7 +85,7 @@ function generateMobileNavigation(pages) {
 
 	var mobileNav = document.createElement("div");
 	mobileNav.id = "mobileNav";
-	mobileNav.style.position = "absolute";
+	mobileNav.style.position = "fixed";
 	mobileNav.style.top = "0px";
 	mobileNav.style.left = "-300px";
 	mobileNav.style.width = "300px";
