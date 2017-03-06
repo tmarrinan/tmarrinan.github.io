@@ -9,7 +9,7 @@ function initNavigation() {
 	];
 	
 	var browser = fetchBrowser();
-	if (!browser.isMobile)
+	if (browser.isMobile)
 		generateMobileNavigation(pages);
 	else
 		generateDesktopNavigation(pages);
