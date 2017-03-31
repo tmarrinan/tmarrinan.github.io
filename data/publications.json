@@ -1,6 +1,14 @@
 {
 	"conferences": [
 		{
+			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
+			"year": "2017",
+			"authors": "Vishal Doshi, Sneha Tuteja, Krishna Bharadwaj, Davide Tantillo, James Patton, Thomas Marrinan, and G. Elisabeta Marai",
+			"venue": "In Proceedings of The International Symposium on Pervasive Displays (PerDis '17), 2017, to be published",
+			"link_text": "http://pervasivedisplays.org/2017/",
+			"link_url": "http://pervasivedisplays.org/2017/"
+		},
+		{
 			"title": "Automated Dynamic Data Redistribution",
 			"year": "2017",
 			"authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
