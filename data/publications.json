@@ -4,9 +4,8 @@
 			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
 			"year": "2017",
 			"authors": "Vishal Doshi, Sneha Tuteja, Krishna Bharadwaj, Davide Tantillo, James Patton, Thomas Marrinan, and G. Elisabeta Marai",
-			"venue": "In Proceedings of the ACM International Symposium on Pervasive Displays (PerDis '17), 2017, to be published",
-			"link_text": "http://pervasivedisplays.org/2017/",
-			"link_url": "http://pervasivedisplays.org/2017/"
+			"venue": "In Proceedings of the ACM International Symposium on Pervasive Displays (PerDis '17), 2017, article 2",
+			"doi": "https://dx.doi.org/10.1145/3078810.3078817"
 		},
 		{
 			"title": "Automated Dynamic Data Redistribution",
