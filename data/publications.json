@@ -135,6 +135,13 @@
 	],
 	"presentations": [
 		{
+			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
+			"year": "2017",
+			"venue": "Demo session at Pervasive Displays",
+			"link_text": "Demo [photo]",
+			"link_url": "images/publications/sticky_schedule.jpg"
+		},
+		{
 			"title": "Human-Centered Computing to Enable Large-Scale Science and Collaboration",
 			"year": "2016",
 			"venue": "Invited Talk: University of St. Thomas"
