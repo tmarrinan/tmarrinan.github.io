@@ -11,9 +11,8 @@
 			"title": "Automated Dynamic Data Redistribution",
 			"year": "2017",
 			"authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
-			"venue": "In Proceedings of the 2017 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '17), 2017, to be published",
-			"link_text": "http://cse.stfx.ca/~pdsec17/index.php",
-			"link_url": "http://cse.stfx.ca/~pdsec17/index.php"
+			"venue": "In Proceedings of the 2017 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '17), 2017, pp. 1208-1215",
+			"doi": "dx.doi.org/10.1109/IPDPSW.2017.17"
 		},
 		{
 			"title": "Mixed Presence Collaboration using Scalable Visualizations in Heterogeneous Display Spaces",
