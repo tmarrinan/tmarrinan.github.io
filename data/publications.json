@@ -1,6 +1,14 @@
 {
 	"conferences": [
 		{
+			"title": "A Path from Serial Execution to Hybrid Parallelization for Learning HPC",
+			"year": "2017",
+			"authors": "Tommy Franczak, Asare Nkansah, Thomas Marrinan, and Michael E. Papka",
+			"venue": "In Proceeding of the 2017 Workshop on Education for High-Performance Computing (EduHPC), 2017, to be published",
+			"link_text": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=eduhpc17",
+			"link_url": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=eduhpc17"
+		},
+        {
 			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
 			"year": "2017",
 			"authors": "Vishal Doshi, Sneha Tuteja, Krishna Bharadwaj, Davide Tantillo, James Patton, Thomas Marrinan, and G. Elisabeta Marai",
@@ -133,6 +141,11 @@
 		}
 	],
 	"presentations": [
+		{
+			"title": "Parallel Streaming for In Transit Analysis with Heterogeneous Data Layout",
+			"year": "2017",
+			"venue": "Lightning Talk at the In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization workshop"
+		},
 		{
 			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
 			"year": "2017",

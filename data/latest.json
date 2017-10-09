@@ -1,5 +1,15 @@
 {
 	"news": [
+        {
+            "date": "October 9, 2017",
+            "text": "Paper titled \"A Path from Serial Execution to Hybrid Parallelization for Learning HPC\" was accepted at %%EduHPC%% (Workshop on Education for High-Performance Computing) held in conjunction with SC 2017.",
+            "link": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=eduhpc17"
+        },
+        {
+            "date": "September 22, 2017",
+            "text": "Talk titled \"Parallel Streaming for In Transit Analysis with Heterogeneous Data Layout\" was accepted for presentation at the %%ISAV workshop%% (In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization) held in conjunction with SC 2017.",
+            "link": "http://vis.lbl.gov/Events/ISAV-2017/"
+        },
 		{
 			"date": "June 7-9, 2017",
 			"text": "Paper titled \"StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays\" was  presented at %%PerDis 2017%% (ACM International Symposium on Pervasive Displays).",
