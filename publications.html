@@ -79,7 +79,7 @@
 			if (pubList[i].venue !== undefined) {
 				venue = document.createElement("p");
 				venue.className = "pub_content";
-				venue.innerHTML = pubList[i].venue.replace(/In /, "In <i>").replace(/PhD Thesis/, "<i>PhD Thesis").replace(/(, \d{4}|\()/, "</i>$1");
+				venue.innerHTML = pubList[i].venue.replace(/the In /, "%%SPECIAL%%").replace(/In /, "In <i>").replace(/%%SPECIAL%%/, "the In ").replace(/PhD Thesis/, "<i>PhD Thesis").replace(/(, \d{4}|\()/, "</i>$1");
 				div1.appendChild(venue);
 			}
 			if (pubList[i].doi !== undefined) {
