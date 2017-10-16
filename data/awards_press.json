@@ -44,6 +44,21 @@
 	],
 	"press": [
 		{
+            "name": "Widening Horizons for High Schoolers with Code",
+            "date": "2017, August",
+            "title": "Argonne National Laboratory's Coding Camp was highlighted as a feauted story for the Department of Energy.",
+            "image": {
+                "url": "https://www.anl.gov/sites/anl.gov/files/styles/default_hero/public/31607D07-1%20%281%29.jpg",
+                "width": 300,
+                "height": 155
+            },
+            "caption": [
+                "The coding camp started three years ago from a vision of Mike Papka, deputy associate lab director and director of the Argonne Leadership Computing Facility (ALCF), to encourage and inspire youth to learn about computer science before they reach college.",
+                "Teaching coding requires teaching how to think like a computer, said Tommy Marrinan, a postdoctoral appointee at Argonne, another key player at the camp. \"Humans have a lot of intuition and inferencing capabilities. Computers are explicit,\" said Marrinan."
+            ],
+            "link": "https://www.anl.gov/articles/widening-horizons-high-schoolers-code"
+        },
+        {
 			"name": "European Alliance for Innovation: News and Insights from EAI Community",
 			"date": "2014, November",
 			"title": "Research on SAGE2, extracted from the award-winning paper at the Collaborative Computing conference, was written about in the European Alliance for Innovation's blog.",
