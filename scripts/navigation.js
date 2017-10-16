@@ -60,10 +60,10 @@ function generateMobileNavigation(pages) {
 	info.style.height = "40px";
 	var info1 = document.createElement("p");
 	info1.style.color = "#D1C9D9";
-	info1.innerHTML = "<b>Tommy Marrinan, PhD</b> | Argonne National Laboratory | tmarrinan@anl.gov";
+	info1.innerHTML = "<b>Tommy Marrinan, PhD</b> | University of St. Thomas | tmarrinan@stthomas.edu";
 	var info2 = document.createElement("p");
 	info2.style.color = "#D1C9D9";
-	info2.innerHTML = "Postdoctoral Appointee &ndash; Computing, Environment, and Life Sciences";
+	info2.innerHTML = "Assistant Professor &ndash; Computer and Information Sciences";
 	info.appendChild(info1);
 	info.appendChild(info2);
 
@@ -174,13 +174,13 @@ function generateDesktopNavigation(pages) {
 	var name = document.createElement("h1");
 	name.innerHTML = "Tommy Marrinan, PhD";
 	var position = document.createElement("h4");
-	position.innerHTML = "Postdoctoral Appointee<br/>Computing, Environment, and Life Sciences<br/>Argonne National Laboratory";
+	position.innerHTML = "Assistant Professor<br/>Computer and Information Sciences<br/>University of St. Thomas";
 	var spacer1 = document.createElement("div");
 	spacer1.style.display = "block";
 	spacer1.style.width = "290px";
 	spacer1.style.height = "6px";
 	var email = document.createElement("h4");
-	email.innerHTML = "tmarrinan@anl.gov";
+	email.innerHTML = "tmarrinan@stthomas.edu";
 	var spacer2 = document.createElement("div");
 	spacer2.style.display = "block";
 	spacer2.style.width = "290px";
