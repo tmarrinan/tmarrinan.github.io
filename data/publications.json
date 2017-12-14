@@ -106,6 +106,14 @@
 	],
 	"posters": [
 		{
+            "title": "Revolutionizing Hybrid Parallelization Through Data Communication Techniques",
+            "year": "2016",
+            "authors": "Asare Nkansah, Tommy Franczak, Thomas Marrinan, and Michael E. Papka",
+            "venue": "In Annual Biomedical Research Conference for Minority Students (ABRCMS)",
+            "link_text": "Poster [PDF]",
+            "link_url": "pdfs/Nkansah%20et%20al.%20-%20Revolutionizing%20Hybrid%20Parallelization%20Through%20Data%20Communication%20Techniques.pdf"
+        },
+        {
 			"title": "Networking Simulation Clusters with Visualization Clusters for Real-Time Data Analysis",
 			"year": "2016",
 			"authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
