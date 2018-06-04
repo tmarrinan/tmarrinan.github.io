@@ -2,7 +2,7 @@
 	"news": [
         {
             "date": "May 21-25, 2018",
-            "text": "Paper titled \"ransferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time\" was presented at %%CEBDA 2017%% (Convergence of Extreme Scale Computing and Big Data Analysis). CEBDA was a workshop held in conjunction with IPDPS (International Parallel & Distributed Processing Symposium).",
+            "text": "Paper titled \"Transferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time\" was presented at %%CEBDA 2017%% (Convergence of Extreme Scale Computing and Big Data Analysis). CEBDA was a workshop held in conjunction with IPDPS (International Parallel & Distributed Processing Symposium).",
             "link": "http://bigstorage-project.eu/CEBDA2018/"
         },
         {
