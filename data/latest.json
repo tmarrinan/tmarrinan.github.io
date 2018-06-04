@@ -1,6 +1,11 @@
 {
 	"news": [
         {
+            "date": "May 21-25, 2018",
+            "text": "Paper titled \"ransferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time\" was presented at %%CEBDA 2017%% (Convergence of Extreme Scale Computing and Big Data Analysis). CEBDA was a workshop held in conjunction with IPDPS (International Parallel & Distributed Processing Symposium).",
+            "link": "http://bigstorage-project.eu/CEBDA2018/"
+        },
+        {
             "date": "November 13, 2017",
             "text": "Paper titled \"A Path from Serial Execution to Hybrid Parallelization for Learning HPC\" was presented at %%EduHPC%% (Workshop on Education for High-Performance Computing) held in conjunction with SC 2017.",
             "link": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=eduhpc17"
@@ -19,16 +24,6 @@
 			"date": "June 7-9, 2017",
 			"text": "Paper titled \"StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays\" was  presented at %%PerDis 2017%% (ACM International Symposium on Pervasive Displays).",
 			"link": "http://pervasivedisplays.org/2017/"
-		},
-		{
-			"date": "May 29-June 2, 2017",
-			"text": "Paper titled \"Automated Dynamic Data Redistribution\" was presented at %%PDSEC 2017%% (Parallel and Distributed Scientific and Engineering Computing). PDSEC was a workshop held in conjunction with IPDPS (International Parallel & Distributed Processing Symposium).",
-			"link": "http://cse.stfx.ca/~pdsec17/index.php"
-		},
-		{
-			"date": "February 25-March 1, 2017",
-			"text": "Paper titled \"Mixed Presence Collaboration using Scalable Visualizations in Heterogeneous Display Spaces\" was presented at %%CSCW 2017%% (Computer-Supported Cooperative Work & Social Computing).",
-			"link": "https://cscw.acm.org/2017/"
 		}
 	]
 }

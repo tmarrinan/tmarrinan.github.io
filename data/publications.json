@@ -1,12 +1,20 @@
 {
 	"conferences": [
 		{
+            "title": "Transferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time",
+            "year": "2018",
+            "authors": "Thomas Marrinan, Silvio Rizzi, Joseph A. Insley, Brian Toonen, William Allcock, and Michael E. Papka",
+            "venue": "In Proceedings of the 2017 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '18), 2018",
+            "link_text": "http://bigstorage-project.eu/CEBDA2018/",
+            "link_url": "http://bigstorage-project.eu/CEBDA2018/"
+        },
+        {
 			"title": "A Path from Serial Execution to Hybrid Parallelization for Learning HPC",
 			"year": "2017",
 			"authors": "Tommy Franczak, Asare Nkansah, Thomas Marrinan, and Michael E. Papka",
 			"venue": "In Proceeding of the 2017 Workshop on Education for High-Performance Computing (EduHPC), 2017, to be published",
-			"link_text": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=eduhpc17",
-			"link_url": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=eduhpc17"
+			"link_text": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=technical_program",
+			"link_url": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=technical_program"
 		},
         {
 			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
