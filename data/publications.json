@@ -4,9 +4,8 @@
             "title": "Transferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time",
             "year": "2018",
             "authors": "Thomas Marrinan, Silvio Rizzi, Joseph A. Insley, Brian Toonen, William Allcock, and Michael E. Papka",
-            "venue": "In Proceedings of the 2018 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '18), 2018",
-            "link_text": "http://bigstorage-project.eu/CEBDA2018/",
-            "link_url": "http://bigstorage-project.eu/CEBDA2018/"
+            "venue": "In Proceedings of the 2018 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '18), 2018, pp. 2114-1220",
+            "doi": "https://dx.doi.org/10.1109/IPDPSW.2018.00188"
         },
         {
 			"title": "A Path from Serial Execution to Hybrid Parallelization for Learning HPC",
@@ -35,28 +34,28 @@
 			"year": "2017",
 			"authors": "Thomas Marrinan, Jason Leigh, Luc Renambot, Angus Forbes, Steve Jones, and Andrew Johnson",
 			"venue": "In Proceedings of the 2017 ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW '17), 2017, pp. 2236-2245",
-			"doi": "http://dx.doi.org/10.1145/2998181.2998346"
+			"doi": "https://dx.doi.org/10.1145/2998181.2998346"
 		},
 		{
 			"title": "Interactive Multi-Modal Display Spaces for Visual Analysis",
 			"year": "2016",
 			"authors": "Thomas Marrinan, Arthur Nishimoto, Joseph A. Insley, Silvio Rizzi, Andrew Johnson, and Michael E. Papka",
 			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 421-426",
-			"doi": "http://dx.doi.org/10.1145/2992154.2996792"
+			"doi": "https://dx.doi.org/10.1145/2992154.2996792"
 		},
 		{
 			"title": "Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays",
 			"year": "2016",
 			"authors": "Thomas Marrinan, Luc Renambot, Jason Leigh, Angus Forbes, Steve Jones, and Andrew Johnson",
 			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 355-360",
-			"doi": "http://dx.doi.org/10.1145/2992154.2996780"
+			"doi": "https://dx.doi.org/10.1145/2992154.2996780"
 		},
 		{
 			"title": "SAGE2: A New Approach for Data Intensive Collaboration Using Scalable Resolution Shared Displays",
 			"year": "2014",
 			"authors": "Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Krishna Bharadwaj, Victor Mateevitsi, Luc Renambot, Lance Long, Andrew Johnson, and Jason Leigh",
 			"venue": "In Proceedings of the IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom '14), 2014, pp. 177-186",
-			"doi": "http://dx.doi.org/10.4108/icst.collaboratecom.2014.257337",
+			"doi": "https://dx.doi.org/10.4108/icst.collaboratecom.2014.257337",
 			"award": "best paper"
 		},
 		{
@@ -72,7 +71,7 @@
 			"year": "2011",
 			"authors": "Timothy Urness, Thomas Marrinan, Andrew R. Johnson, and Mark F. Vitha",
 			"venue": "In Proceedings of SPIE-IS&T Electronic Imaging, 2011, vol. 7868",
-			"doi": "http://dx.doi.org/10.1117/12.872020"
+			"doi": "https://dx.doi.org/10.1117/12.872020"
 		}
 	],
 	"journals": [
@@ -81,35 +80,35 @@
 			"year": "2016",
 			"authors": "Luc Renambot, Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Victor Mateevitsi, Krishna Bharadwaj, Lance Long, Andy Johnson, Maxine Brown, and Jason Leigh",
 			"venue": "In Future Generation Computer Systems, 2016, vol. 54, pp. 296-305",
-			"doi": "http://dx.doi.org/10.1016/j.future.2015.05.014"
+			"doi": "https://dx.doi.org/10.1016/j.future.2015.05.014"
 		},
 		{
 			"title": "Cerebral Microcirculation and Oxygen Tension in the Human Secondary Cortex",
 			"year": "2013",
 			"authors": "A. A. Linninger, I. G. Gould, T. Marrinan, C.-Y. Hsu, M. Chojecki, and A. Alaraj",
 			"venue": "In Annals of Biomedical Engineering, 2013, vol. 41, no. 11, pp. 2264-2284",
-			"doi": "http://dx.doi.org/10.1007/s10439-016-1722-3"
+			"doi": "https://dx.doi.org/10.1007/s10439-016-1722-3"
 		},
 		{
 			"title": "Hemodynamics of Cerebral Micro Vasculature",
 			"year": "2012",
 			"authors": "Ian Gould, Thomas Marrinan, Maurice Chojecki, Masood Qader, Brian Henry, Mohammed Pervais, Nicholas Vaičaitis, Yiyi Zhu, Aaron Rogers, and Andreas Linninger",
 			"venue": "In Computer Aided Chemical Engineering, 2012, vol. 31, pp. 1727-1731",
-			"doi": "http://dx.doi.org/10.1016/B978-0-444-59506-5.50176-0"
+			"doi": "https://dx.doi.org/10.1016/B978-0-444-59506-5.50176-0"
 		},
 		{
 			"title": "Understanding and Interpreting Multivalued Astronomical Data",
 			"year": "2010",
 			"authors": "Thomas Marrinan,Timothy Urness, Charles Nelson, Kory Kreimeyer, and Jordan Mirocha",
 			"venue": "In IEEE Computer Graphics and Applications, 2010, vol. 30, no. 5, pp. 12-17",
-			"doi": "http://dx.doi.org/10.1109/MCG.2010.97"
+			"doi": "https://dx.doi.org/10.1109/MCG.2010.97"
 		},
 		{
 			"title": "System Selectivity Cube: A 3D Visualization Tool for Comparing the Selectivity of Gas Chromatography, Supercritical-Fluid Chromatography, High-Pressure Liquid Chromatography, and Micellar Electrokinetic Capillary Chromatography Systems",
 			"year": "2010",
 			"authors": "Andrew R. Johnson, Mark F. Vitha, Timothy Urness, and Thomas Marrinan",
 			"venue": "In Analytical Chemistry, 2010, vol. 82, no. 14, pp. 6251-6258",
-			"doi": "http://dx.doi.org/10.1021/ac101163d"
+			"doi": "https://dx.doi.org/10.1021/ac101163d"
 		}
 	],
 	"posters": [
