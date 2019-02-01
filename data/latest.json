@@ -1,6 +1,16 @@
 {
 	"news": [
         {
+            "date": "January 29, 2019",
+            "text": "Proposal titled \"Computer Science for the Common Good\" was submitted to the %%Responsible CS Challenge%% with the hopes of revamping curriculum to integrate ethics, divserity, and inclusion into undergraduate computer science education.",
+            "link": "https://foundation.mozilla.org/en/initiatives/responsible-cs/"
+        },
+        {
+            "date": "January 17, 2019",
+            "text": "Paper titled \"Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis\" was accepted for publication in the %%Journal of Computational Science%%.",
+            "link": "https://www.journals.elsevier.com/journal-of-computational-science"
+        },
+        {
             "date": "May 21-25, 2018",
             "text": "Paper titled \"Transferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time\" was presented at %%CEBDA 2018%% (Convergence of Extreme Scale Computing and Big Data Analysis). CEBDA was a workshop held in conjunction with IPDPS (International Parallel & Distributed Processing Symposium).",
             "link": "http://bigstorage-project.eu/CEBDA2018/"
@@ -14,16 +24,6 @@
             "date": "November 12, 2017",
             "text": "Talk titled \"Parallel Streaming for In Transit Analysis with Heterogeneous Data Layout\" was presented at the %%ISAV workshop%% (In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization) held in conjunction with SC 2017.",
             "link": "http://vis.lbl.gov/Events/ISAV-2017/"
-        },
-        {
-            "date": "September 5, 2017",
-            "text": "My application was accepted to participate in the %%Early Career Program%% at SC 2017.",
-            "link": "https://sc17.supercomputing.org/program/early-career-program/"
-        },
-		{
-			"date": "June 7-9, 2017",
-			"text": "Paper titled \"StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays\" was  presented at %%PerDis 2017%% (ACM International Symposium on Pervasive Displays).",
-			"link": "http://pervasivedisplays.org/2017/"
-		}
+        }
 	]
 }

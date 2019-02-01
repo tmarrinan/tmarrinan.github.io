@@ -76,6 +76,13 @@
 	],
 	"journals": [
 		{
+			"title": "Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis",
+			"year": "2019",
+			"authors": "Thomas Marrinan, Greg Eisenhauer, Matthew Wolf, Joseph A. Insley, Silvio Rizzi, and Machael E. Papka",
+			"venue": "In Journal of Computational Science, 2019",
+			"doi": "https://dx.doi.org/10.1016/j.jocs.2019.01.003"
+		},
+		{
 			"title": "SAGE2: A Collaboration Portal for Scalable Resolution Displays",
 			"year": "2016",
 			"authors": "Luc Renambot, Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Victor Mateevitsi, Krishna Bharadwaj, Lance Long, Andy Johnson, Maxine Brown, and Jason Leigh",
