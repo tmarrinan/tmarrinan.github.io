@@ -16,6 +16,13 @@
 					"number": 310,
 					"link": "teaching/cisc310.html",
 					"description": "The basic principles of designing and building operating systems. Sequential versus concurrent processes, synchronization and mutual exclusion, memory management techniques, CPU scheduling, input/output device handling, file systems design, security and protection."
+				},
+				{
+					"title": "Web Development",
+					"department": "CISC",
+					"number": 375,
+					"link": "teaching/cisc375.html",
+					"description": "This course examines the theory and practice of developing applications for the World Wide Web. Students will learn practical technique for designing and implementing Web applications, with a particular emphasis on server-side processing and data-driven Web sites."
 				}
 			]
 		}

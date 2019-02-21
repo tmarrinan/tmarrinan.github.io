@@ -1,14 +1,14 @@
 {
 	"news": [
         {
+            "date": "February 21, 2019",
+            "text": "Paper titled \"Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis\" was published in the %%Journal of Computational Science%%.",
+            "link": "https://www.journals.elsevier.com/journal-of-computational-science"
+        },
+        {
             "date": "January 29, 2019",
             "text": "Proposal titled \"Computer Science for the Common Good\" was submitted to the %%Responsible CS Challenge%% with the hopes of revamping curriculum to integrate ethics, divserity, and inclusion into undergraduate computer science education.",
             "link": "https://foundation.mozilla.org/en/initiatives/responsible-cs/"
-        },
-        {
-            "date": "January 17, 2019",
-            "text": "Paper titled \"Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis\" was accepted for publication in the %%Journal of Computational Science%%.",
-            "link": "https://www.journals.elsevier.com/journal-of-computational-science"
         },
         {
             "date": "May 21-25, 2018",
