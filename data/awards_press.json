@@ -4,11 +4,7 @@
 			"name": "IEEE CollaborateCom: Best Paper",
 			"date": "2014",
 			"title": "Marrinan et al. \"SAGE2: A New Approach for Data Intensive Collaboration Using Scalable Resolution Shared Displays\".",
-			"image": {
-				"url": "images/awards_press/Marrinan-CollaborateCom.png",
-				"width": 300,
-				"height": 130
-			},
+			"image": "images/awards_press/Marrinan-CollaborateCom.png",
 			"caption": [
 				"Current web-based collaboration systems, such as Google Hangouts, WebEx, and Skype, primarily enable single users to work with remote collaborators through video conferencing and desktop mirroring. The original SAGE software, developed in 2004 and adopted at over one hundred international sites, was designed to enable groups to work in front of large shared displays in order to solve problems that required juxtaposing large volumes of information in ultra high-resolution. We have developed SAGE2, as a complete redesign and implementation of SAGE, using cloud-based and web browser technologies in order to enhance data intensive co-located and remote collaboration. This paper provides an overview of SAGE2's infrastructure, the technical design challenges, and the afforded benefits to data intensive collaboration. Lastly, we provide insight on how future collaborative applications can be developed to support large displays and demonstrate the power and flexibility that SAGE2 offers in collaborative scenarios through a series of use cases."
 			]
@@ -17,11 +13,7 @@
 			"name": "IEEE VisWeek: Best Poster Honorable Mention",
 			"date": "2012",
 			"title": "Marrinan, et al. \"Whole-Brain Vascular Reconstruction, Simulation, and Visualization\".",
-			"image": {
-				"url": "images/awards_press/Marrinan-VisWeek Poster.jpg",
-				"width": 300,
-				"height": 212
-			},
+			"image": "images/awards_press/Marrinan-VisWeek Poster.jpg",
 			"caption": [
 				"Current techniques in medical imaging and analysis primarily focus on recording information about one specific physiological property at a time. Various modalities such as magnetic resonance, computed tomography, and digital subtraction angiography are each suited towards different tasks. In order to improve surgical planning, physicians would benefit from patient-specific computational models built from medical images. These models could be used in order to run simulations and simultaneously gather physiological information that would otherwise require multiple imaging modalities or be impossible to measure with current technology.",
 				"We present a pipeline for processing medical data and executing computational simulations to enhance the information conveyed in standard medical imaging. Our work focuses on the whole brain, where we've developed tools that allow vasculature to be analyzed in three-dimensions, at high resolutions, and with multiple relevant data sets overlaid on the vascular structure. In order to avoid confusion and misinterpretations, we have the ability to render simulated data such that it mirrors raw medical images and vascular reconstructions."
@@ -31,11 +23,7 @@
 			"name": "Image of Research: 1<sup>st</sup> Place",
 			"date": "2012",
 			"title": "Thomas Marrinan (Computer Science) and Ian Gould (BioEngineering) won first place in the University of Illinois at Chicago's Image of Research competition for their submission \"Artificially Created Cortical Functional Blood Unit\".",
-			"image": {
-				"url": "images/awards_press/IOR_MarrinanGould.jpg",
-				"width": 300,
-				"height": 461
-			},
+			"image": "images/awards_press/IOR_MarrinanGould.jpg",
 			"caption": [
 				"Many questions regarding cerebral hemodynamics and control of cerebral blood flow remain unanswered due to the complex architecture of the cerebral vascular network. The cortical blood supply is managed by functional blood units, which form clusters of a single draining vein surrounded by a ring of three to six arterioles. Our image is the result of collaboration between a computer science student specializing in scientific visualization and a bioengineering student with research interest in cerebral blood flow. The center of this image depicts an artificially generated three-dimensional representation of a functional blood unit embedded in the human cortex. The feeding ring arterioles and draining vein were generated with a stochastic algorithm that constructed acyclic binary trees with minimum blood volume. The capillaries were created with three dimensional Voronoi tessellation in order to achieve a mesh-like network. Our artificial network is similar in morphology to a human functional blood unit. The color-coding depicts a snapshot of a tracer's intensity after its injection into the ring arterioles. The shown tracer concentration was computed with large-scale sparse linear algebra for solving the transient convection species transport and blood flow equations. Custom coded OpenGL allows for real-time rendering of the network structure and tracer dispersion."
 			],
@@ -47,11 +35,7 @@
             "name": "Widening Horizons for High Schoolers with Code",
             "date": "2017, August",
             "title": "Argonne National Laboratory's Coding Camp was highlighted as a feauted story for the Department of Energy.",
-            "image": {
-                "url": "https://www.anl.gov/sites/anl.gov/files/styles/default_hero/public/31607D07-1%20%281%29.jpg",
-                "width": 300,
-                "height": 155
-            },
+            "image": "https://www.anl.gov/sites/www/files/2018-04/FTD_178293_31968D107.jpg",
             "caption": [
                 "The coding camp started three years ago from a vision of Mike Papka, deputy associate lab director and director of the Argonne Leadership Computing Facility (ALCF), to encourage and inspire youth to learn about computer science before they reach college.",
                 "Teaching coding requires teaching how to think like a computer, said Tommy Marrinan, a postdoctoral appointee at Argonne, another key player at the camp. \"Humans have a lot of intuition and inferencing capabilities. Computers are explicit,\" said Marrinan."
@@ -62,11 +46,7 @@
 			"name": "European Alliance for Innovation: News and Insights from EAI Community",
 			"date": "2014, November",
 			"title": "Research on SAGE2, extracted from the award-winning paper at the Collaborative Computing conference, was written about in the European Alliance for Innovation's blog.",
-			"image": {
-				"url": "http://blog.eai.eu/wp-content/uploads/2014/11/technology-153709_1280.png",
-				"width": 300,
-				"height": 150
-			},
+			"image": "http://blog.eai.eu/wp-content/uploads/2014/11/technology-153709_1280.png",
 			"caption": [
 				"How many times were we wondering how to improve group work collaboration? Of course, all of us are thinking about web-based collaboration systems such as the well-known Skype or Google Hangouts. According to the next generation data complexity, innovative collaboration systems are required to improve the cooperation among users."
 			],
@@ -76,11 +56,7 @@
 			"name": "Physics Today: Cover Photo",
 			"date": "2013, July",
 			"title": "I am pictured alongside my research on visualizing the human cerebral vascular system in the CAVE2&trade; Hybrid Reality System for the cover of an issue of Physics Today.",
-			"image": {
-				"url": "images/awards_press/physicstoday-cover-volume66-issue6-july2013.jpg",
-				"width": 300,
-				"height": 394
-			},
+			"image": "images/awards_press/physicstoday-cover-volume66-issue6-july2013.jpg",
 			"caption": [
 				"This simulation of the brain's blood vessels and cortical tissue, created from magnetic resonance imaging data, exemplifies how physics contributes to 21st-century biology. Increasingly, the life-sciences community is recognizing that its students will need a multidisciplinary, quantitative education... (Photo by Lance Long, courtesy of the Electronic Visualization Laboratory, University of Illinois at Chicago)."
 			],
@@ -90,11 +66,7 @@
 			"name": "Budget Request to Congress: NSF Highlighted Project",
 			"date": "2013, April",
 			"title": "The research project I was a part of, to bring advanced medical visualization into the CAVE2 Hybrid Reality Environment for interactive exploration, was highlighted as one of twelve NSF \"nuggets\" in their Budget Request to Congress for the 2014 Fiscal Year.",
-			"image": {
-				"url": "images/awards_press/NSF_highlight.jpg",
-				"width": 300,
-				"height": 191
-			},
+			"image": "images/awards_press/NSF_highlight.jpg",
 			"caption": [
 				"<b>State-of-the-Art Virtual Reality System is Key to Medical Discovery</b>",
 				"A team of neurosurgeons from the College of Medicine at the University of Illinois at Chicago (UIC) recently stepped into CAVE2 &ndash; a next-generation, large-scale, virtual environment &ndash; to solve a vexing problem that presented itself in the arteries of the brain of a real patient. For years, the team had painstakingly used laptop and desktop computers to create three-dimensional, full-brain models that physiologically mirrored the brains of individual patients. These models were used for a patient whose cerebrovascular system they were trying to accurately model. But because of the limited image spatial-resolution of even today's best-quality computers, there was something the neurosurgeons couldn't see. That is, until they stepped into an automatic virtual environment, also known as a \"CAVE\" &ndash; a room in which images are seamlessly displayed so as to immerse an observer in a cyber-world of 3-D data. CAVE2 helped the team discover quickly that their model was \"inconsistent with anatomy\" &ndash; and with that revelation, their model could be corrected. The use of UIC's virtual reality system to make the discovery could help change the way surgeons are trained and greatly improve patient care &ndash; and the method could someday benefit hundreds of thousands of Americans who fall victim to brain aneurysms and strokes, the third leading cause of death in the United States. CAVE2 is funded through NSF's Major Research Instrumentation program and the Department of Energy."
@@ -107,9 +79,7 @@
 			"title": "Visualization research that I worked on, about the human cerebral vascular system, is shown and talked about throughout the article. I also appear in the video several times [0:27-0:36, 3:02-3:05, 3:48-3:51, 6:18-6:23, and 6:36-6:52]",
 			"video": {
 				"type": "youtube",
-				"url": "https://www.youtube.com/embed/I35aXrys9U4?rel=0",
-				"width": 300,
-				"height": 169
+				"url": "https://www.youtube.com/embed/I35aXrys9U4?rel=0"
 			},
 			"caption": [
 				"On Tuesday, April 23, 2013, the WTTW television news show \"Chicago Tonight\" aired an ~8 minute \"Scientific Chicago\" segment on the UIC Electronic Visualization Laboratory (EVL) and its CAVE2&trade; System.",
@@ -121,11 +91,7 @@
 			"name": "UIC News: Step Into CAVE2 Virtual World",
 			"date": "2013, March",
 			"title": "EVL's CAVE2 Hybrid Reality System was highlighted at a UIC open house where I helped lead tours.",
-			"image": {
-				"url": "http://news.uic.edu/files/2013/03/EVL-OpenHouse2013-Brain_LJL1256.jpg",
-				"width": 300,
-				"height": 200
-			},
+			"image": "http://news.uic.edu/files/2013/03/EVL-OpenHouse2013-Brain_LJL1256.jpg",
 			"caption": [
 				"The EVL’s virtual reality environment in the College of Engineering lets people navigate through the human brain or roam through the holodeck of the Star Trek Enterprise with the help of 3D glasses.",
 				"This imposing virtual world stands 8 feet tall and 24 feet in diameter. The environment wraps 320 degrees around the user, offering a dream-like sense of infinite space that is never physically there. The system rivals 20/20 vision, consisting of 72 near-seamless passive stereo off-axis optimized 3D LCD panels that display information at 37 megapixels in 3D, or 74 megapixels in 2D."
@@ -136,11 +102,7 @@
 			"name": "AP - Future Science: Using 3D Worlds to Visualize Data",
 			"date": "2013, February",
 			"title": "EVL student research, including my own, was highlighted in an article by the Associated Press. Jason Leigh (Director of the EVL [at the time of the article]) and Andy Johnson (Academic Advisor) as well as collaborators Andreas Linninger (BioEngineer) and Dr. Ali Alaraj (Neurosurgeon) were all interviewed for the article.",
-			"image": {
-				"url": "http://binaryapi.ap.org/c7850cf214dd4851b943e4f5187b5470/460x.jpg",
-				"width": 300,
-				"height": 209
-			},
+			"image": "http://binaryapi.ap.org/c7850cf214dd4851b943e4f5187b5470/460x.jpg",
 			"caption": [
 				"In this photo taken Thursday, Jan. 24, 2013, in Chicago, brain surgeon Ali Alaraj talks about the first time he viewed the brain using the CAVE2. \"You can walk between the blood vessels,\" said the University of Illinois College of Medicine neurosurgeon. \"You can look at the arteries from below. You can look at the arteries from the side\". CAVE2 is a system of 72 stereoscopic liquid crystal display panels that encircles the viewer 320 degrees and creates a 3D environment that can take you to the bridge of the Starship Enterprise, a flyover of the planet Mars, or through the blood vessels of the brain. (AP Photo/Charles Rex Arbogast)."
 			],

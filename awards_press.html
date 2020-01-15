@@ -2,9 +2,37 @@
 <html>
 <head>
 <title>Tommy Marrinan: Awards/Press</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<script type="text/javascript" src="scripts/navigation.js"></script>
-<script type="text/javascript">
+
+<!-- Pure.css -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/style2.css" media="screen" />
+
+<!-- Vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- Custom JavaScript -->
+<script type="application/javascript" src="scripts/common.js"></script>
+<script type="application/javascript">
+    let app;
+    function Init() {
+        InitNavigation();
+
+        app = new Vue({
+            el: '#content',
+            data: {
+            	awards: [],
+            	press: []
+            }
+        });
+
+        GetJSON('data/awards_press.json').then((data) => {
+        	app.awards = data.awards;
+        	app.press = data.press;
+        });
+    }
+
+	/*
 	function init() {
 		initNavigation();
 		getJSON("data/awards_press.json", populateAwardsPress);
@@ -97,35 +125,97 @@
 		};
 		xhr.send();
 	}
+	*/
 </script>
 </head>
 
-<body onload="init()">
-	<div id="main">
-		<!-- START: NAVIGATION -->
-		<div id="navWrapper">
-			<div id="navigation">
-			</div>
-		</div>
-		<!-- END: NAVIGATION -->
-		
-		<!-- START: MAIN CONTENT -->
-		<div id="content">
-			<div id="awards">
-				<h2>Awards</h2>
-			</div>
+<body onload="Init()">
+    <!-- START: NAVIGATION -->
+    <div id="navigation">
+        <div id="menu-open" class="menu">
+            <img class="menu-icon" src="images/menu.png" alt="menu open icon" />
+        </div>
+        <div id="info">
+            <p class="info-text"><span class="bold">Tommy Marrinan, PhD</span> | University of St. Thomas | tmarrinan@stthomas.edu</p>
+            <p class="info-text">Assistant Professor &ndash; Computer and Information Sciences</p>
+        </div>
 
-			<div class="vertical_spacer"></div>
-			<hr />
-			<div class="vertical_dspacer"></div>
-			
-			<div id="press">
-				<h2>Press Coverage</h2>
-			</div>
-		</div>
-		<!-- END: MAIN CONTENT -->
+        <div id="overlay"></div>
 
-		<div class="clear"></div>
-	</div>
+        <div id="menu-items">
+            <div class="menu-heading">
+                <div id="menu-close" class="menu">
+                    <img class="menu-icon" src="images/close.png" alt="menu close icon" />
+                </div>
+                <p class="menu-heading-text">Navigation</p>
+            </div>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="teaching.html" class="pure-menu-link menu-link">Teaching</a></li>
+                <li class="pure-menu-item"><a href="research.html" class="pure-menu-link menu-link">Research</a></li>
+                <li class="pure-menu-item"><a href="publications.html" class="pure-menu-link menu-link">Publications</a></li>
+                <li class="pure-menu-item"><a href="awards_press.html" class="pure-menu-link menu-link">Awards/Press</a></li>
+                <li class="pure-menu-item"><a href="cv.html" class="pure-menu-link menu-link">CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav-spacer"></div>
+    <!-- END: NAVIGATION -->
+
+    <!-- START: MAIN CONTENT -->
+    <div id="content" class="pure-g">
+        <div class="pure-u-1-1 l-box">
+            <h2>Awards</h2>
+            <div class="pure-g">
+                <div class="pure-u-1-1" v-for="item in awards">
+                    <h3 class="bold"><span v-html="item.name"></span> ({{ item.date }})</h3>
+                    <div class="pure-g">
+                        <img class="pure-u-8-24 no-stretch" v-if="item.hasOwnProperty('image')" :src="item.image" alt="award item image" />
+                        <iframe class="pure-u-8-24 no-stretch" v-if="item.hasOwnProperty('video') && item.video.type === 'youtube'" frameborder="0" allowfullscreen :src="item.video.url"></iframe>
+                        <div class="pure-u-1-24"></div>
+                        <div class="pure-u-15-24">
+                            <h3 style="text-align: justify;" v-html="item.title"></h3>
+                            <blockquote>
+                                <p v-for="cap in item.caption" v-html="cap"></p>
+                            </blockquote>
+                            <p v-if="item.hasOwnProperty('link')"><a :href="item.link" target="_blank">{{ item.link }}</a></p>
+                        </div>
+                        <div class="pure-u-1-1">
+                            <div class="vertical-dspacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pure-u-1-1 l-box">
+            <div class="vertical-spacer"></div>
+            <hr />
+            <div class="vertical-spacer"></div>
+        </div>
+        <div class="pure-u-1-1 l-box">
+            <h2>Press Coverage</h2>
+            <div class="pure-g">
+                <div class="pure-u-1-1" v-for="item in press">
+                    <h3 class="bold"><span v-html="item.name"></span> ({{ item.date }})</h3>
+                    <div class="pure-g">
+                        <img class="pure-u-8-24 no-stretch" v-if="item.hasOwnProperty('image')" :src="item.image" alt="award item image" />
+                        <iframe class="pure-u-8-24 no-stretch" v-if="item.hasOwnProperty('video') && item.video.type === 'youtube'" frameborder="0" allowfullscreen :src="item.video.url"></iframe>
+                        <div class="pure-u-1-24"></div>
+                        <div class="pure-u-15-24">
+                            <h3 style="text-align: justify;" v-html="item.title"></h3>
+                            <blockquote>
+                                <p v-for="cap in item.caption" v-html="cap"></p>
+                            </blockquote>
+                            <p v-if="item.hasOwnProperty('link')"><a :href="item.link" target="_blank">{{ item.link }}</a></p>
+                        </div>
+                        <div class="pure-u-1-1">
+                            <div class="vertical-dspacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

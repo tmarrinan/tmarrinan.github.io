@@ -1,29 +1,33 @@
 {
 	"news": [
         {
+            "date": "December 18, 2019",
+            "text": "Divserity, Equity, and Inclusion grant was funded by the UST Vice Provost's office in partnership with the HHMI STEM Inclusive Excellence program. This grant supports work to revise the introductory computer science course to make it more inclusive and engaging for students coming from a diverse set of backgrounds.",
+            "image": "https://www.stthomas.edu/_media-library/_images/about/1920x1080/hands-circle-diversity-1920x1080"
+        },
+        {
+            "date": "October 21, 2019",
+            "text": "Paper titled \"PxStream: Remote Visualization for Distributed Rendering Frameworks\" was presented at %%LDAV%% (Big Data Analysis and Visualization) held in conjunction with IEEE Vis 2019.",
+            "link": "https://ldav.org/2019/",
+            "image": "https://ldav.org/2019/assets/logo-ldav.png"
+        },
+        {
+            "date": "October 21, 2019",
+            "text": "Extended abstract titled \"Real-Time Compression of Dynamically Generated Images for Offscreen Rendering\" was presented as a poster at %%LDAV%% (Big Data Analysis and Visualization) held in conjunction with IEEE Vis 2019.",
+            "link": "https://ldav.org/2019/",
+            "image": "https://ldav.org/2019/assets/logo-ldav.png"
+        },
+        {
+            "date": "July 15-19, 2019",
+            "text": "Co-taught the %%CAPS%% (Creative Approaches to Problems in Science) high school computing workshop &ndash; a free 5-day enrichment experience hosted at Argonne National Laboratory.",
+            "link": "https://www.anl.gov/education/high-school-computing-workshop",
+            "image": "https://www.anl.gov/sites/www/files/styles/carousel_max_height_600/public/32321D30-%20New.jpg"
+        },
+        {
             "date": "February 21, 2019",
             "text": "Paper titled \"Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis\" was published in the %%Journal of Computational Science%%.",
-            "link": "https://www.journals.elsevier.com/journal-of-computational-science"
-        },
-        {
-            "date": "January 29, 2019",
-            "text": "Proposal titled \"Computer Science for the Common Good\" was submitted to the %%Responsible CS Challenge%% with the hopes of revamping curriculum to integrate ethics, divserity, and inclusion into undergraduate computer science education.",
-            "link": "https://foundation.mozilla.org/en/initiatives/responsible-cs/"
-        },
-        {
-            "date": "May 21-25, 2018",
-            "text": "Paper titled \"Transferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time\" was presented at %%CEBDA 2018%% (Convergence of Extreme Scale Computing and Big Data Analysis). CEBDA was a workshop held in conjunction with IPDPS (International Parallel & Distributed Processing Symposium).",
-            "link": "http://bigstorage-project.eu/CEBDA2018/"
-        },
-        {
-            "date": "November 13, 2017",
-            "text": "Paper titled \"A Path from Serial Execution to Hybrid Parallelization for Learning HPC\" was presented at %%EduHPC%% (Workshop on Education for High-Performance Computing) held in conjunction with SC 2017.",
-            "link": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=eduhpc17"
-        },
-        {
-            "date": "November 12, 2017",
-            "text": "Talk titled \"Parallel Streaming for In Transit Analysis with Heterogeneous Data Layout\" was presented at the %%ISAV workshop%% (In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization) held in conjunction with SC 2017.",
-            "link": "http://vis.lbl.gov/Events/ISAV-2017/"
+            "link": "https://www.journals.elsevier.com/journal-of-computational-science",
+            "image": "https://ars.els-cdn.com/content/image/X18777503.jpg"
         }
 	]
 }

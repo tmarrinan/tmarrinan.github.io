@@ -1,125 +1,140 @@
 {
-	"conferences": [
-		{
+    "conferences": [
+        {
+            "title": "PxStream: Remote Visualization for Distributed Rendering Frameworks",
+            "year": "2019",
+            "authors": "Thomas Marrinan, Silvio Rizzi, Joseph A. Insley, Lance Long, Luc Renambot, and Michael E. Papka",
+            "venue":  "In Proceedings of the 2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV '19), 2019, pp. 37-41",
+            "doi": "https://doi.org/10.1109/LDAV48142.2019.8944369"
+        },
+        {
             "title": "Transferring Data from High-Performance Simulations to Extreme Scale Analysis Applications in Real-Time",
             "year": "2018",
             "authors": "Thomas Marrinan, Silvio Rizzi, Joseph A. Insley, Brian Toonen, William Allcock, and Michael E. Papka",
             "venue": "In Proceedings of the 2018 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '18), 2018, pp. 2114-1220",
-            "doi": "https://dx.doi.org/10.1109/IPDPSW.2018.00188"
+            "doi": "https://doi.org/10.1109/IPDPSW.2018.00188"
         },
         {
-			"title": "A Path from Serial Execution to Hybrid Parallelization for Learning HPC",
-			"year": "2017",
-			"authors": "Tommy Franczak, Asare Nkansah, Thomas Marrinan, and Michael E. Papka",
-			"venue": "In Proceeding of the 2017 Workshop on Education for High-Performance Computing (EduHPC), 2017, to be published",
-			"link_text": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=technical_program",
-			"link_url": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=technical_program"
-		},
+            "title": "A Path from Serial Execution to Hybrid Parallelization for Learning HPC",
+            "year": "2017",
+            "authors": "Tommy Franczak, Asare Nkansah, Thomas Marrinan, and Michael E. Papka",
+            "venue": "In Proceeding of the 2017 Workshop on Education for High-Performance Computing (EduHPC), 2017, to be published",
+            "link_text": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=technical_program",
+            "link_url": "https://grid.cs.gsu.edu/~tcpp/curriculum/?q=technical_program"
+        },
         {
-			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
-			"year": "2017",
-			"authors": "Vishal Doshi, Sneha Tuteja, Krishna Bharadwaj, Davide Tantillo, James Patton, Thomas Marrinan, and G. Elisabeta Marai",
-			"venue": "In Proceedings of the ACM International Symposium on Pervasive Displays (PerDis '17), 2017, article 2",
-			"doi": "https://dx.doi.org/10.1145/3078810.3078817"
-		},
-		{
-			"title": "Automated Dynamic Data Redistribution",
-			"year": "2017",
-			"authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
-			"venue": "In Proceedings of the 2017 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '17), 2017, pp. 1208-1215",
-			"doi": "https://dx.doi.org/10.1109/IPDPSW.2017.17"
-		},
-		{
-			"title": "Mixed Presence Collaboration using Scalable Visualizations in Heterogeneous Display Spaces",
-			"year": "2017",
-			"authors": "Thomas Marrinan, Jason Leigh, Luc Renambot, Angus Forbes, Steve Jones, and Andrew Johnson",
-			"venue": "In Proceedings of the 2017 ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW '17), 2017, pp. 2236-2245",
-			"doi": "https://dx.doi.org/10.1145/2998181.2998346"
-		},
-		{
-			"title": "Interactive Multi-Modal Display Spaces for Visual Analysis",
-			"year": "2016",
-			"authors": "Thomas Marrinan, Arthur Nishimoto, Joseph A. Insley, Silvio Rizzi, Andrew Johnson, and Michael E. Papka",
-			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 421-426",
-			"doi": "https://dx.doi.org/10.1145/2992154.2996792"
-		},
-		{
-			"title": "Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays",
-			"year": "2016",
-			"authors": "Thomas Marrinan, Luc Renambot, Jason Leigh, Angus Forbes, Steve Jones, and Andrew Johnson",
-			"venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 355-360",
-			"doi": "https://dx.doi.org/10.1145/2992154.2996780"
-		},
-		{
-			"title": "SAGE2: A New Approach for Data Intensive Collaboration Using Scalable Resolution Shared Displays",
-			"year": "2014",
-			"authors": "Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Krishna Bharadwaj, Victor Mateevitsi, Luc Renambot, Lance Long, Andrew Johnson, and Jason Leigh",
-			"venue": "In Proceedings of the IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom '14), 2014, pp. 177-186",
-			"doi": "https://dx.doi.org/10.4108/icst.collaboratecom.2014.257337",
-			"award": "best paper"
-		},
-		{
-			"title": "Whole-Brain Computational Fluid Dynamic Analysis",
-			"year": "2013",
-			"authors": "Thomas Marrinan and Andreas Linninger",
-			"venue": "In Food, Pharmaceutical and Bioengineering Division 2013 - Core Programming Area at the 2013 AIChE Annual Meeting: Global Challenges for Engineering a Sustainable Future (AIChE), 2013, pp. 706-708",
-			"link_text": "https://uic.pure.elsevier.com/en/publications/whole-brain-computational-fluid-dynamic-analysis",
-			"link_url": "https://uic.pure.elsevier.com/en/publications/whole-brain-computational-fluid-dynamic-analysis"
-		},
-		{
-			"title": "Multivariate Visualization of Chromatographic Systems",
-			"year": "2011",
-			"authors": "Timothy Urness, Thomas Marrinan, Andrew R. Johnson, and Mark F. Vitha",
-			"venue": "In Proceedings of SPIE-IS&T Electronic Imaging, 2011, vol. 7868",
-			"doi": "https://dx.doi.org/10.1117/12.872020"
-		}
-	],
-	"journals": [
-		{
-			"title": "Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis",
-			"year": "2019",
-			"authors": "Thomas Marrinan, Greg Eisenhauer, Matthew Wolf, Joseph A. Insley, Silvio Rizzi, and Machael E. Papka",
-			"venue": "In Journal of Computational Science, 2019, vol. 31, pp. 163-171",
-			"doi": "https://dx.doi.org/10.1016/j.jocs.2019.01.003"
-		},
-		{
-			"title": "SAGE2: A Collaboration Portal for Scalable Resolution Displays",
-			"year": "2016",
-			"authors": "Luc Renambot, Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Victor Mateevitsi, Krishna Bharadwaj, Lance Long, Andy Johnson, Maxine Brown, and Jason Leigh",
-			"venue": "In Future Generation Computer Systems, 2016, vol. 54, pp. 296-305",
-			"doi": "https://dx.doi.org/10.1016/j.future.2015.05.014"
-		},
-		{
-			"title": "Cerebral Microcirculation and Oxygen Tension in the Human Secondary Cortex",
-			"year": "2013",
-			"authors": "A. A. Linninger, I. G. Gould, T. Marrinan, C.-Y. Hsu, M. Chojecki, and A. Alaraj",
-			"venue": "In Annals of Biomedical Engineering, 2013, vol. 41, no. 11, pp. 2264-2284",
-			"doi": "https://dx.doi.org/10.1007/s10439-016-1722-3"
-		},
-		{
-			"title": "Hemodynamics of Cerebral Micro Vasculature",
-			"year": "2012",
-			"authors": "Ian Gould, Thomas Marrinan, Maurice Chojecki, Masood Qader, Brian Henry, Mohammed Pervais, Nicholas Vaičaitis, Yiyi Zhu, Aaron Rogers, and Andreas Linninger",
-			"venue": "In Computer Aided Chemical Engineering, 2012, vol. 31, pp. 1727-1731",
-			"doi": "https://dx.doi.org/10.1016/B978-0-444-59506-5.50176-0"
-		},
-		{
-			"title": "Understanding and Interpreting Multivalued Astronomical Data",
-			"year": "2010",
-			"authors": "Thomas Marrinan,Timothy Urness, Charles Nelson, Kory Kreimeyer, and Jordan Mirocha",
-			"venue": "In IEEE Computer Graphics and Applications, 2010, vol. 30, no. 5, pp. 12-17",
-			"doi": "https://dx.doi.org/10.1109/MCG.2010.97"
-		},
-		{
-			"title": "System Selectivity Cube: A 3D Visualization Tool for Comparing the Selectivity of Gas Chromatography, Supercritical-Fluid Chromatography, High-Pressure Liquid Chromatography, and Micellar Electrokinetic Capillary Chromatography Systems",
-			"year": "2010",
-			"authors": "Andrew R. Johnson, Mark F. Vitha, Timothy Urness, and Thomas Marrinan",
-			"venue": "In Analytical Chemistry, 2010, vol. 82, no. 14, pp. 6251-6258",
-			"doi": "https://dx.doi.org/10.1021/ac101163d"
-		}
-	],
-	"posters": [
-		{
+            "title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
+            "year": "2017",
+            "authors": "Vishal Doshi, Sneha Tuteja, Krishna Bharadwaj, Davide Tantillo, James Patton, Thomas Marrinan, and G. Elisabeta Marai",
+            "venue": "In Proceedings of the ACM International Symposium on Pervasive Displays (PerDis '17), 2017, article 2",
+            "doi": "https://doi.org/10.1145/3078810.3078817"
+        },
+        {
+            "title": "Automated Dynamic Data Redistribution",
+            "year": "2017",
+            "authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
+            "venue": "In Proceedings of the 2017 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW '17), 2017, pp. 1208-1215",
+            "doi": "https://doi.org/10.1109/IPDPSW.2017.17"
+        },
+        {
+            "title": "Mixed Presence Collaboration using Scalable Visualizations in Heterogeneous Display Spaces",
+            "year": "2017",
+            "authors": "Thomas Marrinan, Jason Leigh, Luc Renambot, Angus Forbes, Steve Jones, and Andrew Johnson",
+            "venue": "In Proceedings of the 2017 ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW '17), 2017, pp. 2236-2245",
+            "doi": "https://doi.org/10.1145/2998181.2998346"
+        },
+        {
+            "title": "Interactive Multi-Modal Display Spaces for Visual Analysis",
+            "year": "2016",
+            "authors": "Thomas Marrinan, Arthur Nishimoto, Joseph A. Insley, Silvio Rizzi, Andrew Johnson, and Michael E. Papka",
+            "venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 421-426",
+            "doi": "https://doi.org/10.1145/2992154.2996792"
+        },
+        {
+            "title": "Synchronized Mixed Presence Data-Conferencing Using Large-Scale Shared Displays",
+            "year": "2016",
+            "authors": "Thomas Marrinan, Luc Renambot, Jason Leigh, Angus Forbes, Steve Jones, and Andrew Johnson",
+            "venue": "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS '16), 2016, pp. 355-360",
+            "doi": "https://doi.org/10.1145/2992154.2996780"
+        },
+        {
+            "title": "SAGE2: A New Approach for Data Intensive Collaboration Using Scalable Resolution Shared Displays",
+            "year": "2014",
+            "authors": "Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Krishna Bharadwaj, Victor Mateevitsi, Luc Renambot, Lance Long, Andrew Johnson, and Jason Leigh",
+            "venue": "In Proceedings of the IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom '14), 2014, pp. 177-186",
+            "doi": "https://doi.org/10.4108/icst.collaboratecom.2014.257337",
+            "award": "best paper"
+        },
+        {
+            "title": "Whole-Brain Computational Fluid Dynamic Analysis",
+            "year": "2013",
+            "authors": "Thomas Marrinan and Andreas Linninger",
+            "venue": "In Food, Pharmaceutical and Bioengineering Division 2013 - Core Programming Area at the 2013 AIChE Annual Meeting: Global Challenges for Engineering a Sustainable Future (AIChE), 2013, pp. 706-708",
+            "link_text": "https://uic.pure.elsevier.com/en/publications/whole-brain-computational-fluid-dynamic-analysis",
+            "link_url": "https://uic.pure.elsevier.com/en/publications/whole-brain-computational-fluid-dynamic-analysis"
+        },
+        {
+            "title": "Multivariate Visualization of Chromatographic Systems",
+            "year": "2011",
+            "authors": "Timothy Urness, Thomas Marrinan, Andrew R. Johnson, and Mark F. Vitha",
+            "venue": "In Proceedings of SPIE-IS&T Electronic Imaging, 2011, vol. 7868",
+            "doi": "https://doi.org/10.1117/12.872020"
+        }
+    ],
+    "journals": [
+        {
+            "title": "Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis",
+            "year": "2019",
+            "authors": "Thomas Marrinan, Greg Eisenhauer, Matthew Wolf, Joseph A. Insley, Silvio Rizzi, and Machael E. Papka",
+            "venue": "In Journal of Computational Science, 2019, vol. 31, pp. 163-171",
+            "doi": "https://doi.org/10.1016/j.jocs.2019.01.003"
+        },
+        {
+            "title": "SAGE2: A Collaboration Portal for Scalable Resolution Displays",
+            "year": "2016",
+            "authors": "Luc Renambot, Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Victor Mateevitsi, Krishna Bharadwaj, Lance Long, Andy Johnson, Maxine Brown, and Jason Leigh",
+            "venue": "In Future Generation Computer Systems, 2016, vol. 54, pp. 296-305",
+            "doi": "https://doi.org/10.1016/j.future.2015.05.014"
+        },
+        {
+            "title": "Cerebral Microcirculation and Oxygen Tension in the Human Secondary Cortex",
+            "year": "2013",
+            "authors": "A. A. Linninger, I. G. Gould, T. Marrinan, C.-Y. Hsu, M. Chojecki, and A. Alaraj",
+            "venue": "In Annals of Biomedical Engineering, 2013, vol. 41, no. 11, pp. 2264-2284",
+            "doi": "https://doi.org/10.1007/s10439-016-1722-3"
+        },
+        {
+            "title": "Hemodynamics of Cerebral Micro Vasculature",
+            "year": "2012",
+            "authors": "Ian Gould, Thomas Marrinan, Maurice Chojecki, Masood Qader, Brian Henry, Mohammed Pervais, Nicholas Vaičaitis, Yiyi Zhu, Aaron Rogers, and Andreas Linninger",
+            "venue": "In Computer Aided Chemical Engineering, 2012, vol. 31, pp. 1727-1731",
+            "doi": "https://doi.org/10.1016/B978-0-444-59506-5.50176-0"
+        },
+        {
+            "title": "Understanding and Interpreting Multivalued Astronomical Data",
+            "year": "2010",
+            "authors": "Thomas Marrinan,Timothy Urness, Charles Nelson, Kory Kreimeyer, and Jordan Mirocha",
+            "venue": "In IEEE Computer Graphics and Applications, 2010, vol. 30, no. 5, pp. 12-17",
+            "doi": "https://doi.org/10.1109/MCG.2010.97"
+        },
+        {
+            "title": "System Selectivity Cube: A 3D Visualization Tool for Comparing the Selectivity of Gas Chromatography, Supercritical-Fluid Chromatography, High-Pressure Liquid Chromatography, and Micellar Electrokinetic Capillary Chromatography Systems",
+            "year": "2010",
+            "authors": "Andrew R. Johnson, Mark F. Vitha, Timothy Urness, and Thomas Marrinan",
+            "venue": "In Analytical Chemistry, 2010, vol. 82, no. 14, pp. 6251-6258",
+            "doi": "https://doi.org/10.1021/ac101163d"
+        }
+    ],
+    "posters": [
+        {
+            "title": "Real-Time Compression of Dynamically Generated Images for Offscreen Rendering",
+            "year": "2019",
+            "authors": "Leah Emerson and Thomas Marrinan",
+            "venue": "In Proceedings of the 2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV '19), 2019, pp. 91-92",
+            "link_text": "Extended Abstract [PDF]",
+            "link_url": "pdfs/Emerson%20et%20al.%20-%20Real-Time%20Compression%20of%20Dynamically%20Generated%20Images%20for%20Offscreen%20Rendering.pdf"
+        },
+        {
             "title": "Revolutionizing Hybrid Parallelization Through Data Communication Techniques",
             "year": "2017",
             "authors": "Asare Nkansah, Tommy Franczak, Thomas Marrinan, and Michael E. Papka",
@@ -128,67 +143,75 @@
             "link_url": "pdfs/Nkansah%20et%20al.%20-%20Revolutionizing%20Hybrid%20Parallelization%20Through%20Data%20Communication%20Techniques.pdf"
         },
         {
-			"title": "Networking Simulation Clusters with Visualization Clusters for Real-Time Data Analysis",
-			"year": "2016",
-			"authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
-			"venue": "In Argonne National Laboratory Postdoctoral Research and Career Symposium",
-			"link_text": "Poster [PDF]",
-			"link_url": "pdfs/Marrinan%20et%20al.%20-%20Networking%20Simulation%20Clusters%20with%20Visualization%20Clusters%20for%20Real-Time%20Data%20Analysis.pdf"
-		},
-		{
-			"title": "Future Outlooks for Enabling Interactive Supercomputing Frameworks",
-			"year": "2016",
-			"authors": "Thomas Marrinan and Michael E. Papka",
-			"venue": " In Greater Chicago Area Systems Research (GCASR)",
-			"link_text": "Poster [PDF]",
-			"link_url": "pdfs/Marrinan%20et%20al.%20-%20Future%20Outlooks%20for%20Enabling%20Interactive%20Supercomputing%20Frameworks.pdf"
-		},
-		{
-			"title": "Whole-Brain Vascular Reconstruction, Simulation, and Visualization",
-			"year": "2012",
-			"authors": "Thomas Marrinan, Ian Gould, Chih-Yang Hsu, and Andreas Linninger",
-			"venue": "In IEEE Scientific Visualization Conference (VisWeek)",
-			"link_text": "Extended Abstract [PDF]",
-			"link_url": "pdfs/Marrinan%20et%20al.%20-%20Whole-Brain%20Vascular%20Reconstruction,%20Simulation,%20and%20Visualization.pdf",
-			"award": "honorable mention"
-		}
-	],
-	"theses": [
-		{
-			"title": "Data-Intensive Remote Collaboration using Scalable Visualizations in Heterogeneous Display Spaces",
-			"year": "2016",
-			"authors": "Thomas Marrinan",
-			"venue": "PhD Thesis, University of Illinois at Chicago",
-			"doi": "http://hdl.handle.net/10027/20877"
-		}
-	],
-	"presentations": [
-		{
-			"title": "Parallel Streaming for In Transit Analysis with Heterogeneous Data Layout",
-			"year": "2017",
-			"venue": "Lightning Talk at the In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization workshop"
-		},
-		{
-			"title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
-			"year": "2017",
-			"venue": "Demo session at Pervasive Displays",
-			"link_text": "Demo [photo]",
-			"link_url": "images/publications/sticky_schedule.jpg"
-		},
-		{
-			"title": "Human-Centered Computing to Enable Large-Scale Science and Collaboration",
-			"year": "2016",
-			"venue": "Invited Talk: University of St. Thomas"
-		},
-		{
-			"title": "Scalable Adaptive Graphics Environment (SAGE) for Global Collaboration",
-			"year": "2014",
-			"venue": "In Birds of a Feather Presentation at Supercomputing"
-		},
-		{
-			"title": "SAGE2",
-			"year": "2014",
-			"venue": "In VISTech Workshop at Supercomputing"
-		}
-	]
+            "title": "Networking Simulation Clusters with Visualization Clusters for Real-Time Data Analysis",
+            "year": "2016",
+            "authors": "Thomas Marrinan, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
+            "venue": "In Argonne National Laboratory Postdoctoral Research and Career Symposium",
+            "link_text": "Poster [PDF]",
+            "link_url": "pdfs/Marrinan%20et%20al.%20-%20Networking%20Simulation%20Clusters%20with%20Visualization%20Clusters%20for%20Real-Time%20Data%20Analysis.pdf"
+        },
+        {
+            "title": "Future Outlooks for Enabling Interactive Supercomputing Frameworks",
+            "year": "2016",
+            "authors": "Thomas Marrinan and Michael E. Papka",
+            "venue": "In Greater Chicago Area Systems Research (GCASR)",
+            "link_text": "Poster [PDF]",
+            "link_url": "pdfs/Marrinan%20et%20al.%20-%20Future%20Outlooks%20for%20Enabling%20Interactive%20Supercomputing%20Frameworks.pdf"
+        },
+        {
+            "title": "Whole-Brain Vascular Reconstruction, Simulation, and Visualization",
+            "year": "2012",
+            "authors": "Thomas Marrinan, Ian Gould, Chih-Yang Hsu, and Andreas Linninger",
+            "venue": "In IEEE Scientific Visualization Conference (VisWeek)",
+            "link_text": "Extended Abstract [PDF]",
+            "link_url": "pdfs/Marrinan%20et%20al.%20-%20Whole-Brain%20Vascular%20Reconstruction,%20Simulation,%20and%20Visualization.pdf",
+            "award": "honorable mention"
+        }
+    ],
+    "thesis": [
+        {
+            "title": "Data-Intensive Remote Collaboration using Scalable Visualizations in Heterogeneous Display Spaces",
+            "year": "2016",
+            "authors": "Thomas Marrinan",
+            "venue": "PhD Thesis, University of Illinois at Chicago",
+            "doi": "https://indigo.uic.edu/handle/10027/20877"
+        }
+    ],
+    "other": [
+        {
+            "title": "Web Browser Rendering and Interaction in Custom OpenGL Applications",
+            "year": "2019",
+            "authors": "Trevor Tracy and Thomas Marrinan",
+            "venue": "Student Paper in Midwest Instruction and Computing Symposium (MICS)",
+            "link_text": "http://www.micsymposium.org/mics2019/",
+            "link_url": "http://www.micsymposium.org/mics2019/"
+        },
+        {
+            "title": "Parallel Streaming for In Transit Analysis with Heterogeneous Data Layout",
+            "year": "2017",
+            "venue": "Lightning Talk at the In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization workshop"
+        },
+        {
+            "title": "StickySchedule: An Interactive Multi-user Application for Conference Scheduling on Large-scale Shared Displays",
+            "year": "2017",
+            "venue": "Demo session at Pervasive Displays",
+            "link_text": "Demo [photo]",
+            "link_url": "images/publications/sticky_schedule.jpg"
+        },
+        {
+            "title": "Human-Centered Computing to Enable Large-Scale Science and Collaboration",
+            "year": "2016",
+            "venue": "Invited Talk: University of St. Thomas"
+        },
+        {
+            "title": "Scalable Adaptive Graphics Environment (SAGE) for Global Collaboration",
+            "year": "2014",
+            "venue": "In Birds of a Feather Presentation at Supercomputing"
+        },
+        {
+            "title": "SAGE2",
+            "year": "2014",
+            "venue": "In VISTech Workshop at Supercomputing"
+        }
+    ]
 }

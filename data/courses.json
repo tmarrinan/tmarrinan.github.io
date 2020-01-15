@@ -2,27 +2,42 @@
 	"schools": [
 		{
 			"name": "Univeristy of St. Thomas",
+			"url": "https://www.stthomas.edu/",
 			"courses": [
 				{
 					"title": "Introduction to Programming and Problem Solving",
 					"department": "CISC",
 					"number": 131,
-					"link": "teaching/cisc131.html",
 					"description": "This course is designed for students with majors in the Department of Computer and Information Sciences and focuses on logical thinking, the design and implementation of algorithms in a procedural language, testing, correctness, and the use of common programming structures such as arrays. In addition, basic machine concepts are covered including hardware organization and representation of information in the machine. The typical student will be adept at using the computer but will have no prior programming experience."
 				},
 				{
 					"title": "Operating Systems",
 					"department": "CISC",
 					"number": 310,
-					"link": "teaching/cisc310.html",
 					"description": "The basic principles of designing and building operating systems. Sequential versus concurrent processes, synchronization and mutual exclusion, memory management techniques, CPU scheduling, input/output device handling, file systems design, security and protection."
 				},
 				{
 					"title": "Web Development",
 					"department": "CISC",
 					"number": 375,
-					"link": "teaching/cisc375.html",
 					"description": "This course examines the theory and practice of developing applications for the World Wide Web. Students will learn practical technique for designing and implementing Web applications, with a particular emphasis on server-side processing and data-driven Web sites."
+				},
+				{
+					"title": "Computer Graphics",
+					"department": "CISC",
+					"number": 460,
+					"description": "This course introduces the principles of interactive computer graphics. Computer graphics serves as the foundation for many areas, such as computer animation, video game design, and data visualization. Topics covered in this course include raster vs. vector techniques and hardware, 2-dimensional and 3-dimensional rendering, and shading and illumination models."
+				}
+			]
+		},
+		{
+			"name": "Argonne National Laboratory",
+			"url": "https://www.anl.gov/",
+			"courses": [
+				{
+					"title": "Creative Approaches to Problems in Science",
+					"department": "CAPS",
+					"description": "In this free, five-day enrichment experience, high school students learn Python, connect with Argonne computer scientists, and program a robot via a Raspberry Pi. Students will learn computer science skills and find ways to apply them to key science problems, opening up new opportunities on the path toward STEM-related careers."
 				}
 			]
 		}

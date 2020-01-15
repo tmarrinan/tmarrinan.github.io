@@ -2,190 +2,127 @@
 <html>
 <head>
 <title>Tommy Marrinan: Publications</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<script type="text/javascript" src="scripts/navigation.js"></script>
-<script type="text/javascript">
-	function init() {
-		initNavigation();
-		getJSON("data/publications.json", populatePubList);
-	}
 
-	function populatePubList(error, data) {
-		if (error) return;
+<!-- Pure.css -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/style2.css" media="screen" />
 
-		var conference_title = document.getElementById("conference_title");
-		var journal_title = document.getElementById("journal_title");
-		var poster_title = document.getElementById("poster_title");
-		var thesis_title = document.getElementById("thesis_title");
-		var presentation_title = document.getElementById("presentation_title");
+<!-- Vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- Custom JavaScript -->
+<script type="application/javascript" src="scripts/common.js"></script>
+<script type="application/javascript">
+    let app;
+    function Init() {
+        InitNavigation();
 
-		conference_title.textContent += " (" + data.conferences.length + ")";
-		journal_title.textContent += " (" + data.journals.length + ")";
-		poster_title.textContent += " (" + data.posters.length + ")";
-		thesis_title.textContent += " (" + data.theses.length + ")";
-		presentation_title.textContent += " (" + data.presentations.length + ")";
+        app = new Vue({
+            el: '#content',
+            data: {
+                publication_types: [
+                    {key: 'conferences', text: 'Conference and Workshop Papers'},
+                    {key: 'journals', text: 'Journal Articles'},
+                    {key: 'posters', text: 'Posters'},
+                    {key: 'thesis', text: 'Thesis'},
+                    {key: 'other', text: 'Other'}
+                ],
+                publications: {}
+            }
+        });
 
-		var conference_papers = document.getElementById("conference_papers");
-		var journal_articles = document.getElementById("journal_articles");
-		var poster_presentations = document.getElementById("poster_presentations");
-		var thesis_documents = document.getElementById("thesis_documents");
-		var presentation_talks = document.getElementById("presentation_talks");
-
-		initPublications(conference_papers, data.conferences);
-		initPublications(journal_articles, data.journals);
-		initPublications(poster_presentations, data.posters);
-		initPublications(thesis_documents, data.theses);
-		initPublications(presentation_talks, data.presentations);
-	}
-
-	function initPublications(parent, pubList) {
-		var i;
-		var div1, div2, div3, title, year, authors, venue, doi, link, award;
-
-		for (i=0; i<pubList.length; i++) {
-			div1 = document.createElement("div");
-			div1.style.float = "left";
-			div1.style.width = "685px";
-			div2 = document.createElement("div");
-			div2.style.float = "right";
-			div2.style.width = "75px";
-			div3 = document.createElement("div");
-			div3.className = "clear";
-
-			if (pubList[i].title !== undefined) {
-				title = document.createElement("p");
-				title.className = "pub_title";
-				title.innerHTML = pubList[i].title;
-				if (pubList[i].award !== undefined) {
-					award = document.createElement("img");
-					award.width = 16;
-					award.height = 15;
-					award.style.verticalAlign = "text-top";
-					award.style.marginLeft = "3px";
-					if (pubList[i].award === "best paper")
-						award.src = "images/publications/best_paper.png";
-					else if (pubList[i].award === "honorable mention")
-						award.src = "images/publications/honorable_mention.png";
-					title.appendChild(award);
-				}
-				div1.appendChild(title);
-			}
-			if (pubList[i].authors !== undefined) {
-				authors = document.createElement("p");
-				authors.className = "pub_content";
-				authors.innerHTML = pubList[i].authors.replace(/Thomas Marrinan/, "<u>Thomas Marrinan</u>").replace(/T. Marrinan/, "<u>T. Marrinan</u>");
-				div1.appendChild(authors);
-			}
-			if (pubList[i].venue !== undefined) {
-				venue = document.createElement("p");
-				venue.className = "pub_content";
-				venue.innerHTML = pubList[i].venue.replace(/the In /, "%%SPECIAL%%").replace(/In /, "In <i>").replace(/%%SPECIAL%%/, "the In ").replace(/PhD Thesis/, "<i>PhD Thesis").replace(/(, \d{4}|\()/, "</i>$1");
-				div1.appendChild(venue);
-			}
-			if (pubList[i].doi !== undefined) {
-				doi = document.createElement("p");
-				doi.className = "pub_content";
-				doi.innerHTML = "<a href=" + pubList[i].doi + ">" + pubList[i].doi + "</a>";
-				div1.appendChild(doi);
-			}
-			if (pubList[i].link_text !== undefined && pubList[i].link_url !== undefined) {
-				link = document.createElement("p");
-				link.className = "pub_content";
-				link.innerHTML = "<a href=" + pubList[i].link_url + ">" + pubList[i].link_text + "</a>";
-				div1.appendChild(link);
-			}
-			if (pubList[i].year !== undefined) {
-				title.innerHTML += " ";
-				year = document.createElement("p");
-				year.className = "pub_year";
-				year.innerHTML = "(" + pubList[i].year + ")";
-				div2.appendChild(year);
-			}
-
-			parent.appendChild(div1);
-			parent.appendChild(div2);
-			parent.appendChild(div3);
-		}
-	}
-
-	function getJSON(url, callback) {
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", url, true);
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					callback(null, JSON.parse(xhr.responseText));
-				}
-				else {
-					callback("Error: File Not Found", null);
-				}
-			}
-		};
-		xhr.send();
-	}
+        GetJSON('data/publications.json').then((data) => {
+            for (let key in data) {
+                for (let i = 0; i < data[key].length; i++) {
+                    if (data[key][i].hasOwnProperty('authors')) {
+                        data[key][i].authors = data[key][i].authors.replace(/Thomas Marrinan/, '<span class="underline">Thomas Marrinan</span>').replace(/T. Marrinan/, '<span class="underline">T. Marrinan</span>');
+                    }
+                    if (data[key][i].hasOwnProperty('venue')) {
+                        data[key][i].venue = data[key][i].venue.replace(/(^In | in | at |: |PhD Thesis, )/, '$1<span class="italic">').replace(/(, \d{4}| \(|$)/, "</span>$1");
+                    }
+                }
+            }
+            app.publications = data;
+        });
+    }
 </script>
 </head>
 
-<body onload="init()">
-	<div id="main">
-		<!-- START: NAVIGATION -->
-		<div id="navWrapper">
-			<div id="navigation">
-			</div>
-		</div>
-		<!-- END: NAVIGATION -->
-		
-		<!-- START: MAIN CONTENT -->
-		<div id="content">
-			<!-- START: CONFERENCE / WORKSHOP PAPERS -->
-			<div id="conference_papers">
-				<h2 id="conference_title">Conference and Workshop Papers</h2>
-			</div>
-			<div class="vertical_tspacer"></div>
-			<!-- END: CONFERENCE / WORKSHOP PAPERS -->
+<body onload="Init()">
+    <!-- START: NAVIGATION -->
+    <div id="navigation">
+        <div id="menu-open" class="menu">
+            <img class="menu-icon" src="images/menu.png" alt="menu open icon" />
+        </div>
+        <div id="info">
+            <p class="info-text"><span class="bold">Tommy Marrinan, PhD</span> | University of St. Thomas | tmarrinan@stthomas.edu</p>
+            <p class="info-text">Assistant Professor &ndash; Computer and Information Sciences</p>
+        </div>
 
-			<!-- START: JOURNAL ARTICLES -->
-			<div id="journal_articles">
-				<h2 id="journal_title">Journal Articles</h2>
-			</div>
-			<div class="vertical_tspacer"></div>
-			<!-- END: JOURNAL ARTICLES -->
+        <div id="overlay"></div>
 
-			<!-- START: POSTER PRESENTATIONS -->
-			<div id="poster_presentations">
-				<h2 id="poster_title">Posters</h2>
-			</div>
-			<div class="vertical_tspacer"></div>
-			<!-- END: POSTER PRESENTATIONS -->
+        <div id="menu-items">
+            <div class="menu-heading">
+                <div id="menu-close" class="menu">
+                    <img class="menu-icon" src="images/close.png" alt="menu close icon" />
+                </div>
+                <p class="menu-heading-text">Navigation</p>
+            </div>
 
-			<!-- START: THESIS DOCUMENT -->
-			<div id="thesis_documents">
-				<h2 id="thesis_title">Thesis</h2>
-			</div>
-			<div class="vertical_tspacer"></div>
-			<!-- END: THESIS DOCUMENT -->
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="teaching.html" class="pure-menu-link menu-link">Teaching</a></li>
+                <li class="pure-menu-item"><a href="research.html" class="pure-menu-link menu-link">Research</a></li>
+                <li class="pure-menu-item"><a href="publications.html" class="pure-menu-link menu-link">Publications</a></li>
+                <li class="pure-menu-item"><a href="awards_press.html" class="pure-menu-link menu-link">Awards/Press</a></li>
+                <li class="pure-menu-item"><a href="cv.html" class="pure-menu-link menu-link">CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav-spacer"></div>
+    <!-- END: NAVIGATION -->
 
-			<!-- START: PRESENTATION TALKS -->
-			<div id="presentation_talks">
-				<h2 id="presentation_title">Other Presentations</h2>
-			</div>
-			<div class="vertical_tspacer"></div>
-			<!-- START: PRESENTATION TALKS -->
+    <!-- START: MAIN CONTENT -->
+    <div id="content" class="pure-g">
+        <div class="pure-u-1-1 l-box" v-for="item in publication_types">
+            <h2>{{ item.text }} (<span v-if="publications.hasOwnProperty(item.key)">{{ publications[item.key].length }}</span>)</h2>
+            <div class="pure-g" v-for="pub in publications[item.key]">
+                <div class="pure-u-1-24"></div>
+                <div class="pure-u-20-24">
+                    <p class="pub-title">
+                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'best paper'" src="images/publications/best_paper.png" alt="best paper icon" />
+                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'honorable mention'" src="images/publications/honorable_mention.png" alt="honorable mention icon" />
+                        {{ pub.title }}
+                    </p>
+                    <p class="pub-content" v-if="pub.hasOwnProperty('authors')" v-html="pub.authors"></p>
+                    <p class="pub-content" v-if="pub.hasOwnProperty('venue')" v-html="pub.venue"></p>
+                    <p class="pub-content" v-if="pub.hasOwnProperty('doi')"><a :href="pub.doi" target="_blank">{{ pub.doi }}</a></p>
+                    <p class="pub-content" v-if="pub.hasOwnProperty('link_text') && pub.hasOwnProperty('link_url')"><a :href="pub.link_url" target="_blank">{{ pub.link_text }}</a></p>
+                </div>
+                <div class="pure-u-1-24"></div>
+                <div class="pure-u-2-24">
+                    <p class="pub-year">({{ pub.year }})</p>
+                </div>
+            </div>
+        </div>
 
-			<hr />
-			<div class="vertical_spacer"></div>
-			
-			<!-- START: AWARD LEGEND -->
-			<div>
-				<p><img src="images/publications/best_paper.png" width="16" height="15" style="vertical-align: text-top;"> = Best Paper</p>
-				<p><img src="images/publications/honorable_mention.png" width="16" height="15" style="vertical-align: text-top;"> = Honorable Mention</p>
-			</div>
-			<div class="vertical_spacer"></div>
-			<!-- END: AWARD LEGEND -->
-		</div>
-		<!-- END: MAIN CONTENT -->
-
-		<div class="clear"></div>
-	</div>
+        <!-- START: AWARD LEGEND -->
+        <div class="pure-u-1-1 l-box">
+            <div class="vertical-spacer"></div>
+            <hr />
+        </div>
+        <div class="pure-u-1-1 l-box">
+            <div class="pure-g">
+                <div class="pure-u-1-24"></div>
+                <div class="pure-u-23-24">
+                    <p><img class="pub-award" src="images/publications/best_paper.png" alt="best paper icon" /> = Best Paper</p>
+                    <p><img class="pub-award" src="images/publications/honorable_mention.png" alt="honorable mention icon" /> = Honorable Mention</p>
+                </div>
+            </div>
+        </div>
+        <!-- END: AWARD LEGEND -->
+    </div>
+    <!-- END: MAIN CONTENT -->
 </body>
 </html>

@@ -2,102 +2,104 @@
 <html>
 <head>
 <title>Tommy Marrinan: Research</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<script type="text/javascript" src="scripts/navigation.js"></script>
-<script type="text/javascript">
-	function init() {
-		initNavigation();
-		getJSON("data/research.json", populateResearch);
-	}
 
-	function populateResearch(error, data) {
-		if (error) return;
+<!-- Pure.css -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/style2.css" media="screen" />
 
-		var content = document.getElementById("content");
+<!-- Vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- Custom JavaScript -->
+<script type="application/javascript" src="scripts/common.js"></script>
+<script type="application/javascript">
+    let app;
+    function Init() {
+        InitNavigation();
+        OnResize();
 
-		var i, j;
-		var date, title, img, img_link, desc_container, desc_paragraph, clear, spacer;
-		for (i=0; i<data.research.length; i++) {
-			date = document.createElement("h3");
-			date.innerHTML = data.research[i].dates;
-			content.appendChild(date);
-			title = document.createElement("h3");
-			if (data.research[i].link !== undefined) {
-				title_link = document.createElement("a");
-				title_link.href = data.research[i].link;
-				title_link.innerHTML = data.research[i].title;
-				title.appendChild(title_link);
-			}
-			else {
-				title.style.color = "#AF5252";
-				title.style.fontStyle = "italic";
-				title.innerHTML = data.research[i].title;
-			}
-			content.appendChild(title);
-			img = document.createElement("img");
-			img.src = data.research[i].image.url;
-			img.width = data.research[i].image.width;
-			img.height = data.research[i].image.height;
-			if (data.research[i].link !== undefined) {
-				img_link = document.createElement("a");
-				img_link.href = data.research[i].link;
-				img_link.appendChild(img);
-				content.appendChild(img_link);
-			}
-			else {
-				content.appendChild(img);
-			}
-			desc_container = document.createElement("div");
-			desc_container.className = "research_description";
-			for (j=0; j<data.research[i].description.length; j++) {
-				desc_paragraph = document.createElement("p");
-				desc_paragraph.innerHTML = data.research[i].description[j];
-				desc_container.appendChild(desc_paragraph);
-			}
-			content.appendChild(desc_container);
-			clear = document.createElement("div");
-			clear.className = "clear";
-			content.appendChild(clear);
-			spacer = document.createElement("div");
-			spacer.className = "vertical_dspacer";
-			content.appendChild(spacer);
-		}
-	}
+        window.addEventListener('resize', OnResize);
 
-	function getJSON(url, callback) {
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", url, true);
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					callback(null, JSON.parse(xhr.responseText));
-				}
-				else {
-					callback("Error: File Not Found", null);
-				}
-			}
-		};
-		xhr.send();
-	}
+        app = new Vue({
+            el: '#content',
+            data: {
+                research: {}
+            }
+        });
+
+        GetJSON('data/research.json').then((data) => {
+            app.research = data;
+        });
+    }
+
+    function OnResize() {
+        var nav_height = document.getElementById('navigation').offsetHeight;
+        var remaining_height = window.innerHeight - nav_height;
+        document.getElementById('mainlist').style.height = (remaining_height - 96)+ 'px';
+    }
 </script>
 </head>
 
-<body onload="init()">
-	<div id="main">
-		<!-- START: NAVIGATION -->
-		<div id="navWrapper">
-			<div id="navigation">
-			</div>
-		</div>
-		<!-- END: NAVIGATION -->
-		
-		<!-- START: MAIN CONTENT -->
-		<div id="content">
-			<h2>Research</h2>
-		</div>
-		<!-- END: MAIN CONTENT -->
+<body onload="Init()">
+    <!-- START: NAVIGATION -->
+    <div id="navigation">
+        <div id="menu-open" class="menu">
+            <img class="menu-icon" src="images/menu.png" alt="menu open icon" />
+        </div>
+        <div id="info">
+            <p class="info-text"><span class="bold">Tommy Marrinan, PhD</span> | University of St. Thomas | tmarrinan@stthomas.edu</p>
+            <p class="info-text">Assistant Professor &ndash; Computer and Information Sciences</p>
+        </div>
 
-		<div class="clear"></div>
-	</div>
+        <div id="overlay"></div>
+
+        <div id="menu-items">
+            <div class="menu-heading">
+                <div id="menu-close" class="menu">
+                    <img class="menu-icon" src="images/close.png" alt="menu close icon" />
+                </div>
+                <p class="menu-heading-text">Navigation</p>
+            </div>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="teaching.html" class="pure-menu-link menu-link">Teaching</a></li>
+                <li class="pure-menu-item"><a href="research.html" class="pure-menu-link menu-link">Research</a></li>
+                <li class="pure-menu-item"><a href="publications.html" class="pure-menu-link menu-link">Publications</a></li>
+                <li class="pure-menu-item"><a href="awards_press.html" class="pure-menu-link menu-link">Awards/Press</a></li>
+                <li class="pure-menu-item"><a href="cv.html" class="pure-menu-link menu-link">CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav-spacer"></div>
+    <!-- END: NAVIGATION -->
+
+    <!-- START: MAIN CONTENT -->
+    <div id="content" class="pure-g">
+        <div class="pure-u-1-1 l-box">
+            <h2>Research</h2>
+            <div id="mainlist-container">
+                <ul id="mainlist">
+                    <li class="pure-g" v-for="item in research.research">
+                        <div class="pure-u-1-1">
+                            <h3>{{ item.dates }}</h3>
+                            <h3>
+                                <a v-if="item.hasOwnProperty('link')" :href="item.link" v-html="item.title"></a>
+                                <span v-else class="link-highlight" v-html="item.title"></span>
+                            </h3>
+                        </div>
+                        <div class="vertical-spacer"></div>
+                        <img class="pure-u-6-24 no-stretch" :src="item.image" alt="research item image" />
+                        <div class="pure-u-1-24"></div>
+                        <div class="pure-u-17-24">
+                            <p v-for="line in item.description" v-html="line"></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END: MAIN CONTENT -->
 </body>
 </html>
