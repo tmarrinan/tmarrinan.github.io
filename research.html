@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
 <!-- Custom CSS -->
-<link rel="stylesheet" type="text/css" href="css/style2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
 <!-- Vue.js -->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -34,8 +34,8 @@
     }
 
     function OnResize() {
-        var nav_height = document.getElementById('navigation').offsetHeight;
-        var remaining_height = window.innerHeight - nav_height;
+        let nav_height = document.getElementById('navigation').offsetHeight;
+        let remaining_height = window.innerHeight - nav_height;
         document.getElementById('mainlist').style.height = (remaining_height - 96)+ 'px';
     }
 </script>

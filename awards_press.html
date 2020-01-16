@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
 <!-- Custom CSS -->
-<link rel="stylesheet" type="text/css" href="css/style2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
 <!-- Vue.js -->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -27,105 +27,10 @@
         });
 
         GetJSON('data/awards_press.json').then((data) => {
-        	app.awards = data.awards;
-        	app.press = data.press;
+            app.awards = data.awards;
+            app.press = data.press;
         });
     }
-
-	/*
-	function init() {
-		initNavigation();
-		getJSON("data/awards_press.json", populateAwardsPress);
-	}
-
-	function populateAwardsPress(error, data) {
-		if (error) return;
-
-		var awards = document.getElementById("awards");
-		var press = document.getElementById("press");
-
-		initAwardsPress(awards, data.awards);
-		initAwardsPress(press, data.press);
-	}
-
-	function initAwardsPress(parent, list) {
-		var i, j;
-		var container, name, image, video, title, caption, caption_text, link, clear, spacer;
-
-		for (i=0; i<list.length; i++) {
-			container = document.createElement("div");
-			container.className = "awards_press_caption";
-			name = document.createElement("h3");
-			name.innerHTML = list[i].name + " (" + list[i].date + ")";
-			name.style.fontWeight = "bold";
-			parent.appendChild(name);
-			if (list[i].image !== undefined) {
-				image = document.createElement("img");
-				image.src = list[i].image.url;
-				image.width = list[i].image.width;
-				image.height = list[i].image.height;
-				image.className = "text_wrap_left";
-				parent.appendChild(image);
-			}
-			else if (list[i].video !== undefined) {
-				if (list[i].video.type === "youtube") {
-					video = document.createElement("iframe");
-					video.style.display = "block";
-					video.style.margin = "0 auto";
-					video.width = list[i].video.width;
-					video.height = list[i].video.height;
-					video.src = list[i].video.url;
-					video.setAttribute("frameborder", "0");
-					video.setAttribute("allowfullscreen", "");
-					video.className = "text_wrap_left";
-					parent.appendChild(video);
-				}
-			}
-			title = document.createElement("h3");
-			title.innerHTML = list[i].title;
-			title.style.textAlign = "justify";
-			container.appendChild(title);
-			caption = document.createElement("blockquote");
-			if (list[i].link !== undefined) caption.cite = list[i].link;
-			for (j=0; j<list[i].caption.length; j++) {
-				caption_text = document.createElement("p");
-				caption_text.innerHTML = list[i].caption[j];
-				caption.appendChild(caption_text);
-			}
-			container.appendChild(caption);
-			if (list[i].link !== undefined) {
-				link = document.createElement("a");
-				link.href = list[i].link;
-				link.innerHTML = list[i].link;
-				container.appendChild(link);
-			}
-			parent.appendChild(container);
-
-			clear = document.createElement("div");
-			clear.className = "clear";
-			parent.appendChild(clear);
-			spacer = document.createElement("div");
-			spacer.className = "vertical_dspacer";
-			parent.appendChild(spacer);
-		}
-	}
-
-	function getJSON(url, callback) {
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", url, true);
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					callback(null, JSON.parse(xhr.responseText));
-				}
-				else {
-					callback("Error: File Not Found", null);
-				}
-			}
-		};
-		xhr.send();
-	}
-	*/
 </script>
 </head>
 
