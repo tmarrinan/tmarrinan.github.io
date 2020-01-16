@@ -3,32 +3,68 @@
 <head>
 <title>Tommy Marrinan: Research</title>
 <base href="../">
+
+<!-- Pure.css -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+<!-- Custom CSS -->
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<script type="text/javascript" src="scripts/navigation.js"></script>
-<script type="text/javascript">
-	function init() {
-		initNavigation();
-	}
+
+<!-- Vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- Custom JavaScript -->
+<script type="application/javascript" src="scripts/common.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.2.228/build/pdf.min.js"></script>
+<script type="application/javascript">
+    function Init() {
+        InitNavigation();
+    }
 </script>
 </head>
 
-<body onload="init()">
-	<div id="main">
-		<!-- START: NAVIGATION -->
-		<div id="navWrapper">
-			<div id="navigation">
-			</div>
-		</div>
-		<!-- END: NAVIGATION -->
-		
-		<!-- START: MAIN CONTENT -->
-		<div id="content">
-			<h2>Visualization of the Human Cerebral Vascular System</h2>
-			<p>Coming soon...</p>
-		</div>
-		<!-- END: MAIN CONTENT -->
+<body onload="Init()">
+    <!-- START: NAVIGATION -->
+    <div id="navigation">
+        <div id="menu-open" class="menu">
+            <img class="menu-icon" src="images/menu.png" alt="menu open icon" />
+        </div>
+        <div id="info">
+            <p class="info-text"><span class="bold">Tommy Marrinan, PhD</span> | University of St. Thomas | tmarrinan@stthomas.edu</p>
+            <p class="info-text">Assistant Professor &ndash; Computer and Information Sciences</p>
+        </div>
 
-		<div class="clear"></div>
-	</div>
+        <div id="overlay"></div>
+
+        <div id="menu-items">
+            <div class="menu-heading">
+                <div id="menu-close" class="menu">
+                    <img class="menu-icon" src="images/close.png" alt="menu close icon" />
+                </div>
+                <p class="menu-heading-text">Navigation</p>
+            </div>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="teaching.html" class="pure-menu-link menu-link">Teaching</a></li>
+                <li class="pure-menu-item"><a href="research.html" class="pure-menu-link menu-link">Research</a></li>
+                <li class="pure-menu-item"><a href="publications.html" class="pure-menu-link menu-link">Publications</a></li>
+                <li class="pure-menu-item"><a href="awards_press.html" class="pure-menu-link menu-link">Awards/Press</a></li>
+                <li class="pure-menu-item"><a href="cv.html" class="pure-menu-link menu-link">CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav-spacer"></div>
+    <!-- END: NAVIGATION -->
+
+    <!-- START: MAIN CONTENT -->
+    <div id="content">
+        <div class="pure-g">
+            <div class="pure-u-1 l-box">
+                <h2>Visualization of the Human Cerebral Vascular System</h2>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    </div>
+    <!-- END: MAIN CONTENT -->
 </body>
 </html>
