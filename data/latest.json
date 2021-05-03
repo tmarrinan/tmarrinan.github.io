@@ -1,9 +1,16 @@
 {
 	"news": [
         {
-            "date": "December 18, 2019",
-            "text": "Diversity, Equity, and Inclusion grant was funded by the UST Vice Provost's office in partnership with the HHMI STEM Inclusive Excellence program. This grant supports work to revise the introductory computer science course to make it more inclusive and engaging for students coming from a diverse set of backgrounds.",
-            "image": "https://www.stthomas.edu/_media-library/_images/about/1920x1080/hands-circle-diversity-1920x1080"
+            "date": "April 1, 2021",
+            "text": "Paper titled \"Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing\" was presented at %%IEEE VR%% 2021. The paper was also nominated for Best Journal Paper!",
+            "link": "https://ieeevr.org/2021/",
+            "image": "https://ieeevr.org/2021/assets/images/ieeevr-banner-with-motto.jpg"
+        },
+        {
+            "date": "July 13-17, 2020",
+            "text": "Co-taught the %%Coding for Science%% high school computing workshop &ndash; a free 5-day enrichment experience hosted at Argonne National Laboratory.",
+            "link": "https://www.anl.gov/education/coding-for-science-camp",
+            "image": "https://www.anl.gov/sites/www/files/styles/carousel_max_height_600/public/32321D30-%20New.jpg"
         },
         {
             "date": "October 21, 2019",
@@ -16,12 +23,6 @@
             "text": "Extended abstract titled \"Real-Time Compression of Dynamically Generated Images for Offscreen Rendering\" was presented as a poster at %%LDAV%% (Big Data Analysis and Visualization) held in conjunction with IEEE Vis 2019.",
             "link": "https://ldav.org/2019/",
             "image": "https://ldav.org/2019/assets/logo-ldav.png"
-        },
-        {
-            "date": "July 15-19, 2019",
-            "text": "Co-taught the %%CAPS%% (Creative Approaches to Problems in Science) high school computing workshop &ndash; a free 5-day enrichment experience hosted at Argonne National Laboratory.",
-            "link": "https://www.anl.gov/education/high-school-computing-workshop",
-            "image": "https://www.anl.gov/sites/www/files/styles/carousel_max_height_600/public/32321D30-%20New.jpg"
         },
         {
             "date": "February 21, 2019",

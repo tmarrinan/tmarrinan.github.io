@@ -83,9 +83,16 @@
     ],
     "journals": [
         {
+            "title": "Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing",
+            "year": "2021",
+            "authors": "Thomas Marrinan and Michael E. Papka",
+            "venue": "In IEEE Transactions on Visualization and Computer Graphics, 2021, vol. 27, no. 5, pp. 2587-2596",
+            "doi": "https://doi.org/10.1109/TVCG.2021.3067780"
+        },
+        {
             "title": "Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis",
             "year": "2019",
-            "authors": "Thomas Marrinan, Greg Eisenhauer, Matthew Wolf, Joseph A. Insley, Silvio Rizzi, and Machael E. Papka",
+            "authors": "Thomas Marrinan, Greg Eisenhauer, Matthew Wolf, Joseph A. Insley, Silvio Rizzi, and Michael E. Papka",
             "venue": "In Journal of Computational Science, 2019, vol. 31, pp. 163-171",
             "doi": "https://doi.org/10.1016/j.jocs.2019.01.003"
         },

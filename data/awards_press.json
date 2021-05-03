@@ -1,5 +1,14 @@
 {
 	"awards": [
+        {
+            "name": "IEEE VR: Best Journal Paper Nomination",
+            "date": "2021",
+            "title": "Marrinan et al. \"Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing\".",
+            "image": "images/awards_press/IEEE-VR_BestPaperNominee.jpg",
+            "caption": [
+                "Surround-view panoramic images and videos have become a popular form of media for interactive viewing on mobile devices and virtual reality headsets. Viewing such media provides a sense of immersion by allowing users to control their view direction and experience an entire environment. When using a virtual reality headset, the level of immersion can be improved by leveraging stereoscopic capabilities. Stereoscopic images are generated in pairs, one for the left eye and one for the right eye, and result in providing an important depth cue for the human visual system. For computer generated imagery, rendering proper stereo pairs is well known for a fixed view. However, it is much more difficult to create omnidirectional stereo pairs for a surround-view projection that work well when looking in any direction. One major drawback of traditional omnidirectional stereo images is that they suffer from binocular misalignment in the peripheral vision as a user's view direction approaches the zenith / nadir (north / south pole) of the projection sphere. This paper presents a real-time geometry-based approach for omnidirectional stereo rendering that fits into the standard rendering pipeline. Our approach includes tunable parameters that enable pole merging -- a reduction in the stereo effect near the poles that can minimize binocular misalignment. Results from a user study indicate that pole merging reduces visual fatigue and discomfort associated with binocular misalignment without inhibiting depth perception."
+            ]
+        },
 		{
 			"name": "IEEE CollaborateCom: Best Paper",
 			"date": "2014",
