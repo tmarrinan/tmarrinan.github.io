@@ -14,9 +14,15 @@
         },
         {
             "date": "August 10, 2021",
-            "text": "IEEE VR paper titled \Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing\" was presented at %%ACM SIGGRAPH%% 2021 as an invited talk.",
+            "text": "IEEE VR paper titled \"Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing\" was presented at %%ACM SIGGRAPH%% 2021 as an invited talk.",
             "link": "https://s2021.siggraph.org/",
             "image": "https://www.siggraph.org/wp-content/uploads/2020/12/s2021-simple-logo.png"
+        },
+        {
+            "date": "July 19-23, 2021",
+            "text": "Co-taught the %%Coding for Science%% high school computing workshop &ndash; a free 5-day enrichment experience hosted at Argonne National Laboratory.",
+            "link": "https://www.anl.gov/education/coding-for-science-camp",
+            "image": "https://www.anl.gov/sites/www/files/styles/carousel_max_height_600/public/summer_coding_camp_4.jpg"
         },
         {
             "date": "April 1, 2021",
@@ -35,18 +41,6 @@
             "text": "Paper titled \"PxStream: Remote Visualization for Distributed Rendering Frameworks\" was presented at %%LDAV%% (Big Data Analysis and Visualization) held in conjunction with IEEE Vis 2019.",
             "link": "https://ldav.org/2019/",
             "image": "https://ldav.org/2019/assets/logo-ldav.png"
-        },
-        {
-            "date": "October 21, 2019",
-            "text": "Extended abstract titled \"Real-Time Compression of Dynamically Generated Images for Offscreen Rendering\" was presented as a poster at %%LDAV%% (Big Data Analysis and Visualization) held in conjunction with IEEE Vis 2019.",
-            "link": "https://ldav.org/2019/",
-            "image": "https://ldav.org/2019/assets/logo-ldav.png"
-        },
-        {
-            "date": "February 21, 2019",
-            "text": "Paper titled \"Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis\" was published in the %%Journal of Computational Science%%.",
-            "link": "https://www.journals.elsevier.com/journal-of-computational-science",
-            "image": "https://ars.els-cdn.com/content/image/X18777503.jpg"
         }
 	]
 }
