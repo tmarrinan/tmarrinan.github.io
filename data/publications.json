@@ -1,6 +1,20 @@
 {
     "conferences": [
         {
+            "title": "GPU-based Image Compression for Efficient Compositing in Distributed Rendering Applications",
+            "year": "2021",
+            "authors": "Riley Lipinksi, Kenneth Moreland, Michael E. Papka, and Thomas Marrinan",
+            "venue": "In Proceedings of the 2021 IEEE 11th Symposium on Large Data Analysis and Visualization (LDAV '21), 2021, pp. 43-52",
+            "doi": "https://doi.org/10.1109/LDAV53230.2021.00012"
+        },
+        {
+            "title": "Enabling Collaborative Interaction with 360° Panoramas between Large-scale Displays and Immersive Headsets",
+            "year": "2021",
+            "authors": "Leah Emerson, Riley Lipinski, Heather Shirey, Theresa Malloy, and Thomas Marrinan",
+            "venue": "In Proceedings of the 2021 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct '21), 2021, pp. 183-188",
+            "doi": "https://doi.org/10.1109/ISMAR-Adjunct54149.2021.00045"
+        },
+        {
             "title": "PxStream: Remote Visualization for Distributed Rendering Frameworks",
             "year": "2019",
             "authors": "Thomas Marrinan, Silvio Rizzi, Joseph A. Insley, Lance Long, Luc Renambot, and Michael E. Papka",
@@ -185,6 +199,11 @@
         }
     ],
     "other": [
+        {
+            "title": "Real-Time Omnidirectional Stereo Rendering: Generating 360° Surround-View Panoramic Images for Comfortable Immersive Viewing",
+            "year": "2021",
+            "venue": "Invited Talk: SIGGRAPH 2021"
+        },
         {
             "title": "Web Browser Rendering and Interaction in Custom OpenGL Applications",
             "year": "2019",

@@ -1,6 +1,24 @@
 {
 	"news": [
         {
+            "date": "October 25th, 2021",
+            "text": "Paper titled \"GPU-based Image Compression for Efficient Compositing in Distributed Rendering Applications\" was presented at %%LDAV%% (Big Data Analysis and Visualization) held in conjunction with IEEE Vis 2021.",
+            "link": "https://ldav.org/2021/",
+            "image": "https://ldav.org/2021/assets/ldav21_logo.png"
+        },
+        {
+            "date": "October 4-8, 2021",
+            "text": "Paper titled \"Enabling Collaborative Interaction with 360&deg; Panoramas between Large-scale Displays and Immersive Headsets\" was presented as a poster at %%IEEE ISMAR%% 2021.",
+            "link": "https://ismar21.org/",
+            "image": "https://ismar21.org/wp-content/uploads/2021/01/logo_ismar-300x60.png"
+        },
+        {
+            "date": "August 10, 2021",
+            "text": "IEEE VR paper titled \Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing\" was presented at %%ACM SIGGRAPH%% 2021 as an invited talk.",
+            "link": "https://s2021.siggraph.org/",
+            "image": "https://www.siggraph.org/wp-content/uploads/2020/12/s2021-simple-logo.png"
+        },
+        {
             "date": "April 1, 2021",
             "text": "Paper titled \"Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing\" was presented at %%IEEE VR%% 2021. The paper was also nominated for Best Journal Paper!",
             "link": "https://ieeevr.org/2021/",
