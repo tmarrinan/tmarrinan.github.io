@@ -1,6 +1,13 @@
 {
     "conferences": [
         {
+            "title": "Interactive Virtual Reality Exploration of Large-scale Datasets using Omnidirectional Stereo Images",
+            "year": "2022",
+            "authors": "Thomas Marrinan, Jifu Tan, Joseph A. Insley, Alina Kanayinkal1, and Michael E. Papka",
+            "venue": "Advances in Visual Computing; Proceedings of the 2022 International Symposium on Visual Computing (ISVC), 2022",
+            "doi": "https://doi.org/10.1007/978-3-031-20713-6_9"
+        },
+        {
             "title": "GPU-based Image Compression for Efficient Compositing in Distributed Rendering Applications",
             "year": "2021",
             "authors": "Riley Lipinksi, Kenneth Moreland, Michael E. Papka, and Thomas Marrinan",
