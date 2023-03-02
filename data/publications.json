@@ -108,7 +108,8 @@
             "year": "2021",
             "authors": "Thomas Marrinan and Michael E. Papka",
             "venue": "In IEEE Transactions on Visualization and Computer Graphics, 2021, vol. 27, no. 5, pp. 2587-2596",
-            "doi": "https://doi.org/10.1109/TVCG.2021.3067780"
+            "doi": "https://doi.org/10.1109/TVCG.2021.3067780",
+            "award": "honorable mention"
         },
         {
             "title": "Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis",
