@@ -25,7 +25,7 @@
 				{
 					"title": "Computer Graphics",
 					"department": "CISC",
-					"number": 460,
+					"number": 420,
 					"description": "This course introduces the principles of interactive computer graphics. Computer graphics serves as the foundation for many areas, such as computer animation, video game design, and data visualization. Topics covered in this course include raster vs. vector techniques and hardware, 2-dimensional and 3-dimensional rendering, and shading and illumination models."
 				}
 			]
