@@ -1,6 +1,12 @@
 {
 	"news": [
         {
+            "date": "October 23, 2023",
+            "text": "IEEE SciVis Contest submission \"VisAnywhere: Developing Multi-platform Scientific Visualization Applications\" was awarded 1st Place at %%IEEE VIS%% (Visualization Conference) 2023.",
+            "link": "https://sciviscontest2023.github.io/",
+            "image": "https://sciviscontest2023.github.io/images/brain.png"
+        },
+        {
             "date": "October 3-5, 2022",
             "text": "Paper titled \"Interactive Virtual Reality Exploration of Large-scale Datasets using Omnidirectional Stereo Images\" was presented at %%ISVC%% (International Symposium on Visual Computing) 2022.",
             "link": "https://www.isvc.net/",
@@ -29,12 +35,6 @@
             "text": "Co-taught the %%Coding for Science%% high school computing workshop &ndash; a free 5-day enrichment experience hosted at Argonne National Laboratory.",
             "link": "https://www.anl.gov/education/coding-for-science-camp",
             "image": "https://www.anl.gov/sites/www/files/styles/carousel_max_height_600/public/summer_coding_camp_4.jpg"
-        },
-        {
-            "date": "April 1, 2021",
-            "text": "Paper titled \"Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing\" was presented at %%IEEE VR%% 2021. The paper was also nominated for Best Journal Paper!",
-            "link": "https://ieeevr.org/2021/",
-            "image": "https://ieeevr.org/2021/assets/images/ieeevr-banner-with-motto.jpg"
         }
 	]
 }
