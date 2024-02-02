@@ -208,6 +208,14 @@
     ],
     "other": [
         {
+            "title": "VisAnywhere: Developing Multi-platform Scientific Visualization Applications",
+            "year": "2023",
+            "authors": "Thomas Marrinan, Victor A. Mateevitsi, Madeleine Moeller, Alina Kanayinkal, and Michael E. Papka",
+            "venue": "SciVis Contest submission at IEEE Visualization Conference (VIS)",
+            "link_text": "https://sciviscontest2023.github.io/",
+            "link_url": "https://sciviscontest2023.github.io/"
+        },
+        {
             "title": "Real-Time Omnidirectional Stereo Rendering: Generating 360° Surround-View Panoramic Images for Comfortable Immersive Viewing",
             "year": "2021",
             "venue": "Invited Talk: SIGGRAPH 2021"
@@ -217,8 +225,8 @@
             "year": "2019",
             "authors": "Trevor Tracy and Thomas Marrinan",
             "venue": "Student Paper in Midwest Instruction and Computing Symposium (MICS)",
-            "link_text": "http://www.micsymposium.org/mics2019/",
-            "link_url": "http://www.micsymposium.org/mics2019/"
+            "link_text": "https://micsymposium.org/mics2019/",
+            "link_url": "https://micsymposium.org/mics2019/"
         },
         {
             "title": "Parallel Streaming for In Transit Analysis with Heterogeneous Data Layout",

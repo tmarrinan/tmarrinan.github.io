@@ -2,9 +2,9 @@
 	"news": [
         {
             "date": "October 23, 2023",
-            "text": "IEEE SciVis Contest submission \"VisAnywhere: Developing Multi-platform Scientific Visualization Applications\" was awarded 1st Place at %%IEEE VIS%% (Visualization Conference) 2023.",
+            "text": "IEEE %%SciVis Contest%% submission \"VisAnywhere: Developing Multi-platform Scientific Visualization Applications\" was awarded 1st Place at IEEE VIS (Visualization Conference) 2023.",
             "link": "https://sciviscontest2023.github.io/",
-            "image": "https://sciviscontest2023.github.io/images/brain.png"
+            "image": "https://sciviscontest2023.github.io/brainAnim.webp"
         },
         {
             "date": "October 3-5, 2022",
