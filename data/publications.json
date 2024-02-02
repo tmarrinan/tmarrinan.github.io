@@ -84,7 +84,7 @@
             "authors": "Thomas Marrinan, Jillian Aurisano, Arthur Nishimoto, Krishna Bharadwaj, Victor Mateevitsi, Luc Renambot, Lance Long, Andrew Johnson, and Jason Leigh",
             "venue": "In Proceedings of the IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom '14), 2014, pp. 177-186",
             "doi": "https://doi.org/10.4108/icst.collaboratecom.2014.257337",
-            "award": "best paper"
+            "award": "winner"
         },
         {
             "title": "Whole-Brain Computational Fluid Dynamic Analysis",
@@ -109,7 +109,7 @@
             "authors": "Thomas Marrinan and Michael E. Papka",
             "venue": "In IEEE Transactions on Visualization and Computer Graphics, 2021, vol. 27, no. 5, pp. 2587-2596",
             "doi": "https://doi.org/10.1109/TVCG.2021.3067780",
-            "award": "honorable mention"
+            "award": "nomination"
         },
         {
             "title": "Parallel Streaming between Heterogeneous HPC Resources for Real-time Analysis",
@@ -194,7 +194,7 @@
             "venue": "In IEEE Scientific Visualization Conference (VisWeek)",
             "link_text": "Extended Abstract [PDF]",
             "link_url": "pdfs/Marrinan%20et%20al.%20-%20Whole-Brain%20Vascular%20Reconstruction,%20Simulation,%20and%20Visualization.pdf",
-            "award": "honorable mention"
+            "award": "nomination"
         }
     ],
     "thesis": [
@@ -213,7 +213,8 @@
             "authors": "Thomas Marrinan, Victor A. Mateevitsi, Madeleine Moeller, Alina Kanayinkal, and Michael E. Papka",
             "venue": "SciVis Contest submission at IEEE Visualization Conference (VIS)",
             "link_text": "https://sciviscontest2023.github.io/",
-            "link_url": "https://sciviscontest2023.github.io/"
+            "link_url": "https://sciviscontest2023.github.io/",
+            "award": "winner"
         },
         {
             "title": "Real-Time Omnidirectional Stereo Rendering: Generating 360° Surround-View Panoramic Images for Comfortable Immersive Viewing",

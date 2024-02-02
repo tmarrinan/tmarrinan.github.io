@@ -91,8 +91,8 @@
                 <div class="pure-u-1-24"></div>
                 <div class="pure-u-20-24">
                     <p class="pub-title">
-                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'best paper'" src="images/publications/best_paper.png" alt="best paper icon" />
-                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'honorable mention'" src="images/publications/honorable_mention.png" alt="honorable mention icon" />
+                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'winner'" src="images/publications/best_paper.png" alt="best paper or winner icon" />
+                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'nomination'" src="images/publications/honorable_mention.png" alt="honorable mention or nomination icon" />
                         {{ pub.title }}
                     </p>
                     <p class="pub-content" v-if="pub.hasOwnProperty('authors')" v-html="pub.authors"></p>
@@ -116,8 +116,8 @@
             <div class="pure-g">
                 <div class="pure-u-1-24"></div>
                 <div class="pure-u-23-24">
-                    <p><img class="pub-award" src="images/publications/best_paper.png" alt="best paper icon" /> = Best Paper</p>
-                    <p><img class="pub-award" src="images/publications/honorable_mention.png" alt="honorable mention icon" /> = Honorable Mention / Nomination</p>
+                    <p><img class="pub-award" src="images/publications/best_paper.png" alt="best paper or winner icon" /> = Best Paper / Winner</p>
+                    <p><img class="pub-award" src="images/publications/honorable_mention.png" alt="honorable mention or nomination icon" /> = Honorable Mention / Nomination</p>
                 </div>
             </div>
         </div>
