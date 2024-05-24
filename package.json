@@ -1,0 +1,27 @@
+{
+    "name": "tmarrinan",
+    "description": "Personal Website",
+    "version": "1.0.0",
+    "author": {
+        "name": "Tommy Marrinan",
+        "email": "thomas.j.marrinan@gmail.com"
+    },
+    "contributors": [
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tmarrinan/tmarrinan.github.io.git"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.4.21"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "vite": "^5.2.8"
+    }
+}
