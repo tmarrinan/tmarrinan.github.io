@@ -28,7 +28,7 @@ let email = ref('tmarrinan@stthomas.edu');
                     <li><a :href="BASE_URL + 'teaching.html'" class="tm-nav-link">Teaching</a></li>
                     <li><a :href="BASE_URL + 'research.html'" class="tm-nav-link">Research</a></li>
                     <li><a :href="BASE_URL + 'publications.html'" class="tm-nav-link">Publications</a></li>
-                    <li><a :href="BASE_URL + 'awards_press.html'" class="tm-nav-link">Awards/Press</a></li>
+                    <li><a :href="BASE_URL + 'awards-press.html'" class="tm-nav-link">Awards/Press</a></li>
                     <li><a :href="BASE_URL + 'cv.html'" class="tm-nav-link">CV</a></li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@ let email = ref('tmarrinan@stthomas.edu');
                 <li><a :href="BASE_URL + 'teaching.html'" class="tm-menu-link">Teaching</a></li>
                 <li><a :href="BASE_URL + 'research.html'" class="tm-menu-link">Research</a></li>
                 <li><a :href="BASE_URL + 'publications.html'" class="tm-menu-link">Publications</a></li>
-                <li><a :href="BASE_URL + 'awards_press.html'" class="tm-menu-link">Awards/Press</a></li>
+                <li><a :href="BASE_URL + 'awards-press.html'" class="tm-menu-link">Awards/Press</a></li>
                 <li><a :href="BASE_URL + 'cv.html'" class="tm-menu-link">CV</a></li>
             </ul>
         </div>
