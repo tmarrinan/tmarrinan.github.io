@@ -13,7 +13,7 @@ let latest = ref([
     },
     {
         date: 'May 11, 2024',
-        text: 'Paper titled "Leveraging AI to Generate Audio for User-generated Content in Video Games" was presented at %%GenAICHI%% (Generative AI and HCI workshop - held in conjunction with ACM CHI) 2024.',
+        text: 'Paper titled "Leveraging AI to Generate Audio for User-generated Content in Video Games" was presented at %%GenAICHI%% (Generative AI and HCI workshop) held in conjunction with ACM CHI 2024.',
         link: 'https://generativeaiandhci.github.io/',
         image: 'https://generativeaiandhci.github.io/images/2023-firefly.jpg'
     },
