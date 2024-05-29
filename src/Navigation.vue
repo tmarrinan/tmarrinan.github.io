@@ -13,7 +13,7 @@ let email = ref('tmarrinan@stthomas.edu');
                 <img class="tm-menu-icon" :src="BASE_URL + 'images/menu.png'" alt="menu open icon" />
             </div>
             <div id="tm-info">
-                <p class="tm-info-text"><span class="tm-bold">Tommy Marrinan, PhD</span> | {{ email }}</p>
+                <p class="tm-info-text"><span class="tm-bold">Tommy Marrinan, PhD</span><span class="show-for-medium"> | {{ email }}</span></p>
                 <p class="tm-info-text">{{ job_title }} &ndash; Computer Science</p>
             </div>
         </div>
