@@ -1,128 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tommy Marrinan: Publications</title>
-
-<!-- Pure.css -->
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-
-<!-- Vue.js -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<!-- Custom JavaScript -->
-<script type="application/javascript" src="scripts/common.js"></script>
-<script type="application/javascript">
-    let app;
-    function Init() {
-        InitNavigation();
-
-        app = new Vue({
-            el: '#content',
-            data: {
-                publication_types: [
-                    {key: 'conferences', text: 'Conference and Workshop Papers'},
-                    {key: 'journals', text: 'Journal Articles'},
-                    {key: 'posters', text: 'Posters'},
-                    {key: 'thesis', text: 'Thesis'},
-                    {key: 'other', text: 'Other'}
-                ],
-                publications: {}
-            }
-        });
-
-        GetJSON('data/publications.json').then((data) => {
-            for (let key in data) {
-                for (let i = 0; i < data[key].length; i++) {
-                    if (data[key][i].hasOwnProperty('authors')) {
-                        data[key][i].authors = data[key][i].authors.replace(/Thomas Marrinan/, '<span class="underline">Thomas Marrinan</span>').replace(/T. Marrinan/, '<span class="underline">T. Marrinan</span>');
-                    }
-                    if (data[key][i].hasOwnProperty('venue')) {
-                        data[key][i].venue = data[key][i].venue.replace(/(^In | in | at |: |PhD Thesis, )/, '$1<span class="italic">').replace(/(, \d{4}| \(|$)/, "</span>$1");
-                    }
-                }
-            }
-            app.publications = data;
-        });
-    }
-</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Marrinan: Publications</title>
+    <!-- Foundation.css -->
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 </head>
 
-<body onload="Init()">
-    <!-- START: NAVIGATION -->
-    <div id="navigation">
-        <div id="menu-open" class="menu">
-            <img class="menu-icon" src="images/menu.png" alt="menu open icon" />
-        </div>
-        <div id="info">
-            <p class="info-text"><span class="bold">Tommy Marrinan, PhD</span> | University of St. Thomas | tmarrinan@stthomas.edu</p>
-            <p class="info-text">Associate Professor &ndash; Computer and Information Sciences</p>
-        </div>
+<body>
+    <!-- Main content -->
+    <div id="app"></div>
 
-        <div id="overlay"></div>
-
-        <div id="menu-items">
-            <div class="menu-heading">
-                <div id="menu-close" class="menu">
-                    <img class="menu-icon" src="images/close.png" alt="menu close icon" />
-                </div>
-                <p class="menu-heading-text">Navigation</p>
-            </div>
-
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link menu-link">Home</a></li>
-                <li class="pure-menu-item"><a href="teaching.html" class="pure-menu-link menu-link">Teaching</a></li>
-                <li class="pure-menu-item"><a href="research.html" class="pure-menu-link menu-link">Research</a></li>
-                <li class="pure-menu-item"><a href="publications.html" class="pure-menu-link menu-link">Publications</a></li>
-                <li class="pure-menu-item"><a href="awards_press.html" class="pure-menu-link menu-link">Awards/Press</a></li>
-                <li class="pure-menu-item"><a href="cv.html" class="pure-menu-link menu-link">CV</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="nav-spacer"></div>
-    <!-- END: NAVIGATION -->
-
-    <!-- START: MAIN CONTENT -->
-    <div id="content" class="pure-g">
-        <div class="pure-u-1-1 l-box" v-for="item in publication_types">
-            <h2>{{ item.text }} (<span v-if="publications.hasOwnProperty(item.key)">{{ publications[item.key].length }}</span>)</h2>
-            <div class="pure-g" v-for="pub in publications[item.key]">
-                <div class="pure-u-1-24"></div>
-                <div class="pure-u-20-24">
-                    <p class="pub-title">
-                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'winner'" src="images/publications/best_paper.png" alt="best paper or winner icon" />
-                        <img class="pub-award" v-if="pub.hasOwnProperty('award') && pub.award === 'nomination'" src="images/publications/honorable_mention.png" alt="honorable mention or nomination icon" />
-                        {{ pub.title }}
-                    </p>
-                    <p class="pub-content" v-if="pub.hasOwnProperty('authors')" v-html="pub.authors"></p>
-                    <p class="pub-content" v-if="pub.hasOwnProperty('venue')" v-html="pub.venue"></p>
-                    <p class="pub-content" v-if="pub.hasOwnProperty('doi')"><a :href="pub.doi" target="_blank">{{ pub.doi }}</a></p>
-                    <p class="pub-content" v-if="pub.hasOwnProperty('link_text') && pub.hasOwnProperty('link_url')"><a :href="pub.link_url" target="_blank">{{ pub.link_text }}</a></p>
-                </div>
-                <div class="pure-u-1-24"></div>
-                <div class="pure-u-2-24">
-                    <p class="pub-year">({{ pub.year }})</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- START: AWARD LEGEND -->
-        <div class="pure-u-1-1 l-box">
-            <div class="vertical-spacer"></div>
-            <hr />
-        </div>
-        <div class="pure-u-1-1 l-box">
-            <div class="pure-g">
-                <div class="pure-u-1-24"></div>
-                <div class="pure-u-23-24">
-                    <p><img class="pub-award" src="images/publications/best_paper.png" alt="best paper or winner icon" /> = Best Paper / Winner</p>
-                    <p><img class="pub-award" src="images/publications/honorable_mention.png" alt="honorable mention or nomination icon" /> = Honorable Mention / Nomination</p>
-                </div>
-            </div>
-        </div>
-        <!-- END: AWARD LEGEND -->
-    </div>
-    <!-- END: MAIN CONTENT -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script type="module" src="src/publications.js"></script>
+    <script type="application/javascript">
+        $(document).ready(() => {
+            $(document).foundation();
+        });
+    </script>
 </body>
 </html>

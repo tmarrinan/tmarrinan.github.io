@@ -12,7 +12,7 @@ let email = ref('tmarrinan@stthomas.edu');
             <div id="tm-menu" data-toggle="tm-mobile-menu">
                 <img class="tm-menu-icon" :src="BASE_URL + 'images/menu.png'" alt="menu open icon" />
             </div>
-            <div id="tm-info">
+            <div id="tm-mobile-info">
                 <p class="tm-info-text"><span class="tm-bold">Tommy Marrinan, PhD</span><span class="show-for-medium"> | {{ email }}</span></p>
                 <p class="tm-info-text">{{ job_title }} &ndash; Computer Science</p>
             </div>
@@ -80,10 +80,19 @@ let email = ref('tmarrinan@stthomas.edu');
     height: 3.5rem;
 }
 
-#tm-info {
+#tm-mobile-info {
     position: absolute;
     display: block;
     left: 3rem;
+    margin: 0.5rem 0 0 1.25rem;
+    height: 2.5rem;
+    white-space: nowrap;
+}
+
+#tm-info {
+    position: absolute;
+    display: block;
+    left: 0;
     margin: 0.5rem 0 0 1.25rem;
     height: 2.5rem;
     white-space: nowrap;
@@ -106,7 +115,7 @@ let email = ref('tmarrinan@stthomas.edu');
 #tm-navlinks{
     position: absolute;
     display: block;
-    left: 27.5rem;
+    left: 24.25rem;
     top: 0.625rem;
 }
 
