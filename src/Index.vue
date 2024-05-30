@@ -36,15 +36,15 @@ let latest = ref([
         image: 'https://ldav.io/2021/assets/ldav21_logo.png'
     }
 ]);
- latest.value.forEach((item) => {
+
+latest.value.forEach((item) => {
     if (item.hasOwnProperty('link')) {
         item.html = '<span class="underline">' + item.date + '</span>: ' + item.text.replace(/%%(.+)%%/, '<a href="' + item.link + '" target="_blank">$1</a>');
     }
     else {
         item.html = '<span class="underline">' + item.date + '</span>: ' + item.text;
     }
- });
-
+});
 </script>
 
 <template>
