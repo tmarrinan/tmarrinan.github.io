@@ -24,12 +24,12 @@ let email = ref('tmarrinan@stthomas.edu');
             </div>
             <div id="tm-navlinks">
                 <ul class="horizontal menu">
-                    <li><a :href="BASE_URL + 'index.html'" class="tm-nav-link">Home</a></li>
-                    <li><a :href="BASE_URL + 'teaching.html'" class="tm-nav-link">Teaching</a></li>
-                    <li><a :href="BASE_URL + 'research.html'" class="tm-nav-link">Research</a></li>
-                    <li><a :href="BASE_URL + 'publications.html'" class="tm-nav-link">Publications</a></li>
-                    <li><a :href="BASE_URL + 'awards-press.html'" class="tm-nav-link">Awards/Press</a></li>
-                    <li><a :href="BASE_URL + 'cv.html'" class="tm-nav-link">CV</a></li>
+                    <li><a :href="BASE_URL" class="tm-nav-link">Home</a></li>
+                    <li><a :href="BASE_URL + 'teaching'" class="tm-nav-link">Teaching</a></li>
+                    <li><a :href="BASE_URL + 'research'" class="tm-nav-link">Research</a></li>
+                    <li><a :href="BASE_URL + 'publications'" class="tm-nav-link">Publications</a></li>
+                    <li><a :href="BASE_URL + 'awards-press'" class="tm-nav-link">Awards/Press</a></li>
+                    <li><a :href="BASE_URL + 'cv'" class="tm-nav-link">CV</a></li>
                 </ul>
             </div>
         </div>
@@ -45,12 +45,12 @@ let email = ref('tmarrinan@stthomas.edu');
                 </div>
             </div>
             <ul class="vertical menu">
-                <li><a :href="BASE_URL + 'index.html'" class="tm-menu-link">Home</a></li>
-                <li><a :href="BASE_URL + 'teaching.html'" class="tm-menu-link">Teaching</a></li>
-                <li><a :href="BASE_URL + 'research.html'" class="tm-menu-link">Research</a></li>
-                <li><a :href="BASE_URL + 'publications.html'" class="tm-menu-link">Publications</a></li>
-                <li><a :href="BASE_URL + 'awards-press.html'" class="tm-menu-link">Awards/Press</a></li>
-                <li><a :href="BASE_URL + 'cv.html'" class="tm-menu-link">CV</a></li>
+                <li><a :href="BASE_URL" class="tm-menu-link">Home</a></li>
+                <li><a :href="BASE_URL + 'teaching'" class="tm-menu-link">Teaching</a></li>
+                <li><a :href="BASE_URL + 'research'" class="tm-menu-link">Research</a></li>
+                <li><a :href="BASE_URL + 'publications'" class="tm-menu-link">Publications</a></li>
+                <li><a :href="BASE_URL + 'awards-press'" class="tm-menu-link">Awards/Press</a></li>
+                <li><a :href="BASE_URL + 'cv'" class="tm-menu-link">CV</a></li>
             </ul>
         </div>
         <!--<div class="off-canvas-content" data-off-canvas-content></div>-->

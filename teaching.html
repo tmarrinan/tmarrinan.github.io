@@ -1,87 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tommy Marrinan: Teaching</title>
-
-<!-- Pure.css -->
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-
-<!-- Vue.js -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<!-- Custom JavaScript -->
-<script type="application/javascript" src="scripts/common.js"></script>
-<script type="application/javascript">
-    let app;
-    function Init() {
-        InitNavigation();
-
-        app = new Vue({
-            el: '#content',
-            data: {
-                courses: {}
-            }
-        });
-
-        GetJSON('data/courses.json').then((data) => {
-            app.courses = data;
-        });
-    }
-</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Marrinan: Teaching</title>
+    <!-- Foundation.css -->
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 </head>
 
-<body onload="Init()">
-	<!-- START: NAVIGATION -->
-    <div id="navigation">
-        <div id="menu-open" class="menu">
-            <img class="menu-icon" src="images/menu.png" alt="menu open icon" />
-        </div>
-        <div id="info">
-            <p class="info-text"><span class="bold">Tommy Marrinan, PhD</span> | University of St. Thomas | tmarrinan@stthomas.edu</p>
-            <p class="info-text">Associate Professor &ndash; Computer and Information Sciences</p>
-        </div>
+<body>
+    <!-- Main content -->
+    <div id="app"></div>
 
-        <div id="overlay"></div>
-
-        <div id="menu-items">
-            <div class="menu-heading">
-                <div id="menu-close" class="menu">
-                    <img class="menu-icon" src="images/close.png" alt="menu close icon" />
-                </div>
-                <p class="menu-heading-text">Navigation</p>
-            </div>
-
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link menu-link">Home</a></li>
-                <li class="pure-menu-item"><a href="teaching.html" class="pure-menu-link menu-link">Teaching</a></li>
-                <li class="pure-menu-item"><a href="research.html" class="pure-menu-link menu-link">Research</a></li>
-                <li class="pure-menu-item"><a href="publications.html" class="pure-menu-link menu-link">Publications</a></li>
-                <li class="pure-menu-item"><a href="awards_press.html" class="pure-menu-link menu-link">Awards/Press</a></li>
-                <li class="pure-menu-item"><a href="cv.html" class="pure-menu-link menu-link">CV</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="nav-spacer"></div>
-    <!-- END: NAVIGATION -->
-
-    <!-- START: MAIN CONTENT -->
-    <div id="content" class="pure-g">
-        <div class="pure-u-1-1 l-box">
-            <h2>Teaching</h2>
-            <div v-for="item in courses.schools">
-                <h3><a :href="item.url" target="_blank">{{ item.name }}</a></h3>
-                <ul>
-                    <li v-for="course in item.courses">
-                        <p><span class="bold">{{ course.department }}</span><span class="bold" v-if="course.hasOwnProperty('number')"> {{ course.number }}</span>: {{ course.title }}</p>
-                        <blockquote><p>{{ course.description }}</p></blockquote>
-                    </li>
-                </ul>
-                <div class="vertical-spacer"></div>
-            </div>
-        </div>
-    </div>
-    <!-- END: MAIN CONTENT -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script type="module" src="src/teaching.js"></script>
+    <script type="application/javascript">
+        $(document).ready(() => {
+            $(document).foundation();
+        });
+    </script>
 </body>
 </html>
