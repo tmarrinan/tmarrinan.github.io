@@ -39,10 +39,10 @@ let latest = ref([
 
 latest.value.forEach((item) => {
     if (item.hasOwnProperty('link')) {
-        item.html = '<span class="underline">' + item.date + '</span>: ' + item.text.replace(/%%(.+)%%/, '<a href="' + item.link + '" target="_blank">$1</a>');
+        item.html = '<span class="tm-underline">' + item.date + '</span>: ' + item.text.replace(/%%(.+)%%/, '<a href="' + item.link + '" target="_blank">$1</a>');
     }
     else {
-        item.html = '<span class="underline">' + item.date + '</span>: ' + item.text;
+        item.html = '<span class="tm-underline">' + item.date + '</span>: ' + item.text;
     }
 });
 </script>
@@ -87,7 +87,7 @@ latest.value.forEach((item) => {
     </div>
 </template>
 
-<style>
+<style scoped>
 #tm-about {
     margin-top: 1rem;
 }
@@ -114,9 +114,5 @@ latest.value.forEach((item) => {
 
 #tm-news-items:last-child {
     margin-bottom: 1rem;
-}
-
-.underline {
-    text-decoration: underline;
 }
 </style>

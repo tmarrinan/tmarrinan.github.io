@@ -57,7 +57,7 @@ let email = ref('tmarrinan@stthomas.edu');
     </div>
 </template>
 
-<style>
+<style scoped>
 #tm-top-bar {
     position: fixed;
     width: 100%;
@@ -160,10 +160,6 @@ let email = ref('tmarrinan@stthomas.edu');
     color: #D1C9D9;
     margin-bottom: 0;
     line-height: 1.5;
-}
-
-.tm-bold {
-    font-weight: bold;
 }
 
 .tm-nav-link, .tm-nav-link:visited {

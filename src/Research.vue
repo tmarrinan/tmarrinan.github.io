@@ -85,13 +85,13 @@ let research = ref([
     </div>
 </template>
 
-<style>
+<style scoped>
 #tm-research-proj {
     margin-top: 1rem;
 }
 
 .tm-research-img {
-    height: 12.5rem;
+    max-height: 13rem;
     width: auto;
 }
 </style>

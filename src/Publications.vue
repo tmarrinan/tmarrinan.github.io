@@ -307,10 +307,10 @@ let publications = reactive({
 for (let key in publications) {
     for (let i = 0; i < publications[key].length; i++) {
         if (publications[key][i].hasOwnProperty('authors')) {
-            publications[key][i].authors = publications[key][i].authors.replace(/Thomas Marrinan/, '<span class="underline">Thomas Marrinan</span>').replace(/T. Marrinan/, '<span class="underline">T. Marrinan</span>');
+            publications[key][i].authors = publications[key][i].authors.replace(/Thomas Marrinan/, '<span class="tm-underline">Thomas Marrinan</span>').replace(/T. Marrinan/, '<span class="tm-underline">T. Marrinan</span>');
         }
         if (publications[key][i].hasOwnProperty('venue')) {
-            publications[key][i].venue = publications[key][i].venue.replace(/(^In | in | at |: |PhD Thesis, )/, '$1<span class="italic">').replace(/(, \d{4}| \(|$)/, "</span>$1");
+            publications[key][i].venue = publications[key][i].venue.replace(/(^In | in | at |: |PhD Thesis, )/, '$1<span class="tm-italic">').replace(/(, \d{4}| \(|$)/, "</span>$1");
         }
     }
 }
@@ -339,7 +339,7 @@ function awardTypeToImageAlt(type) {
                         <div class="small-12 cell">
                             <div class="card" v-for="item in publications[type.key]">
                                 <div class="card-divider">
-                                    <h3><span class="bold" v-html="item.title"></span><br/>({{ item.year }})</h3>
+                                    <h3><span class="tm-bold" v-html="item.title"></span><br/>({{ item.year }})</h3>
                                     <div class="tm-award-container" v-if="item.hasOwnProperty('award')">
                                         <img class="tm-award" :src="awardTypeToImageUrl(item.award)" :alt="awardTypeToImageAlt(item.award)" />
                                     </div>
@@ -372,7 +372,7 @@ function awardTypeToImageAlt(type) {
     </div>
 </template>
 
-<style>
+<style scoped>
 #tm-publications {
     margin-top: 1rem;
 }
@@ -392,17 +392,5 @@ function awardTypeToImageAlt(type) {
 .tm-pub-award {
     width: 1.2rem;
     height: 1.125rem;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.underline {
-    text-decoration: underline;
 }
 </style>

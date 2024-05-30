@@ -1,0 +1,116 @@
+<script setup>
+import { ref } from 'vue';
+import Navigation from './Navigation.vue';
+
+const BASE_URL = import.meta.env.BASE_URL || '/';
+
+let awards = ref([
+    {
+        name: 'IEEE SciVis Contest: 1<sup>st</sup> Place',
+        date: '2023',
+        title: 'Marrinan et al. "VisAnywhere: Developing Multi-platform Scientific Visualization Applications"',
+        image: BASE_URL + 'images/awards_press/IEEE-SciVisContest.jpg',
+        caption: [
+            'Scientists often explore and analyze large-scale scientific simulation data by leveraging two- and three-dimensional visualizations. The data and tasks can be complex and therefore best supported using myriad display technologies, from mobile devices to large high-resolution display walls to virtual reality headsets. Using a simulation of neuron connections in the human brain, we present our work leveraging various web technologies to create a multi-platform scientific visualization application. Users can spread visualization and interaction across multiple devices to support flexible user interfaces and both co-located and remote collaboration. Drawing inspiration from responsive web design principles, this work demonstrates that a single codebase can be adapted to develop scientific visualization applications that operate everywhere.'
+        ],
+        link: 'https://doi.org/10.48550/arXiv.2404.17619'
+    },
+    {
+        name: 'IEEE VR: Best Journal Paper Nomination',
+        date: '2021',
+        title: 'Marrinan et al. "Real-Time Omnidirectional Stereo Rendering: Generating 360&deg; Surround-View Panoramic Images for Comfortable Immersive Viewing".',
+        image: BASE_URL + 'images/awards_press/IEEE-VR_BestPaperNominee.jpg',
+        caption: [
+            'Surround-view panoramic images and videos have become a popular form of media for interactive viewing on mobile devices and virtual reality headsets. Viewing such media provides a sense of immersion by allowing users to control their view direction and experience an entire environment. When using a virtual reality headset, the level of immersion can be improved by leveraging stereoscopic capabilities. Stereoscopic images are generated in pairs, one for the left eye and one for the right eye, and result in providing an important depth cue for the human visual system. For computer generated imagery, rendering proper stereo pairs is well known for a fixed view. However, it is much more difficult to create omnidirectional stereo pairs for a surround-view projection that work well when looking in any direction. One major drawback of traditional omnidirectional stereo images is that they suffer from binocular misalignment in the peripheral vision as a user\'s view direction approaches the zenith / nadir (north / south pole) of the projection sphere. This paper presents a real-time geometry-based approach for omnidirectional stereo rendering that fits into the standard rendering pipeline. Our approach includes tunable parameters that enable pole merging -- a reduction in the stereo effect near the poles that can minimize binocular misalignment. Results from a user study indicate that pole merging reduces visual fatigue and discomfort associated with binocular misalignment without inhibiting depth perception.'
+        ],
+        link: 'https://doi.org/10.1109/TVCG.2021.3067780'
+    },
+    {
+        name: 'IEEE CollaborateCom: Best Paper',
+        date: '2014',
+        title: 'Marrinan et al. "SAGE2: A New Approach for Data Intensive Collaboration Using Scalable Resolution Shared Displays".',
+        image: BASE_URL + 'images/awards_press/Marrinan-CollaborateCom.png',
+        caption: [
+            'Current web-based collaboration systems, such as Google Hangouts, WebEx, and Skype, primarily enable single users to work with remote collaborators through video conferencing and desktop mirroring. The original SAGE software, developed in 2004 and adopted at over one hundred international sites, was designed to enable groups to work in front of large shared displays in order to solve problems that required juxtaposing large volumes of information in ultra high-resolution. We have developed SAGE2, as a complete redesign and implementation of SAGE, using cloud-based and web browser technologies in order to enhance data intensive co-located and remote collaboration. This paper provides an overview of SAGE2\'s infrastructure, the technical design challenges, and the afforded benefits to data intensive collaboration. Lastly, we provide insight on how future collaborative applications can be developed to support large displays and demonstrate the power and flexibility that SAGE2 offers in collaborative scenarios through a series of use cases.'
+        ],
+        link: 'https://doi.org/10.4108/icst.collaboratecom.2014.257337'
+    },
+    {
+        name: 'IEEE VisWeek: Best Poster Honorable Mention',
+        date: '2012',
+        title: 'Marrinan, et al. "Whole-Brain Vascular Reconstruction, Simulation, and Visualization".',
+        image: BASE_URL + 'images/awards_press/Marrinan-VisWeek Poster.jpg',
+        caption: [
+            'Current techniques in medical imaging and analysis primarily focus on recording information about one specific physiological property at a time. Various modalities such as magnetic resonance, computed tomography, and digital subtraction angiography are each suited towards different tasks. In order to improve surgical planning, physicians would benefit from patient-specific computational models built from medical images. These models could be used in order to run simulations and simultaneously gather physiological information that would otherwise require multiple imaging modalities or be impossible to measure with current technology.',
+            'We present a pipeline for processing medical data and executing computational simulations to enhance the information conveyed in standard medical imaging. Our work focuses on the whole brain, where we\'ve developed tools that allow vasculature to be analyzed in three-dimensions, at high resolutions, and with multiple relevant data sets overlaid on the vascular structure. In order to avoid confusion and misinterpretations, we have the ability to render simulated data such that it mirrors raw medical images and vascular reconstructions.'
+        ],
+        link: BASE_URL + 'pdfs/Marrinan%20et%20al.%20-%20Whole-Brain%20Vascular%20Reconstruction,%20Simulation,%20and%20Visualization.pdf'
+    },
+    {
+        name: 'UIC - The Image of Research: 1<sup>st</sup> Place',
+        date: '2012',
+        title: 'Marrinan and Gould "Artificially Created Cortical Functional Blood Unit".',
+        image: BASE_URL + 'images/awards_press/IOR_MarrinanGould.jpg',
+        caption: [
+            'Many questions regarding cerebral hemodynamics and control of cerebral blood flow remain unanswered due to the complex architecture of the cerebral vascular network. The cortical blood supply is managed by functional blood units, which form clusters of a single draining vein surrounded by a ring of three to six arterioles. Our image is the result of collaboration between a computer science student specializing in scientific visualization and a bioengineering student with research interest in cerebral blood flow. The center of this image depicts an artificially generated three-dimensional representation of a functional blood unit embedded in the human cortex. The feeding ring arterioles and draining vein were generated with a stochastic algorithm that constructed acyclic binary trees with minimum blood volume. The capillaries were created with three dimensional Voronoi tessellation in order to achieve a mesh-like network. Our artificial network is similar in morphology to a human functional blood unit. The color-coding depicts a snapshot of a tracer\'s intensity after its injection into the ring arterioles. The shown tracer concentration was computed with large-scale sparse linear algebra for solving the transient convection species transport and blood flow equations. Custom coded OpenGL allows for real-time rendering of the network structure and tracer dispersion.'
+        ],
+        link: 'https://indigo.uic.edu/articles/journal_contribution/Artificially_created_cortical_functional_blood_unit/10976018'
+    }
+]);
+
+function getAwardPressCardTitle(item) {
+    return '<span class="tm-bold">' + item.name + '</span><br/>' + item.title + '<br/>(' + item.date + ')'; 
+}
+
+</script>
+
+<template>
+    <Navigation></Navigation>
+    <div id="tm-awards" class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
+                <h2>Awards</h2>
+                <div class="grid-container">
+                    <div class="grid-x grid-padding-x">
+                        <div class="small-12 cell" v-for="item in awards">
+                            <div class="card">
+                                <div class="card-divider">
+                                    <h3 v-html="getAwardPressCardTitle(item)"></h3><br/>
+                                </div>
+                                <div class="card-section">
+                                    <div class="grid-x grid-padding-x">
+                                        <div class="small-12 large-5 cell" style="text-align: center;">
+                                            <img class="tm-awardpress-img" :src="item.image" alt="figure from award" />
+                                        </div>
+                                        <div class="small-12 large-7 cell">
+                                            <p class="tm-caption" v-for="paragraph in item.caption" v-html="paragraph"></p>
+                                            <p v-if="item.hasOwnProperty('link')"><a :href="item.link" target="_blank">View artifact</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+#tm-awards {
+    margin-top: 1rem;
+}
+
+.tm-awardpress-img {
+    max-height: 25rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.tm-caption {
+    font-size: 0.75rem;
+    margin: 0.75rem 1.5rem;
+    text-align: justify;
+}
+</style>
