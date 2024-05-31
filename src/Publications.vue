@@ -21,6 +21,13 @@ let publications = reactive({
             venue: 'In Proceedings of the 2024 ACM International Conference on Interactive Media Experiences (IMX), 2024'
         },
         {
+            title: 'Leveraging AI to Generate Audio for User-generated Content in Video Games',
+            year: '2024',
+            authors: 'Thomas Marrinan, Pakeeza Akram, Oli Gurmessa, and Anthony Shishkin',
+            venue: 'In Proceedings of the 2024 Workshop on Generative AI and HCI (GenAICHI), 2024',
+            doi: 'https://doi.org/10.48550/arXiv.2404.17018'
+        },
+        {
             title: 'Interactive Virtual Reality Exploration of Large-scale Datasets using Omnidirectional Stereo Images',
             year: '2022',
             authors: 'Thomas Marrinan, Jifu Tan, Joseph A. Insley, Alina Kanayinkal1, and Michael E. Papka',

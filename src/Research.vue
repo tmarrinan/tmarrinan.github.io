@@ -73,7 +73,7 @@ let research = ref([
             <div class="small-12 medium-6 cell" v-for="project in research">
                 <div class="card">
                     <div class="card-divider">
-                        <h3 v-html="project.title +'<br/>(' + project.dates + ')'"></h3>
+                        <h3><span class="tm-bold" v-html="project.title"></span><br/>({{ project.dates }})</h3>
                     </div>
                     <img class="tm-research-img" :src="BASE_URL + project.image" alt="figure of research project" />
                     <div class="card-section">

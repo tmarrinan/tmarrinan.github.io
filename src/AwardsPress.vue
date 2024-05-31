@@ -58,6 +58,73 @@ let awards = ref([
     }
 ]);
 
+let press = ref([
+    {
+        name: 'ALCF Team Wins First Place and Best Workflow at 2023 IEEE SciVis Contest',
+        date: '2023, November',
+        title: 'Winning submission to the IEEE SciVis Contest was highlighted by InsideHPC',
+        image: 'https://insidehpc.com/wp-content/uploads/2023/11/1-SciVisContest2023_Award01-rev.jpg',
+        caption: [
+            'Researchers from the Argonne Leadership Computing Facility (ALCF), the University of St. Thomas, and the University of Illinois Chicago (UIC) won first place and "best workflow" at the Institute of Electrical and Electronics Engineers\' (IEEE) 2023 SciVis Contest for their development of a multi-platform scientific visualization application for analyzing data from brain plasticity simulations.'
+        ],
+        link: 'https://insidehpc.com/2023/11/alcf-team-wins-first-place-and-best-workflow-at-2023-ieee-scivis-contest/'
+    },
+    {
+        name: 'Widening Horizons for High Schoolers with Code',
+        date: '2017, August',
+        title: 'Argonne National Laboratory\'s Coding Camp was highlighted as a feauted story for the Department of Energy.',
+        image: 'https://www.anl.gov/sites/www/files/styles/article_teaser_16x9/public/2018-04/FTD_178293_31968D107.jpg',
+        caption: [
+            'The coding camp started three years ago from a vision of Mike Papka, deputy associate lab director and director of the Argonne Leadership Computing Facility (ALCF), to encourage and inspire youth to learn about computer science before they reach college.',
+            'Teaching coding requires teaching how to think like a computer, said Tommy Marrinan, a postdoctoral appointee at Argonne, another key player at the camp. "Humans have a lot of intuition and inferencing capabilities. Computers are explicit," said Marrinan.'
+        ],
+        link: 'https://www.anl.gov/article/widening-horizons-for-high-schoolers-with-code'
+    },
+    {
+        name: 'European Alliance for Innovation: News and Insights from EAI Community',
+        date: '2014, November',
+        title: 'Research on SAGE2, extracted from the award-winning paper at the Collaborative Computing conference, was written about in the European Alliance for Innovation\'s blog.',
+        image: 'https://blog.eai-conferences.org/wp-content/uploads/sites/445/2020/09/escriptsAsset-7.png',
+        caption: [
+            'How many times were we wondering how to improve group work collaboration? Of course, all of us are thinking about web-based collaboration systems such as the well-known Skype or Google Hangouts. According to the next generation data complexity, innovative collaboration systems are required to improve the cooperation among users.',
+            'SAGE2 is built to enlarge the user community thanks to its advanced support for development and integration of multi-user applications and the minor barrier to entry. As affirmed by the researchers, this is the main reason to "invite the community to use SAGE2 as a platform to develop multi-user applications for devices ranging from a standard desktop to a cluster-driven tiled display wall."'
+        ],
+        link: 'https://blog.eai-conferences.org/2014/11/21/sage2-the-next-generation-of-collaborative-srsd-middleware/'
+    },
+    {
+        name: 'Physics Today: Cover Photo',
+        date: '2013, July',
+        title: 'Tommy is pictured alongside his research on visualizing the human cerebral vascular system in the CAVE2&trade; Hybrid Reality System for the cover of an issue of Physics Today.',
+        image: BASE_URL + 'images/awards_press/physicstoday-cover-volume66-issue6-july2013.jpg',
+        caption: [
+            'This simulation of the brain\'s blood vessels and cortical tissue, created from magnetic resonance imaging data, exemplifies how physics contributes to 21st-century biology. Increasingly, the life-sciences community is recognizing that its students will need a multidisciplinary, quantitative education... (Photo by Lance Long, courtesy of the Electronic Visualization Laboratory, University of Illinois at Chicago).'
+        ],
+        link: 'https://pubs.aip.org/physicstoday/issue/66/7'
+    },
+    {
+        name: "Budget Request to Congress: NSF Highlighted Project",
+        date: "2013, April",
+        title: "Tommy's research, to bring advanced medical visualization into the CAVE2 Hybrid Reality Environment for interactive exploration, was highlighted as one of twelve NSF \"nuggets\" in their Budget Request to Congress for the 2014 Fiscal Year.",
+        image: BASE_URL + 'images/awards_press/NSF_highlight.jpg',
+        caption: [
+            '<span class="tm-bold">State-of-the-Art Virtual Reality System is Key to Medical Discovery</span>',
+            'A team of neurosurgeons from the College of Medicine at the University of Illinois at Chicago (UIC) recently stepped into CAVE2 &ndash; a next-generation, large-scale, virtual environment &ndash; to solve a vexing problem that presented itself in the arteries of the brain of a real patient. For years, the team had painstakingly used laptop and desktop computers to create three-dimensional, full-brain models that physiologically mirrored the brains of individual patients. These models were used for a patient whose cerebrovascular system they were trying to accurately model. But because of the limited image spatial-resolution of even today\'s best-quality computers, there was something the neurosurgeons couldn\'t see. That is, until they stepped into an automatic virtual environment, also known as a "CAVE" &ndash; a room in which images are seamlessly displayed so as to immerse an observer in a cyber-world of 3-D data.'
+        ],
+        link: "http://www.nsf.gov/about/budget/fy2014/pdf/EntireDocument_fy2014.pdf"
+    },
+    {
+        name: 'WTTW: Chicago Tonight',
+        date: '2013, April',
+        title: 'Chicago\'s local PBS station highlights the CAVE2&trade;, including Tommy\'s visualization research on the human cerebral vascular system',
+        image: 'https://news.wttw.com/sites/default/files/styles/gallery_large/public/Cave%202%20wide.JPG',
+        caption: [
+            'On Tuesday, April 23, 2013, the WTTW television news show "Chicago Tonight" aired an ~8 minute "Scientific Chicago" segment on the UIC Electronic Visualization Laboratory (EVL) and its CAVE2&trade; System.',
+            'Reporter Ash-har Quraishi showcased EVL\'s collaboration with UIC BioEngineering and the College of Medicine\'s Department of Neurosurgery to study the vasculature of the brain, as well as a new collaboration with the Department of Psychiatry on visualizing connectomes; i.e., comprehensive maps of neural connections in the brain. Additional applications by EVL and its collaborators were also highlighted.'
+        ],
+        link: 'https://news.wttw.com/2013/04/23/cave2'
+    }
+]);
+
 function getAwardPressCardTitle(item) {
     return '<span class="tm-bold">' + item.name + '</span><br/>' + item.title + '<br/>(' + item.date + ')'; 
 }
@@ -85,6 +152,38 @@ function getAwardPressCardTitle(item) {
                                         <div class="small-12 large-7 cell">
                                             <p class="tm-caption" v-for="paragraph in item.caption" v-html="paragraph"></p>
                                             <p v-if="item.hasOwnProperty('link')"><a :href="item.link" target="_blank">View artifact</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
+                <hr />
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
+                <h2>Press</h2>
+                <div class="grid-container">
+                    <div class="grid-x grid-padding-x">
+                        <div class="small-12 cell" v-for="item in press">
+                            <div class="card">
+                                <div class="card-divider">
+                                    <h3 v-html="getAwardPressCardTitle(item)"></h3><br/>
+                                </div>
+                                <div class="card-section">
+                                    <div class="grid-x grid-padding-x">
+                                        <div class="small-12 large-5 cell" style="text-align: center;">
+                                            <img class="tm-awardpress-img" :src="item.image" alt="figure from press item" />
+                                        </div>
+                                        <div class="small-12 large-7 cell">
+                                            <p class="tm-caption" v-for="paragraph in item.caption" v-html="paragraph"></p>
+                                            <p v-if="item.hasOwnProperty('link')"><a :href="item.link" target="_blank">View full press item</a></p>
                                         </div>
                                     </div>
                                 </div>
