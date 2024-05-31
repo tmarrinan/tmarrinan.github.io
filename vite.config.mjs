@@ -22,8 +22,7 @@ export default defineConfig({
         'teaching': resolve(__dirname, 'teaching.html'),
         'research': resolve(__dirname, 'research.html'),
         'publications': resolve(__dirname, 'publications.html'),
-        'awards-press': resolve(__dirname, 'awards-press.html'),
-        'cv': resolve(__dirname, 'cv.html')
+        'awards-press': resolve(__dirname, 'awards-press.html')
       }
     }
   }

@@ -4,6 +4,15 @@ const BASE_URL = import.meta.env.BASE_URL || '/';
 
 let job_title = ref('Associate Professor');
 let email = ref('tmarrinan@stthomas.edu');
+
+let pages = ref([
+    {url: BASE_URL, text: 'Home'},
+    {url: BASE_URL + 'teaching', text: 'Teaching'},
+    {url: BASE_URL + 'research', text: 'Research'},
+    {url: BASE_URL + 'publications', text: 'Publications'},
+    {url: BASE_URL + 'awards-press', text: 'Awards/Press'}
+]);
+
 </script>
 
 <template>
@@ -24,12 +33,9 @@ let email = ref('tmarrinan@stthomas.edu');
             </div>
             <div id="tm-navlinks">
                 <ul class="horizontal menu">
-                    <li><a :href="BASE_URL" class="tm-nav-link">Home</a></li>
-                    <li><a :href="BASE_URL + 'teaching'" class="tm-nav-link">Teaching</a></li>
-                    <li><a :href="BASE_URL + 'research'" class="tm-nav-link">Research</a></li>
-                    <li><a :href="BASE_URL + 'publications'" class="tm-nav-link">Publications</a></li>
-                    <li><a :href="BASE_URL + 'awards-press'" class="tm-nav-link">Awards/Press</a></li>
-                    <li><a :href="BASE_URL + 'cv'" class="tm-nav-link">CV</a></li>
+                    <li v-for="page in pages">
+                        <a :href="page.url" class="tm-nav-link">{{ page.text }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -45,12 +51,9 @@ let email = ref('tmarrinan@stthomas.edu');
                 </div>
             </div>
             <ul class="vertical menu">
-                <li><a :href="BASE_URL" class="tm-menu-link">Home</a></li>
-                <li><a :href="BASE_URL + 'teaching'" class="tm-menu-link">Teaching</a></li>
-                <li><a :href="BASE_URL + 'research'" class="tm-menu-link">Research</a></li>
-                <li><a :href="BASE_URL + 'publications'" class="tm-menu-link">Publications</a></li>
-                <li><a :href="BASE_URL + 'awards-press'" class="tm-menu-link">Awards/Press</a></li>
-                <li><a :href="BASE_URL + 'cv'" class="tm-menu-link">CV</a></li>
+                <li v-for="page in pages">
+                    <a :href="page.url" class="tm-menu-link">{{ page.text }}</a>
+                </li>
             </ul>
         </div>
         <!--<div class="off-canvas-content" data-off-canvas-content></div>-->
@@ -115,7 +118,7 @@ let email = ref('tmarrinan@stthomas.edu');
 #tm-navlinks{
     position: absolute;
     display: block;
-    left: 24.25rem;
+    left: 25.5rem;
     top: 0.625rem;
 }
 
