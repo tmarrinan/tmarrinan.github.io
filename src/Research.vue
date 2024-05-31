@@ -43,7 +43,7 @@ let research = ref([
         dates: '2011-2013',
         image: 'images/research/research_bio.jpg',
         description: [
-            'In this collaboration biongineers and neurosurgeons, graphical stereoscopic visual applications were developed for a standard single monitor as well as an ultra-high resolution multi-paneled platform. The visualization focused on viewing 4D (space and time) medical images from angiography, MRI, CT, and blood flow simulations for individual patients. These visualization tools have enhanced insight about the pathology of patients suffering from neurovascular disease, especially stroke. Improved preparation for surgical intervention is expected to empower surgeons to choose better medical treatment paths.'
+            'In this collaboration with biongineers and neurosurgeons, graphical stereoscopic visual applications were developed for a standard single monitor as well as an ultra-high resolution multi-paneled platform. The visualization focused on viewing 4D (space and time) medical images from angiography, MRI, CT, and blood flow simulations for individual patients. These visualization tools have enhanced insight about the pathology of patients suffering from neurovascular disease, especially stroke. Improved preparation for surgical intervention is expected to empower surgeons to choose better medical treatment paths.'
         ]
     },
     {
