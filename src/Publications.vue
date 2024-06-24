@@ -18,7 +18,8 @@ let publications = reactive({
             title: 'Image Synthesis from a Collection of Depth Enhanced Panoramas: Creating Interactive Extended Reality Experiences from Static Images',
             year: '2024',
             authors: 'Thomas Marrinan, Ethan Honzik, Hal L. N. Brynteson, and Michael E. Papka',
-            venue: 'In Proceedings of the 2024 ACM International Conference on Interactive Media Experiences (IMX), 2024'
+            venue: 'In Proceedings of the 2024 ACM International Conference on Interactive Media Experiences (IMX), 2024, pp. 64-74',
+            doi: 'https://doi.org/10.1145/3639701.3656312'
         },
         {
             title: 'Leveraging AI to Generate Audio for User-generated Content in Video Games',

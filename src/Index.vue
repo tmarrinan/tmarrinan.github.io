@@ -7,7 +7,7 @@ const BASE_URL = import.meta.env.BASE_URL || '/';
 let latest = ref([
     {
         date: 'June 12-14, 2024',
-        text: 'Paper titled "Image Synthesis from a Collection of Depth Enhanced Panoramas: Creating Interactive Extended Reality Experiences from Static Images" will be presented at %%ACM IMX%% (Interactive Media Experiences) 2024.',
+        text: 'Paper titled "Image Synthesis from a Collection of Depth Enhanced Panoramas: Creating Interactive Extended Reality Experiences from Static Images" was presented at %%ACM IMX%% (Interactive Media Experiences) 2024.',
         link: 'https://imx.acm.org/2024/',
         image: 'https://imx.acm.org/2024/wp-content/uploads/2021/09/cropped-Logo_IMX_L1-e1696877967641.jpg'
     },
