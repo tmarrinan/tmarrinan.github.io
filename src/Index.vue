@@ -6,6 +6,18 @@ const BASE_URL = import.meta.env.BASE_URL || '/';
 
 let latest = ref([
     {
+        date: 'November 17, 2024',
+        text: 'Paper titled "Bridging Gaps in Simulation Analysis through a General Purpose, Bidirectional Steering Interfacec with Ascent" was award best paper at %%ISAV%% (In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization) 2024.',
+        link: 'https://isav-workshop.github.io/2024/',
+        image: 'https://isav-workshop.github.io/2024/isav24_logo.png'
+    },
+    {
+        date: 'October 13, 2024',
+        text: 'Poster titled "High-quality Approximation of Scientific Data using 3D Gaussian Splatting" was presented at %%LDAV%% (Large Data Analysis and Visualization) 2024.',
+        link: 'https://ldav.io/2024/',
+        image: 'https://ldav.io/2024/assets/ldav24_logo.png'
+    },
+    {
         date: 'June 12-14, 2024',
         text: 'Paper titled "Image Synthesis from a Collection of Depth Enhanced Panoramas: Creating Interactive Extended Reality Experiences from Static Images" was presented at %%ACM IMX%% (Interactive Media Experiences) 2024.',
         link: 'https://imx.acm.org/2024/',
@@ -22,18 +34,6 @@ let latest = ref([
         text: 'IEEE %%SciVis Contest%% submission "VisAnywhere: Developing Multi-platform Scientific Visualization Applications" was awarded 1st Place at IEEE VIS (Visualization Conference) 2023.',
         link: 'https://sciviscontest2023.github.io/',
         image: 'https://sciviscontest2023.github.io/brainAnim.webp'
-    },
-    {
-        date: 'October 3-5, 2022',
-        text: 'Paper titled "Interactive Virtual Reality Exploration of Large-scale Datasets using Omnidirectional Stereo Images" was presented at %%ISVC%% (International Symposium on Visual Computing) 2022.',
-        link: 'https://www.isvc.net/',
-        image: 'https://www.isvc.net/wp-content/uploads/2022/03/logo1.png'
-    },
-    {
-        date: 'October 25th, 2021',
-        text: 'Paper titled "GPU-based Image Compression for Efficient Compositing in Distributed Rendering Applications" was presented at %%LDAV%% (Big Data Analysis and Visualization) held in conjunction with IEEE Vis 2021.',
-        link: 'https://ldav.io/2021/',
-        image: 'https://ldav.io/2021/assets/ldav21_logo.png'
     }
 ]);
 

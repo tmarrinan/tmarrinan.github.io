@@ -15,6 +15,13 @@ let publication_types = ref([
 let publications = reactive({
     conferences: [
         {
+            title: 'Bridging Gaps in Simulation Analysis through a General Purpose, Bidirectional Steering Interfacec with Ascent',
+            year: '2024',
+            authors: 'Andres Sewell Dimitrios K. Fytanidis, Victor A. Mateevitsi, Cyrus Harrison, Nicole Marsaglia, Thomas Marrinan, Silvio Rizzi, Joseph A. Insley, Michael E. Papka, and Steve Petruzza',
+            venue: 'In Proceedings of the 2024 Workshop on In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization (ISAV), 2024',
+            award: 'winner'
+        },
+        {
             title: 'Image Synthesis from a Collection of Depth Enhanced Panoramas: Creating Interactive Extended Reality Experiences from Static Images',
             year: '2024',
             authors: 'Thomas Marrinan, Ethan Honzik, Hal L. N. Brynteson, and Michael E. Papka',
@@ -184,10 +191,16 @@ let publications = reactive({
     ],
     posters: [
         {
+            title: 'High-quality Approximation of Scientific Data using 3D Gaussian Splatting',
+            year: '2024',
+            authors: 'Andres Sewell, Landon Dyken, Victor A. Mateevitsi, Will Usher, Jefferson Amstutz, Thomas Marrinan, Khairi Reda, Silvio Rizzi, Joseph Insley, Michael E. Papka, Sidharth Kumar, Steve Petruzza',
+            venue: 'In Proceedings of the 2024 IEEE 14th Symposium on Large Data Analysis and Visualization (LDAV \'24), 2024'
+        },
+        {
             title: 'Writing, Running, and Analyzing Large-scale Scientific Simulations with Jupyter Notebooks',
             year: '2021',
             authors: 'Pam Savira, Thomas Marrinan, and Michael E. Papka',
-            venue: 'In Proceedings of the 2019 IEEE 11th Symposium on Large Data Analysis and Visualization (LDAV \'21), 2021, pp. 90-91',
+            venue: 'In Proceedings of the 2021 IEEE 11th Symposium on Large Data Analysis and Visualization (LDAV \'21), 2021, pp. 90-91',
             doi: 'https://doi.org/10.1109/LDAV53230.2021.00020'
         },
         {
