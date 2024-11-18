@@ -6,6 +6,16 @@ const BASE_URL = import.meta.env.BASE_URL || '/';
 
 let awards = ref([
     {
+        name: 'ISAV (Workshop at SC): Best Paper',
+        date: '2024',
+        title: 'Sewell et al. "Bridging Gaps in Simulation Analysis through a General Purpose, Bidirectional Steering Interfacec with Ascent"',
+        image: BASE_URL + 'images/awards_press/ISAV_BestPaper.png',
+        caption: [
+            'Existing in situ libraries predominantly focus on enabling automated computational steering with limited support for interactive steering. This paper presents a general-purpose interface for instrumenting existing simulation codes with interactive human-in-the-loop steering capabilities. To better support interactive use cases, bidirectional simulation communication via simulation callbacks and shell commands has been implemented in Ascent. This software library provides simulations with in situ analysis and visualization infrastructure. We present two real-world implementations of this work using different simulations, demonstrating that the proposed interface is sufficiently flexible to enable any interactive computational steering use case within existing Ascent-instrumented codes.'
+        ],
+        link: 'https://isav-workshop.github.io/2024/'
+    },
+    {
         name: 'IEEE SciVis Contest: 1<sup>st</sup> Place',
         date: '2023',
         title: 'Marrinan et al. "VisAnywhere: Developing Multi-platform Scientific Visualization Applications"',
@@ -116,7 +126,7 @@ let press = ref([
         name: 'WTTW: Chicago Tonight',
         date: '2013, April',
         title: 'Chicago\'s local PBS station highlights the CAVE2&trade;, including Tommy\'s visualization research on the human cerebral vascular system',
-        image: 'https://news.wttw.com/sites/default/files/styles/gallery_large/public/Cave%202%20wide.JPG',
+        image: BASE_URL + 'images/awards_press/wttw_cave2.jpg',
         caption: [
             'On Tuesday, April 23, 2013, the WTTW television news show "Chicago Tonight" aired an ~8 minute "Scientific Chicago" segment on the UIC Electronic Visualization Laboratory (EVL) and its CAVE2&trade; System.',
             'Reporter Ash-har Quraishi showcased EVL\'s collaboration with UIC BioEngineering and the College of Medicine\'s Department of Neurosurgery to study the vasculature of the brain, as well as a new collaboration with the Department of Psychiatry on visualizing connectomes; i.e., comprehensive maps of neural connections in the brain. Additional applications by EVL and its collaborators were also highlighted.'
